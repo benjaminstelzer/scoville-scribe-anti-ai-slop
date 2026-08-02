@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-02: Natural prose pattern checks
+
+### Changed
+
+- Made sentence and paragraph rhythm checks concrete enough to catch repeated
+  openings, lengths, clause shapes, contrast frames, and list patterns.
+- Added a clarity check for noun-heavy compression and stacked modifiers.
+- Added context-bound guidance for em dashes and parenthetical expressions
+  without fixed counts, punctuation bans, or manufactured randomness.
+
 ## 2026-08-02: README claim precision
 
 ### Changed

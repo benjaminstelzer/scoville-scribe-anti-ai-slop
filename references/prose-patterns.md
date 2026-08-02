@@ -33,7 +33,10 @@ unrelated content:
 - paragraphs that repeat their opening sentence in different words;
 - canned introductions, transitions, summaries, and closing aphorisms;
 - unnecessary headings or lists that fragment a short, connected argument;
-- uniform sentence or paragraph construction that obscures emphasis.
+- repeated sentence openings, similar sentence or paragraph lengths, clause
+  shapes, contrast frames, or list patterns that flatten emphasis or make the
+  structure predictable;
+- noun-heavy compression or stacked modifiers that hide who did what.
 
 ## Judge only in context
 
@@ -44,6 +47,11 @@ conflict with the required voice, or create real monotony.
 
 Do not replace a precise term merely because it appears on an AI-word list. Do
 not force quirks, errors, or random variation to appear human.
+
+Keep an em dash (U+2014) or parenthetical expression when it earns its emphasis
+and leaves the main clause clear. When repeated or nested interruptions bury
+the point, integrate essential information, move useful secondary information,
+or remove it. Do not target a fixed count.
 
 ## Edit minimally
 

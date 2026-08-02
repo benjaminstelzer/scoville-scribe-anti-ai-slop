@@ -67,7 +67,7 @@ existed.
 
 **What it costs.** `SKILL.md` currently contains 784 words of rules plus 76
 words of frontmatter. Tasks with interface strings load another 745 words.
-Tasks with continuous prose or an explicit anti-slop request load another 447.
+Tasks with continuous prose or an explicit anti-slop request load another 516.
 Tasks meeting both conditions load both references.
 
 ## Use with Scoville
@@ -135,6 +135,9 @@ The skill draws from these sources:
 - [W3C Understanding SC 2.5.3: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name): a visible control label must appear in its accessible name.
 - [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/): localized messages need locale-specific plural and selector branches while preserving their runtime contract.
 - [Microsoft Writing Style Guide: Use technical terms carefully](https://learn.microsoft.com/en-us/style-guide/word-choice/use-technical-terms-carefully): product terms should remain consistent rather than vary for rhythm.
+- [Reinhart et al., Do LLMs write like humans?](https://doi.org/10.1073/pnas.2422455122): instruction-tuned models can retain a noun-heavy, informational style that misses the requested genre.
+- [Wang et al., Catch Me If You Can? Not Yet](https://aclanthology.org/2025.findings-emnlp.532/): a few author samples help more in structured genres than in nuanced informal writing, so samples guide rather than guarantee voice fidelity.
+- [Microsoft Writing Style Guide: Em dashes](https://learn.microsoft.com/en-us/style-guide/punctuation/dashes-hyphens/): em dashes are valid for a break or parenthetical remark, but repeated interruptions can make prose harder to read.
 - [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop): reader-first editing, meaning preservation, and skepticism toward surface-only AI tells.
 
 ## Repository contents
