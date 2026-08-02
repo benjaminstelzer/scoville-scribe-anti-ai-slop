@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scoville Scribe"
+  short_description: "Goal-first prose guardrail against AI writing slop"
+  default_prompt: "Use $scoville-scribe to deliver the intended reader outcome while preserving source meaning, factual claims, author voice, product terminology, and verified behavior."
