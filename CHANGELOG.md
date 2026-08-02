@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-02: README claim precision
+
+### Changed
+
+- Clarified that reference loading follows each segment and request instead of
+  the artifact label.
+- Described Scribe and Scoville as separate responsibilities under one
+  goal-first contract rather than claiming that they never overlap.
+- Limited the research section to current sources; forward-test history remains
+  in the changelog.
+
 ## 2026-08-02: Initial release
 
 ### Added

@@ -75,7 +75,7 @@ when the text belongs to a codebase or engineering change. Scoville owns scope,
 canonical implementation, behavior verification, and validation. Scribe owns
 the reader-facing words and the smallest relevant terminology inspection.
 
-They share a goal-first contract without duplicating each other. A change to an
+They share a goal-first contract with separate responsibilities. A change to an
 error string in `errors.ts`, for example, uses Scoville to verify the error path
 and Scribe to keep the message factual, actionable, and consistent with product
 language.
@@ -106,9 +106,9 @@ The core rules live in [SKILL.md](SKILL.md). It routes to two references:
 - [references/prose-patterns.md](references/prose-patterns.md) covers manuals,
   articles, email, documentation, author voice, and source-near editing.
 
-An interface task does not pay for the prose reference. A manual edit does not
-load ICU and accessibility rules unless the artifact also contains interface
-text. Mixed artifacts load both because they need both.
+Tasks load only the references their segments and request require. Interface
+strings load the UI reference. Continuous prose or an explicit anti-slop
+request loads the prose reference. Tasks meeting both conditions load both.
 
 ## Design
 
@@ -128,8 +128,7 @@ verified. Detector scores decide nothing.
 
 ## Research basis
 
-The skill draws from these sources and the observed failure cases recorded
-during its forward tests:
+The skill draws from these sources:
 
 - [W3C Understanding SC 2.5.3: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name): a visible control label must appear in its accessible name.
 - [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/): localized messages need locale-specific plural and selector branches while preserving their runtime contract.
