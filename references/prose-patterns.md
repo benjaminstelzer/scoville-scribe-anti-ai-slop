@@ -3,6 +3,15 @@
 Use these rules to improve continuous prose without sanding away the source's
 meaning or voice.
 
+## Contents
+
+- [Start from the reader and source](#start-from-the-reader-and-source)
+- [Explain mechanisms completely](#explain-mechanisms-completely)
+- [Treat as defects](#treat-as-defects)
+- [Usually fix](#usually-fix)
+- [Judge only in context](#judge-only-in-context)
+- [Edit minimally](#edit-minimally)
+
 ## Start from the reader and source
 
 Identify the text's job, permitted facts, audience, language, genre, and
@@ -15,11 +24,40 @@ carries meaning, and intentional roughness.
 
 Preserve humor that belongs to the source. Add humor only when the user
 requests it or when an instruction applicable to the artifact, the demonstrated
-voice, or the genre calls for it. Conversational voice guidance alone does not
-set an artifact's voice. Requests for writing that is natural, human-sounding,
+voice, or the genre calls for it. When humor is permitted, prefer a precise
+personification, analogy, or callback that grows out of the subject over a
+detached punch line. The explanation and every factual claim must remain sound
+with the joke removed. Conversational voice guidance alone does not set an
+artifact's voice. Requests for writing that is natural, human-sounding,
 engaging, or less AI-like do not by themselves call for humor. Do not invent
-anecdotes, opinions, sensory details, personal history, or jokes merely to
-simulate humanity.
+anecdotes, opinions, sensory details, personal history, or factual premises to
+make a joke work.
+
+## Explain mechanisms completely
+
+When no explicit voice, house style, or genuine author sample governs an
+explanatory artifact, use a direct, technically literate, essay-like register.
+State the answer or distinction early, then expose the mechanism and its
+consequence. Add a worked example, counterexample, or failure narrative when it
+makes the reader able to predict a nearby case. These are available moves, not
+a fixed template; omit any move that adds no understanding.
+
+When supplied numbers, code, or constraints support a non-obvious implication,
+derive it and state it. Verify the derivation, preserve its assumptions, and do
+not extend it beyond the evidence. Name an established concept when the name
+fits and improves transfer or lookup, not merely to decorate the prose.
+
+Use short bold lead-in labels when an explanation has genuinely separate
+dimensions; use bullets for parallel items and numbers for ordered steps. Keep
+one connected argument in prose. A closing synthesis is useful when it
+compresses or reframes the mechanism into a transferable rule, and redundant
+when it only repeats the opening claim.
+
+Distinguish source fact, inference, and remaining uncertainty where confusing
+them would change the conclusion. Mark the boundary locally or with labels when
+the answer has several epistemic parts. Verification of a word count, sentence
+count, or other hard output constraint is required, but reporting that check in
+the artifact is optional unless the reader needs it or the request asks for it.
 
 ## Treat as defects
 
@@ -38,8 +76,10 @@ unrelated content:
 - abstract phrasing where a supported concrete subject and action exist;
 - repetition that adds no meaning and generic praise that delays the task;
 - paragraphs that repeat their opening sentence in different words;
-- canned introductions, transitions, summaries, and closing aphorisms;
-- unnecessary headings or lists that fragment a short, connected argument;
+- canned introductions, transitions, summaries, and closing aphorisms that
+  restate instead of orienting, connecting, or compressing the argument;
+- unnecessary headings or lists that fragment a short connected argument, and
+  undifferentiated prose that hides genuinely parallel parts;
 - repeated sentence openings, similar sentence or paragraph lengths, clause
   shapes, contrast frames, or list patterns that flatten emphasis or make the
   structure predictable;
@@ -55,10 +95,12 @@ conflict with the required voice, or create real monotony.
 Do not replace a precise term merely because it appears on an AI-word list. Do
 not force quirks, errors, or random variation to appear human.
 
-Keep an em dash (U+2014) or parenthetical expression when it earns its emphasis
-and leaves the main clause clear. When repeated or nested interruptions bury
-the point, integrate essential information, move useful secondary information,
-or remove it. Do not target a fixed count.
+Use a colon to set up a mechanism, consequence, or compact enumeration. Keep an
+em dash (U+2014) or parenthetical expression when it earns a real turn,
+qualification, contrast, or dry aside and leaves the main clause clear. When
+repeated or nested interruptions bury the point, integrate essential
+information, move useful secondary information, or remove the interruption. Do
+not target a punctuation count or manufacture rhythm for its own sake.
 
 ## Edit minimally
 
