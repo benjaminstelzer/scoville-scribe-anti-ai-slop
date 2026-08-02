@@ -134,6 +134,11 @@ diagnose AI authorship, promise detector evasion, or apply universal word and
 punctuation bans. Fix patterns for their effect on this reader and genre, not
 for their supposed origin. A canonical term remains canonical.
 
+Apply routine Scribe guidance silently. Do not announce skill use or narrate
+normal drafting, editing, or auditing steps. Follow the host's disclosure rules
+for non-obvious actions, pauses, scope changes, external effects, and material
+risks.
+
 ## Verify and complete
 
 1. Confirm the reader can reach the intended outcome.

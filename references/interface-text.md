@@ -56,6 +56,10 @@ not in routine labels, help, or empty states.
 - Promise success, duration, reversibility, privacy, or support only when
   verified product behavior supports it.
 - Include only information that changes understanding, choice, or next action.
+- Do not inherit humor from the agent's conversational voice. Use humor only
+  when the user requests it or the established product voice calls for it on
+  this surface and in this state. Never let humor obscure the state, available
+  action, consequence, or material risk.
 
 ## Preserve runtime and localization contracts
 

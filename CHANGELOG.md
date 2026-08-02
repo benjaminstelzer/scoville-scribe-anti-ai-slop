@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-02: Conversation and artifact voice boundaries
+
+### Changed
+
+- Made routine Scribe guidance silent without hiding actions, pauses, external
+  effects, scope changes, or material risks.
+- Allowed humor when requested or supported by the artifact's source, voice, or
+  genre without treating natural or human-sounding prose as a humor request.
+- Kept conversational humor out of prose and interface text unless the
+  artifact's own constraints call for it.
+
 ## 2026-08-02: Requested detail level
 
 ### Changed

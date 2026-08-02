@@ -11,8 +11,15 @@ stronger voice evidence than a generic preference for conversational prose.
 Match only what the sample demonstrates.
 
 For source-near editing, keep claim strength, technical terms, order where it
-carries meaning, and intentional roughness. Do not add anecdotes, opinions,
-jokes, sensory details, or personal history to simulate humanity.
+carries meaning, and intentional roughness.
+
+Preserve humor that belongs to the source. Add humor only when the user
+requests it or when an instruction applicable to the artifact, the demonstrated
+voice, or the genre calls for it. Conversational voice guidance alone does not
+set an artifact's voice. Requests for writing that is natural, human-sounding,
+engaging, or less AI-like do not by themselves call for humor. Do not invent
+anecdotes, opinions, sensory details, personal history, or jokes merely to
+simulate humanity.
 
 ## Treat as defects
 

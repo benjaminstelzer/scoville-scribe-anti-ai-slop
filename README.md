@@ -79,15 +79,19 @@ and interface routing rules when applicable.
 This project rule is necessary when Scribe should govern ordinary agent
 communication as well as explicit writing tasks.
 
+Scribe still classifies each segment separately. A document or interface string
+embedded in a reply follows its own source, voice, genre, and interface
+constraints rather than inheriting the agent's conversational style.
+
 **Verify it works.** Skills load on demand, so test the trigger. Ask your agent:
 *"This project calls the layout concept Padding. Rewrite the related UI label
 and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 818 words of rules plus 76
-words of frontmatter. Tasks with interface strings load another 745 words.
-Tasks with continuous prose or an explicit anti-slop request load another 516.
+**What it costs.** `SKILL.md` currently contains 852 words of rules plus 76
+words of frontmatter. Tasks with interface strings load another 790 words.
+Tasks with continuous prose or an explicit anti-slop request load another 577.
 Tasks meeting both conditions load both references.
 
 ## Use with Scoville
