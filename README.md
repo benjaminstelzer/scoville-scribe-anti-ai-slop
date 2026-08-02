@@ -59,6 +59,26 @@ For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
 `.claude/skills/` inside a repository for that project only. For other agents,
 consult their documentation; paths differ per agent.
 
+### Use Scribe for agent communication
+
+Codex selects skills by task. Installing Scribe makes it available, but does
+not make every conversational reply use it. To apply Scribe to all user-facing
+communication in a project, send your agent this prompt:
+
+```text
+Add the following to AGENTS.md:
+
+## Conversational writing
+
+Apply `$scoville-scribe` to all user-facing communication, including questions,
+progress updates, explanations, and final responses. Apply it without announcing
+or describing its use unless the user explicitly asks. Follow the skill's prose
+and interface routing rules when applicable.
+```
+
+This project rule is necessary when Scribe should govern ordinary agent
+communication as well as explicit writing tasks.
+
 **Verify it works.** Skills load on demand, so test the trigger. Ask your agent:
 *"This project calls the layout concept Padding. Rewrite the related UI label
 and help text, and mention that the internal Spacing tool is unavailable."* The
