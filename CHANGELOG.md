@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-08-02: Explanatory depth and Fable-style calibration
+
+### Changed
+
+- Treated the causal mechanism, supported derived implications, useful
+  examples, and material boundaries as part of the reader outcome for
+  explanatory prose.
+- Allowed short bold lead-ins and closing syntheses when they expose or compress
+  real argument structure instead of decorating or repeating it.
+- Calibrated punctuation and permitted humor toward a more essay-like,
+  technically literate voice without weakening evidence, attribution, output
+  constraints, or artifact-specific voice boundaries.
+- Kept the explanatory guidance in the existing prose reference rather than
+  adding a third overlapping voice owner.
+
+### Validation
+
+- `quick_validate.py` accepted the updated skill structure and metadata.
+- A fresh explanatory forward test derived an unchanged polling window, the
+  lower detection latency, and the higher polling load while separating facts,
+  inferences, and unknowns.
+- A fresh source-near edit preserved the supplied numbers and dry humor, removed
+  repetition, and added no process commentary or unsupported claim.
+
 ## 2026-08-02: Conversation and artifact voice boundaries
 
 ### Changed

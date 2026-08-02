@@ -89,9 +89,9 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 852 words of rules plus 76
+**What it costs.** `SKILL.md` currently contains 889 words of rules plus 76
 words of frontmatter. Tasks with interface strings load another 790 words.
-Tasks with continuous prose or an explicit anti-slop request load another 577.
+Tasks with continuous prose or an explicit anti-slop request load another 921.
 Tasks meeting both conditions load both references.
 
 ## Use with Scoville
@@ -120,6 +120,10 @@ language.
   accessible relationships, and localization schemas survive ordinary edits.
 - **Source and voice.** Good passages stay. Author-owned text keeps its speaking
   position, explicit propositions, uncertainty, and claim strength.
+- **Explanatory depth.** Explanations expose the causal mechanism, derive
+  supported non-obvious implications, use examples or contrasts when they make
+  the behavior predictable, and distinguish evidence from inference without
+  turning every answer into the same template.
 - **Mode boundaries.** Audit reports findings without silently rewriting; Edit
   makes the smallest useful change; Draft stays inside the allowed facts.
 
@@ -130,7 +134,8 @@ The core rules live in [SKILL.md](SKILL.md). It routes to two references:
 - [references/interface-text.md](references/interface-text.md) covers GUI, CLI,
   errors, notifications, accessibility text, runtime messages, and metadata.
 - [references/prose-patterns.md](references/prose-patterns.md) covers manuals,
-  articles, email, documentation, author voice, and source-near editing.
+  articles, email, documentation, explanatory analyses, author voice, and
+  source-near editing.
 
 Tasks load only the references their segments and request require. Interface
 strings load the UI reference. Continuous prose or an explicit anti-slop

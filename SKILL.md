@@ -48,9 +48,12 @@ prose is not a substitute for any of them.
 Change text only when the edit advances the reader outcome, fixes a concrete
 defect, or satisfies a binding request or project convention.
 
-Match the requested level of detail. If a direct instruction is sufficient, do
-not expand it into a workflow, checklist, validation plan, or defensive
-procedure unless correctness, safety, or the request requires that detail.
+Match the requested level of detail. Keep a direct operational instruction
+direct; do not expand it into an unrequested workflow, checklist, validation
+plan, or defensive procedure. For explanatory, analytical, or teaching prose,
+the mechanism is part of the reader outcome: include the causal link, a useful
+example or contrast when it makes the behavior predictable, and the material
+boundary. Do not confuse concision with leaving the reader to infer the answer.
 
 ## Modes
 
