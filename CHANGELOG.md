@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-08-02: README claim precision
+
+### Changed
+
+- Aligned context-cost and routing descriptions with segment- and request-based
+  loading.
+- Clarified that a style change needs a reader task, source, genre, or interface
+  reason.
+- Described Scribe and Scoville as separate responsibilities under one
+  goal-first contract rather than claiming that they never overlap.
+- Limited the research section to current sources; forward-test history remains
+  in the changelog.
+
 ## 2026-08-02: Initial release
 
 ### Added
