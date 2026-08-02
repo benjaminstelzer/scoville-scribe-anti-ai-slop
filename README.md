@@ -65,7 +65,7 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 784 words of rules plus 76
+**What it costs.** `SKILL.md` currently contains 818 words of rules plus 76
 words of frontmatter. Tasks with interface strings load another 745 words.
 Tasks with continuous prose or an explicit anti-slop request load another 516.
 Tasks meeting both conditions load both references.

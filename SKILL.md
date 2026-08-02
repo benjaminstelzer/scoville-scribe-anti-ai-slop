@@ -48,6 +48,10 @@ prose is not a substitute for any of them.
 Change text only when the edit advances the reader outcome, fixes a concrete
 defect, or satisfies a binding request or project convention.
 
+Match the requested level of detail. If a direct instruction is sufficient, do
+not expand it into a workflow, checklist, validation plan, or defensive
+procedure unless correctness, safety, or the request requires that detail.
+
 ## Modes
 
 - **Draft:** Write only from permitted facts and claims.

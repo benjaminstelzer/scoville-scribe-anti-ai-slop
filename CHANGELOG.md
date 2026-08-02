@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-02: Requested detail level
+
+### Changed
+
+- Prevented a sufficient direct instruction from expanding into an unrequested
+  workflow, checklist, validation plan, or defensive procedure.
+- Kept detail required by correctness, safety, or the explicit request.
+
 ## 2026-08-02: Natural prose pattern checks
 
 ### Changed
