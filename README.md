@@ -17,7 +17,8 @@ auditing, adaptation, and localization tied to source meaning, verified product
 behavior, author voice, project terminology, and the text's actual job.
 
 It does not diagnose AI authorship or promise detector evasion. It fixes a
-pattern only when that pattern harms this reader, source, genre, or interface.
+pattern only when that pattern harms the reader's task or conflicts with source
+meaning, genre conventions, or interface constraints.
 
 ## Why "Scribe"?
 
@@ -65,8 +66,9 @@ result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
 **What it costs.** `SKILL.md` currently contains 784 words of rules plus 76
-words of frontmatter. Interface tasks load another 745 words; continuous prose
-tasks load another 447. Mixed artifacts load both references.
+words of frontmatter. Tasks with interface strings load another 745 words.
+Tasks with continuous prose or an explicit anti-slop request load another 447.
+Tasks meeting both conditions load both references.
 
 ## Use with Scoville
 
