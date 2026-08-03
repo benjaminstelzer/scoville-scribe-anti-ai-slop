@@ -26,11 +26,11 @@ meaning, genre conventions, or interface constraints.
 
 ## Why "Scribe"?
 
-Scoville's engineering guardrail keeps a coding task focused on the result the
-user asked for. Scribe does the same for writing: it keeps the text focused on
-what the reader needs to understand or do. The first stops plans and tests from
-replacing the code change; the second stops polished wording from replacing the
-truth.
+Scoville Code's engineering guardrail keeps a coding task focused on the result
+the user asked for. Scribe does the same for writing: it keeps the text focused
+on what the reader needs to understand or do. The first stops plans and tests
+from replacing the code change; the second stops polished wording from
+replacing the truth.
 
 The name also describes the range. Scribe can draft, edit, audit, adapt,
 localize, or preserve exact source text. It is not limited to marketing copy or
@@ -104,24 +104,29 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 935 words of rules plus 76
+**What it costs.** `SKILL.md` currently contains 975 words of rules plus 86
 words for its name and description. Tasks involving buttons, errors, or other
 interface text load another 790 words. Tasks involving paragraphs or an
 explicit anti-slop request load another 1,171. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
-## Use with Scoville Anti-AI-Coding-Slop
+## Use with Scoville Code and UI
 
-Use [Scoville Anti-AI-Coding-Slop](https://github.com/benjaminstelzer/scoville-anti-ai-coding-slop)
-when the text belongs to a codebase or engineering change. Scoville keeps the
+Use [Scoville Code Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
+when the text belongs to a codebase or engineering change. Code keeps the
 code change in the right place, checks that it works, and prevents unrelated
 work. Scribe keeps the reader-facing words factual, clear, and consistent with
 the product's vocabulary.
 
+Use [Scoville UI Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
+when interface presentation or interaction is also changing. UI owns framework
+alignment, hierarchy, layout, responsiveness, and the presence and association
+of required labels or accessible names. Scribe owns their wording and meaning.
+
 They work toward the same requested result but handle different parts of it.
-For an error message in `errors.ts`, Scoville proves that the correct error
-reaches the user. Scribe makes the message factual, actionable, and consistent
-with the rest of the product.
+For an error message in `errors.ts`, Code proves that the correct error reaches
+the user, UI verifies its placement and interaction context, and Scribe makes
+the message factual, actionable, and consistent with the rest of the product.
 
 ## What it enforces
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-03: Scoville family composition
+
+### Changed
+
+- Updated engineering references to the renamed
+  `scoville-code-anti-ai-slop` skill.
+- Added the boundary with `scoville-ui-anti-ai-slop`: UI owns framework
+  alignment and interface presentation; Scribe owns visible and accessible
+  wording and meaning.
+
 ## 2026-08-03: Joint prompt and Scribe calibration
 
 ### Changed

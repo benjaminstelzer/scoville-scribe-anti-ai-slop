@@ -36,9 +36,9 @@ consistency, then verify the concept behind each occurrence before changing it.
 ## Describe the user-relevant state
 
 State what is true in the supported state represented by the artifact. Describe a
-requested final state only when it ships with the behavior and Scoville verifies
-it before completion or publication. Omit internal causes, discarded tools,
-issue chronology, and unreleased alternatives.
+requested final state only when it ships with the behavior and Scoville Code
+verifies it before completion or publication. Omit internal causes, discarded
+tools, issue chronology, and unreleased alternatives.
 
 Mention an older state only when users could have encountered it and need that
 history to migrate, understand a deprecation, avoid harm, or recover from a
@@ -100,5 +100,9 @@ Where the artifact permits it:
 4. Inspect rendering, wrapping, keyboard use, and accessible name.
 5. Check every materially different changed ICU or state branch and at least one
    representative variable expansion.
+
+When Scoville UI is also active, reuse its rendered layout and interaction
+evidence instead of repeating the same inspection. Scribe still verifies the
+wording, tokens, branches, and meaning.
 
 A spelling or word-list check does not verify interface text.

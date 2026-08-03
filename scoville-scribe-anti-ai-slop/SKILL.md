@@ -7,8 +7,10 @@ description: >-
   accessible names, metadata, and reader-facing strings in code or resource
   files. Preserves source meaning, factual claims, author voice, canonical
   product terms, verified behavior, runtime schemas, and source-exact text while
-  removing generic filler. Use alongside scoville-anti-ai-coding-slop for
-  engineering artifacts. Not needed for code semantics or machine-only data.
+  removing generic filler. Use alongside scoville-code-anti-ai-slop for
+  engineering artifacts and scoville-ui-anti-ai-slop when interface wording
+  and visual presentation both change. Not needed for code semantics or
+  machine-only data.
 ---
 
 # Scoville Scribe Anti-AI-Slop
@@ -23,7 +25,8 @@ Resolve each concern from the source that can answer it:
 
 - **Current truth:** verified current behavior and supplied factual sources.
 - **Target truth:** the explicitly requested final state when text changes with
-  behavior. Scoville must verify that state before completion or publication.
+  behavior. Scoville Code must verify that state before completion or
+  publication.
 - **Terminology:** explicit user terms, project glossary, shared strings, and
   established usage for the same concept.
 - **Form:** explicit output requirements, house style, genuine voice samples,
@@ -33,11 +36,16 @@ If these sources conflict materially, report the conflict instead of choosing
 convenient wording. Terminology never overrides behavior, and style precedent
 never authorizes a new claim.
 
-For engineering artifacts, apply `scoville-anti-ai-coding-slop` too. Scoville
-owns engineering scope, canonical ownership, behavior verification, artifact
-changes, and validation. Scribe owns human-readable text and the smallest
-targeted read-only inspection of relevant terms and text surfaces. Reuse
-verified behavior; do not infer it from wording.
+For engineering artifacts, apply `scoville-code-anti-ai-slop` too. Scoville
+Code owns engineering scope, canonical ownership, behavior verification,
+artifact changes, and validation. Scribe owns human-readable text and the
+smallest targeted read-only inspection of relevant terms and text surfaces.
+Reuse verified behavior; do not infer it from wording.
+
+For interactive interfaces, apply `scoville-ui-anti-ai-slop` when presentation
+or interaction is also in scope. UI owns framework alignment, hierarchy,
+layout, responsive behavior, and whether required labels or accessible names
+exist and are associated. Scribe owns their wording and meaning.
 
 Apply compatible host-prompt, project, request, and Scribe constraints together
 while generating the text. Scribe is not a post-processing pass over an answer
