@@ -27,6 +27,10 @@
 - Bound required limitation sections to their affected claims or calculations.
 - Made load-bearing examples carry one concrete instance through to its
   observable result instead of stopping at a named case.
+- Made claims about weak small-sample evidence trigger a visibly hypothetical
+  probability instead of remaining qualitative.
+- Grounded otherwise categorical explanations of practical usefulness, risk,
+  or failure in one representative case.
 
 ### Validation
 
