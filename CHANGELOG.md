@@ -15,6 +15,8 @@
 - Integrated explicitly invited humor into the explanation before a possible
   callback and preserved segment-specific humor restrictions.
 - Bound required limitation sections to their affected claims or calculations.
+- Made load-bearing examples carry one concrete instance through to its
+  observable result instead of stopping at a named case.
 
 ### Validation
 
