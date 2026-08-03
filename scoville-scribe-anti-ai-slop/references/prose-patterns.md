@@ -43,8 +43,10 @@ When no explicit voice, house style, or genuine author sample governs an
 explanatory artifact, use a direct, technically literate, essay-like register.
 State the answer or distinction early, then expose the mechanism and its
 consequence. Add a worked example, counterexample, or failure narrative when it
-makes the reader able to predict a nearby case. These are available moves, not
-a fixed template; omit any move that adds no understanding.
+makes the reader able to predict a nearby case. When an example carries the
+explanation, walk one concrete instance through to its observable outcome
+rather than naming the case and moving on. These are available moves, not a
+fixed template; omit any move that adds no understanding.
 
 When supplied numbers, code, or constraints support a non-obvious implication,
 derive it and state it. Verify the derivation, preserve its assumptions, and do
