@@ -46,16 +46,16 @@ Usually, let your coding agent install the skill. Send it this prompt:
 
 ```text
 Install this Agent Skill from GitHub and make it available for my writing work:
-https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
 ```
 
 Add "for all my projects" or "only for this project" when the installation
 scope matters. The agent should choose its supported skills directory, install
-the repository under the unchanged name `scoville-scribe-anti-ai-slop`, and
-refresh its skill list.
+the skill directory under the unchanged name `scoville-scribe-anti-ai-slop`,
+and refresh its skill list.
 
-If your agent cannot install skills itself, clone or copy the repository so the
-final path is:
+If your agent cannot install skills itself, copy the repository's
+`scoville-scribe-anti-ai-slop/` directory so the final path is:
 
 ```text
 <skills-dir>/scoville-scribe-anti-ai-slop/SKILL.md
@@ -146,16 +146,17 @@ with the rest of the product.
 
 ## UI and prose use separate guidance
 
-The core rules live in [SKILL.md](SKILL.md). Depending on the task, the agent
-also reads one or both of these focused guides:
+The core rules live in
+[SKILL.md](scoville-scribe-anti-ai-slop/SKILL.md). Depending on the task, the
+agent also reads one or both of these focused guides:
 
-- [references/interface-text.md](references/interface-text.md) covers buttons
-  and other graphical controls, command-line text, errors, notifications,
-  screen-reader labels, messages assembled by software, and descriptive fields
-  such as titles or alternative text.
-- [references/prose-patterns.md](references/prose-patterns.md) covers manuals,
-  articles, email, documentation, explanatory analyses, author voice, and
-  source-near editing.
+- [references/interface-text.md](scoville-scribe-anti-ai-slop/references/interface-text.md)
+  covers buttons and other graphical controls, command-line text, errors,
+  notifications, screen-reader labels, messages assembled by software, and
+  descriptive fields such as titles or alternative text.
+- [references/prose-patterns.md](scoville-scribe-anti-ai-slop/references/prose-patterns.md)
+  covers manuals, articles, email, documentation, explanatory analyses, author
+  voice, and source-near editing.
 
 The agent reads only what the current task needs. Buttons, errors, and other
 interface text use the interface guide. Paragraphs, articles, and other
@@ -194,10 +195,12 @@ The skill draws from these sources:
 
 ## Repository contents
 
-The repository is deliberately small: the core instruction file, two focused
-guides, a small file that helps agents display the skill, this README, a
-changelog, and the MIT license. It contains no executable software, model
-requests, AI detector, or generated files.
+The installable `scoville-scribe-anti-ai-slop/` directory contains the core
+instruction file, two focused guides, and a small file that helps agents display
+the skill. This README, the changelog, and the MIT license remain at the
+repository root and are not installed as skill instructions. The repository
+contains no executable software, model requests, AI detector, or generated
+files.
 
 ## License
 

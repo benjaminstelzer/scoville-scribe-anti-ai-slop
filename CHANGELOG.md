@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-03: Installable skill subdirectory
+
+### Changed
+
+- Moved `SKILL.md`, `agents/`, and `references/` into the installable
+  `scoville-scribe-anti-ai-slop/` directory.
+- Kept the README, changelog, and license at the repository root so they are not
+  loaded as part of the skill.
+- Updated installation instructions and documentation links for the nested
+  layout.
+
 ## 2026-08-03: Rename to Scoville Scribe Anti-AI-Slop
 
 ### Changed
