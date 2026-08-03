@@ -107,7 +107,7 @@ existed.
 **What it costs.** `SKILL.md` currently contains 935 words of rules plus 76
 words for its name and description. Tasks involving buttons, errors, or other
 interface text load another 790 words. Tasks involving paragraphs or an
-explicit anti-slop request load another 1,171. Tasks involving both load both
+explicit anti-slop request load another 1,240. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
 ## Use with Scoville Anti-AI-Coding-Slop
@@ -144,11 +144,13 @@ with the rest of the product.
 - **Explanations explain.** When readers need the mechanism, Scribe includes the
   reason something happens and a useful example or contrast. A load-bearing
   example follows one concrete instance to its observable result instead of
-  merely naming cases. Scribe visibly mirrors genuinely separate dimensions,
-  can use a marked hypothetical counterexample, and lands on a transferable
-  rule when that adds real compression. It separates what the evidence shows
-  from what the writer concludes without forcing every answer into the same
-  template.
+  merely naming cases. An otherwise categorical explanation of practical
+  usefulness, risk, or failure grounds itself in one representative case.
+  Scribe visibly mirrors genuinely separate dimensions, can use a marked
+  hypothetical counterexample, and demonstrates weak small-sample evidence
+  with a visibly hypothetical rate. It lands on a transferable rule when that
+  adds real compression and separates what the evidence shows from what the
+  writer concludes without forcing every answer into the same template.
 - **The requested job stays the job.** An audit reports problems without
   rewriting the text. An edit changes only what needs fixing. A draft stays
   inside the facts it is allowed to use.

@@ -45,8 +45,11 @@ State the answer or distinction early, then expose the mechanism and its
 consequence. Add a worked example, counterexample, or failure narrative when it
 makes the reader able to predict a nearby case. When an example carries the
 explanation, walk one concrete instance through to its observable outcome
-rather than naming the case and moving on. These are available moves, not a
-fixed template; omit any move that adds no understanding.
+rather than naming the case and moving on. When an explanation of practical
+usefulness, risk, or failure would otherwise stay entirely at the category
+level, ground it: carry one representative case through input, behavior, and
+result, unless a hard form limit rules the example out. These are available
+moves, not a fixed template; omit any move that adds no understanding.
 
 When supplied numbers, code, or constraints support a non-obvious implication,
 derive it and state it. Verify the derivation, preserve its assumptions, and do
@@ -57,7 +60,9 @@ If an unknown rate or value prevents a real calculation but a numerical
 counterexample would materially clarify the mechanism, use a visibly
 hypothetical assumption and derive its consequence. Keep the assumption
 illustrative; never report it as a source fact or evidence about the actual
-case.
+case. When the text claims that a small sample or a few clean repetitions prove
+little, demonstrate that claim with one visibly hypothetical rate and its
+derived probability rather than leaving it qualitative.
 
 Use short bold lead-in labels when an explanation has genuinely separate
 dimensions; use bullets for parallel items and numbers for ordered steps. Keep
