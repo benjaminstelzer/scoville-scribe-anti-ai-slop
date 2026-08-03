@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-03: Family documentation alignment
+
+### Changed
+
+- Aligned the README section order and installation guidance with Scoville Code
+  and Scoville UI.
+- Added the Scribe-specific explanation of the Scoville family name.
+- Consolidated routing, family composition, repository contents, and status
+  into the shared documentation structure.
+
+### Validation
+
+- `quick_validate.py` accepted the installable skill directory.
+- README links and documented word costs matched the current files.
+- `git diff --check` passed.
+
 ## 2026-08-03: Scoville family composition
 
 ### Changed
