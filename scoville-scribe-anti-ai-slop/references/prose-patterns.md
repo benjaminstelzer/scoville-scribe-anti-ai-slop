@@ -45,11 +45,11 @@ State the answer or distinction early, then expose the mechanism and its
 consequence. Add a worked example, counterexample, or failure narrative when it
 makes the reader able to predict a nearby case. When an example carries the
 explanation, walk one concrete instance through to its observable outcome
-rather than naming the case and moving on. When an explanation of practical
-usefulness, risk, or failure would otherwise stay entirely at the category
-level, ground it: carry one representative case through input, behavior, and
-result, unless a hard form limit rules the example out. These are available
-moves, not a fixed template; omit any move that adds no understanding.
+rather than naming the case and moving on. When the source request asks what
+makes a tool, model, or practice useful, include one representative case that
+traces the request, the contribution, and the external verification or
+observable result, unless a hard form limit rules the example out. These are
+available moves, not a fixed template; omit any move that adds no understanding.
 
 When supplied numbers, code, or constraints support a non-obvious implication,
 derive it and state it. Verify the derivation, preserve its assumptions, and do
