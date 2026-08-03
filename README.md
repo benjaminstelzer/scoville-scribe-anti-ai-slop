@@ -1,4 +1,4 @@
-# Scoville Scribe
+# Scoville Scribe Anti-AI-Slop
 
 Keeps the meaning. Cuts the slop.
 
@@ -13,10 +13,10 @@ and less true:
   value such as `{fileName}` that the software inserts when it runs.
 
 That is prose slop: language work that looks finished but makes the text less
-useful or less true. Scoville Scribe is an Agent Skill—a reusable instruction
-file for coding agents. Whether the agent drafts, edits, reviews, adapts, or
-translates text, Scribe keeps it faithful to the source, the product, the
-writer's voice, and the words the project already uses.
+useful or less true. Scoville Scribe Anti-AI-Slop is an Agent Skill—a reusable
+instruction file for coding agents. Whether the agent drafts, edits, reviews,
+adapts, or translates text, Scribe keeps it faithful to the source, the product,
+the writer's voice, and the words the project already uses.
 
 It may improve a sentence. It does not get to improve what happened.
 
@@ -46,19 +46,19 @@ Usually, let your coding agent install the skill. Send it this prompt:
 
 ```text
 Install this Agent Skill from GitHub and make it available for my writing work:
-https://github.com/benjaminstelzer/scoville-scribe
+https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop
 ```
 
 Add "for all my projects" or "only for this project" when the installation
 scope matters. The agent should choose its supported skills directory, install
-the repository under the unchanged name `scoville-scribe`, and refresh its skill
-list.
+the repository under the unchanged name `scoville-scribe-anti-ai-slop`, and
+refresh its skill list.
 
 If your agent cannot install skills itself, clone or copy the repository so the
 final path is:
 
 ```text
-<skills-dir>/scoville-scribe/SKILL.md
+<skills-dir>/scoville-scribe-anti-ai-slop/SKILL.md
 ```
 
 For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
@@ -77,10 +77,10 @@ supported by this agent:
 
 ## Conversational writing
 
-Apply `$scoville-scribe` to all user-facing communication, including questions,
-progress updates, explanations, and final responses. Apply it without announcing
-or describing its use unless the user explicitly asks. Follow the skill's prose
-and interface routing rules when applicable.
+Apply `$scoville-scribe-anti-ai-slop` to all user-facing communication,
+including questions, progress updates, explanations, and final responses. Apply
+it without announcing or describing its use unless the user explicitly asks.
+Follow the skill's prose and interface routing rules when applicable.
 ```
 
 The exact project instruction file depends on the agent. It may be called

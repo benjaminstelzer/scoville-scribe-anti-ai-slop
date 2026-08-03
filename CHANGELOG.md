@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-03: Rename to Scoville Scribe Anti-AI-Slop
+
+### Changed
+
+- Renamed the published repository and installable skill from
+  `scoville-scribe` to `scoville-scribe-anti-ai-slop` for consistency with
+  `scoville-anti-ai-coding-slop`.
+- Updated the skill name, display metadata, installation prompt, example
+  project instruction, and documented installation paths.
+
+### Migration
+
+- Existing installations under `scoville-scribe/` must be replaced by a folder
+  named `scoville-scribe-anti-ai-slop/` so the folder matches the skill name in
+  `SKILL.md`.
+
 ## 2026-08-02: Explanatory depth and Fable-style calibration
 
 ### Changed

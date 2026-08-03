@@ -1,5 +1,5 @@
 ---
-name: scoville-scribe
+name: scoville-scribe-anti-ai-slop
 description: >-
   Goal-first prose and interface writing guardrail. Use when drafting, editing,
   auditing, adapting, summarizing, localizing, or fidelity-checking manuals,
@@ -11,7 +11,7 @@ description: >-
   engineering artifacts. Not needed for code semantics or machine-only data.
 ---
 
-# Scoville Scribe
+# Scoville Scribe Anti-AI-Slop
 
 Treat prose slop as writing that looks finished while weakening the reader
 outcome: invented facts, shifted meaning, generic filler, inconsistent product
