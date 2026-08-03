@@ -16,6 +16,8 @@ finished. Scoville Scribe is an Agent Skill that keeps drafting, editing,
 auditing, adaptation, and localization tied to source meaning, verified product
 behavior, author voice, project terminology, and the text's actual job.
 
+It may improve a sentence. It does not get to improve what happened.
+
 It does not diagnose AI authorship or promise detector evasion. It fixes a
 pattern only when that pattern harms the reader's task or conflicts with source
 meaning, genre conventions, or interface constraints.
@@ -109,26 +111,30 @@ error string in `errors.ts`, for example, uses Scoville to verify the error path
 and Scribe to keep the message factual, actionable, and consistent with product
 language.
 
-## What it protects
+## What it enforces
 
-- **Meaning and evidence.** Numbers, negation, modality, conditions, quoted
-  text, attribution, and the stated basis of retained claims do not drift under
-  a smoother paraphrase.
-- **Project language.** One concept keeps one canonical term family. Similar
-  concepts remain distinct, and stylistic synonym swapping never overrides the
-  project's glossary or shared strings.
-- **Current-state interface text.** Routine labels and help describe the
-  supported state, not discarded tools, internal causes, or unreleased history.
-- **Runtime structure.** Placeholders, ICU selectors, string keys, shortcuts,
-  accessible relationships, and localization schemas survive ordinary edits.
-- **Source and voice.** Good passages stay. Author-owned text keeps its speaking
-  position, explicit propositions, uncertainty, and claim strength.
-- **Explanatory depth.** Explanations expose the causal mechanism, derive
-  supported non-obvious implications, use examples or contrasts when they make
-  the behavior predictable, and distinguish evidence from inference without
-  turning every answer into the same template.
-- **Mode boundaries.** Audit reports findings without silently rewriting; Edit
-  makes the smallest useful change; Draft stays inside the allowed facts.
+- **The facts survive the edit.** Numbers, quotes, conditions, who said or did
+  something, what did or did not happen, and the difference between `can`,
+  `should`, and `must` keep their meaning. Smoother wording does not get to
+  strengthen the evidence.
+- **The product keeps its own vocabulary.** If the interface calls a setting
+  `Padding`, Scribe does not rename it `Spacing` because the thesaurus was
+  feeling helpful.
+- **Interface text describes the product users actually have.** Labels, help,
+  and errors explain available actions and current behavior. A tool removed
+  before release does not need an obituary in the UI.
+- **Working messages stay working.** Placeholders such as `{fileName}`, singular
+  and plural variants, internal string identifiers, keyboard shortcuts, and
+  accessible names and labels survive the rewrite.
+- **The author still means what they wrote.** Strong passages stay. Edits
+  preserve what the writer claimed, how certain they were, and whose experience
+  or judgment it was.
+- **Explanations explain.** When readers need the mechanism, Scribe includes the
+  causal link and a useful example or contrast. It distinguishes evidence from
+  inference without forcing every answer into the same template.
+- **The requested job stays the job.** An audit reports problems without
+  rewriting the text. An edit changes only what needs fixing. A draft stays
+  inside the facts it is allowed to use.
 
 ## UI and prose load separately
 
