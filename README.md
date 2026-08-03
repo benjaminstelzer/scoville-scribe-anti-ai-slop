@@ -104,10 +104,10 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 975 words of rules plus 86
+**What it costs.** `SKILL.md` currently contains 1,005 words of rules plus 86
 words for its name and description. Tasks involving buttons, errors, or other
 interface text load another 819 words. Tasks involving paragraphs or an
-explicit anti-slop request load another 1,242. Tasks involving both load both
+explicit anti-slop request load another 1,300. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
 ## Use with Scoville Code and UI
@@ -155,11 +155,13 @@ the message factual, actionable, and consistent with the rest of the product.
   visibly mirrors genuinely separate dimensions, can use a marked hypothetical
   counterexample, and demonstrates weak small-sample evidence with a visibly
   hypothetical rate. It lands on a transferable rule when that adds real
-  compression and separates what the evidence shows from what the writer
-  concludes without forcing every answer into the same template.
+  compression, retains meaningful numerical invariants, and separates what the
+  evidence shows from what the writer concludes without forcing every answer
+  into the same template.
 - **The requested job stays the job.** An audit reports problems without
-  rewriting the text. An edit changes only what needs fixing. A draft stays
-  inside the facts it is allowed to use.
+  rewriting the text. An edit changes only what needs fixing. A summary accounts
+  for every enumerated completion condition before compressing status. A draft
+  stays inside the facts it is allowed to use.
 
 ## UI and prose use separate guidance
 
