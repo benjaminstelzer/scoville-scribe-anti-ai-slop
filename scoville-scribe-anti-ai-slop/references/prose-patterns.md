@@ -26,12 +26,16 @@ Preserve humor that belongs to the source. Add humor only when the user
 requests it or when an instruction applicable to the artifact, the demonstrated
 voice, or the genre calls for it. When humor is permitted, prefer a precise
 personification, analogy, or callback that grows out of the subject over a
-detached punch line. The explanation and every factual claim must remain sound
-with the joke removed. Conversational voice guidance alone does not set an
-artifact's voice. Requests for writing that is natural, human-sounding,
-engaging, or less AI-like do not by themselves call for humor. Do not invent
-anecdotes, opinions, sensory details, personal history, or factual premises to
-make a joke work.
+detached punch line. In explanatory prose that explicitly invites humor,
+introduce the image where it helps expose the mechanism; if humor closes the
+piece, prefer a callback to that image over a new tag after the explanation is
+complete. The explanation and every factual claim must remain sound with the
+joke removed. Conversational voice guidance alone does not set an artifact's
+voice, and an artifact that permits humor only in named segments remains plain
+elsewhere. Requests for writing that is natural, human-sounding, engaging, or
+less AI-like do not by themselves call for humor. Do not invent anecdotes,
+opinions, sensory details, personal history, or factual premises to make a joke
+work.
 
 ## Explain mechanisms completely
 
@@ -47,17 +51,36 @@ derive it and state it. Verify the derivation, preserve its assumptions, and do
 not extend it beyond the evidence. Name an established concept when the name
 fits and improves transfer or lookup, not merely to decorate the prose.
 
+If an unknown rate or value prevents a real calculation but a numerical
+counterexample would materially clarify the mechanism, use a visibly
+hypothetical assumption and derive its consequence. Keep the assumption
+illustrative; never report it as a source fact or evidence about the actual
+case.
+
 Use short bold lead-in labels when an explanation has genuinely separate
 dimensions; use bullets for parallel items and numbers for ordered steps. Keep
-one connected argument in prose. A closing synthesis is useful when it
-compresses or reframes the mechanism into a transferable rule, and redundant
-when it only repeats the opening claim.
+one connected argument in prose. When the source request names several
+dimensions to explain or compare, mirror them with concise lead-ins unless the
+result is a short connected argument; expose the requested reasoning structure
+without adding a second outline. Do not default every explanation to two
+balanced paragraphs of uniformly medium sentences. Let the argument determine
+the paragraph breaks, and vary structure only to reveal that argument rather
+than manufacture a more human-looking surface.
+
+A closing synthesis is useful when it compresses or reframes the mechanism into
+a transferable rule, and redundant when it only repeats the opening claim. If
+an explanatory unit would otherwise end on its last caveat or procedural step,
+check whether one closing sentence can turn the mechanism into a transferable
+rule. Prefer that landing only when it passes the same compression test.
 
 Distinguish source fact, inference, and remaining uncertainty where confusing
 them would change the conclusion. Mark the boundary locally or with labels when
 the answer has several epistemic parts. Verification of a word count, sentence
 count, or other hard output constraint is required, but reporting that check in
 the artifact is optional unless the reader needs it or the request asks for it.
+When an audit requires a separate limitations section, bind each remaining
+limitation to the affected question, claim, or calculation without duplicating
+boundaries already clear in place.
 
 ## Treat as defects
 

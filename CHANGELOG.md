@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-08-03: Joint prompt and Scribe calibration
+
+### Changed
+
+- Clarified that Scribe composes with the host prompt, project instructions,
+  and request during generation instead of acting as a post-processing pass.
+- Made explicitly multi-part requests trigger matching lead-ins while keeping
+  short connected arguments in prose.
+- Allowed visibly hypothetical numerical counterexamples without weakening the
+  distinction between illustration and evidence.
+- Let argument structure determine paragraph rhythm and made useful closing
+  syntheses more salient without requiring a summary.
+- Integrated explicitly invited humor into the explanation before a possible
+  callback and preserved segment-specific humor restrictions.
+- Bound required limitation sections to their affected claims or calculations.
+
+### Validation
+
+- `quick_validate.py` accepted the installable skill directory.
+- README word-cost figures matched the updated `SKILL.md` and prose reference.
+- `git diff --check` passed, and focused contract checks found matching rules in
+  Scribe and the companion system prompt.
+
 ## 2026-08-03: Installable skill subdirectory
 
 ### Changed

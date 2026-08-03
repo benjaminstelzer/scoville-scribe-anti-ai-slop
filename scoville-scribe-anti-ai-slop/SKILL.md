@@ -39,6 +39,11 @@ changes, and validation. Scribe owns human-readable text and the smallest
 targeted read-only inspection of relevant terms and text surfaces. Reuse
 verified behavior; do not infer it from wording.
 
+Apply compatible host-prompt, project, request, and Scribe constraints together
+while generating the text. Scribe is not a post-processing pass over an answer
+owned by another layer. Surface boundaries decide which voice rules apply to a
+segment; they do not make one instruction source solely causal.
+
 ## Governing principle
 
 After safety and explicit constraints, optimize for the intended reader

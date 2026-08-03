@@ -92,6 +92,11 @@ This does not force every piece of text into the agent's conversational voice.
 If a reply contains a document, email, or interface label, that part still
 follows its own source, audience, style, and technical requirements.
 
+The host prompt, project instructions, request, and Scribe act together while
+the agent writes. Scribe is not a second pass over an otherwise finished answer.
+The surface boundary selects the applicable voice rules without making one
+instruction layer solely responsible for the output.
+
 **Verify it works.** If your agent loads skills on demand, test the trigger. Ask
 your agent:
 *"This project calls the layout concept Padding. Rewrite the related UI label
@@ -99,10 +104,10 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 890 words of rules plus 76
+**What it costs.** `SKILL.md` currently contains 935 words of rules plus 76
 words for its name and description. Tasks involving buttons, errors, or other
 interface text load another 790 words. Tasks involving paragraphs or an
-explicit anti-slop request load another 921. Tasks involving both load both
+explicit anti-slop request load another 1,148. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
 ## Use with Scoville Anti-AI-Coding-Slop
@@ -137,9 +142,11 @@ with the rest of the product.
   preserve what the writer claimed, how certain they were, and whose experience
   or judgment it was.
 - **Explanations explain.** When readers need the mechanism, Scribe includes the
-  reason something happens and a useful example or contrast. It separates what
-  the evidence shows from what the writer concludes without forcing every
-  answer into the same template.
+  reason something happens and a useful example or contrast. It visibly mirrors
+  genuinely separate dimensions, can use a marked hypothetical counterexample,
+  and lands on a transferable rule when that adds real compression. It
+  separates what the evidence shows from what the writer concludes without
+  forcing every answer into the same template.
 - **The requested job stays the job.** An audit reports problems without
   rewriting the text. An edit changes only what needs fixing. A draft stays
   inside the facts it is allowed to use.
