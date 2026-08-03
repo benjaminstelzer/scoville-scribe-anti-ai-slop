@@ -76,6 +76,9 @@ boundary. Do not confuse concision with leaving the reader to infer the answer.
   do not rewrite unless asked.
 - **Adapt**, including summarize: Remove only information the requested form can
   omit while preserving the conditions that keep each surviving claim true.
+  When the source enumerates completion conditions or status criteria, account
+  for each one before compressing; do not let an aggregate status or passing
+  test stand in for an unverified condition.
 - **Localize:** Preserve meaning, terminology, format contract, and runtime
   schema while allowing natural target-language grammar.
 - **Source-exact:** Extract or quote without stylistic change. Audit fidelity if

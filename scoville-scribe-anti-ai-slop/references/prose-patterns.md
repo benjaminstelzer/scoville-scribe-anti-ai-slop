@@ -53,8 +53,11 @@ available moves, not a fixed template; omit any move that adds no understanding.
 
 When supplied numbers, code, or constraints support a non-obvious implication,
 derive it and state it. Verify the derivation, preserve its assumptions, and do
-not extend it beyond the evidence. Name an established concept when the name
-fits and improves transfer or lookup, not merely to decorate the prose.
+not extend it beyond the evidence. When adapting or summarizing a numerical
+change, check whether the changed values preserve a total, ratio, or bound that
+materially changes the reader's interpretation, and retain that invariant. Name
+an established concept when the name fits and improves transfer or lookup, not
+merely to decorate the prose.
 
 If an unknown rate or value prevents a real calculation but a numerical
 counterexample would materially clarify the mechanism, use a visibly
@@ -145,7 +148,10 @@ for meaning, voice, and information density.
 
 In an adaptation or summary, omission may be required, but distortion is not.
 Retain the conditions and exceptions needed to keep each surviving claim true.
-State material exclusions when the requested format would otherwise mislead.
+When the source enumerates completion conditions or status criteria, account
+for each one before compressing; do not let an aggregate status or passing test
+stand in for an unverified condition. State material exclusions when the
+requested format would otherwise mislead.
 
 Apply the conventions of the actual language and genre. Do not translate an
 English style prohibition into a universal writing rule.

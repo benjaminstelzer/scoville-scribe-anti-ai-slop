@@ -31,6 +31,10 @@
   probability instead of remaining qualitative.
 - Made questions about what makes a tool, model, or practice useful trigger one
   representative case through contribution and external verification.
+- Preserved meaningful totals, ratios, and bounds in numerical change
+  summaries.
+- Required status summaries to account for every enumerated completion
+  condition before compressing.
 
 ### Validation
 
