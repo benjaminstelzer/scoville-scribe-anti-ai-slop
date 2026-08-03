@@ -61,12 +61,13 @@ consult their documentation; paths differ per agent.
 
 ### Use Scribe for agent communication
 
-Codex selects skills by task. Installing Scribe makes it available, but does
-not make every conversational reply use it. To apply Scribe to all user-facing
-communication in a project, send your agent this prompt:
+Installing Scribe makes it available to the agent's skill system, but does not
+automatically make every conversational reply use it. To apply Scribe to all
+user-facing communication in a project, send your agent this prompt:
 
 ```text
-Add the following to AGENTS.md:
+Add the following as a standing project instruction, using the instruction file
+supported by this agent:
 
 ## Conversational writing
 
@@ -76,14 +77,16 @@ or describing its use unless the user explicitly asks. Follow the skill's prose
 and interface routing rules when applicable.
 ```
 
-This project rule is necessary when Scribe should govern ordinary agent
-communication as well as explicit writing tasks.
+The exact project instruction file depends on the agent. This standing rule is
+necessary when Scribe should govern ordinary agent communication as well as
+explicit writing tasks.
 
 Scribe still classifies each segment separately. A document or interface string
 embedded in a reply follows its own source, voice, genre, and interface
 constraints rather than inheriting the agent's conversational style.
 
-**Verify it works.** Skills load on demand, so test the trigger. Ask your agent:
+**Verify it works.** If your agent loads skills on demand, test the trigger. Ask
+your agent:
 *"This project calls the layout concept Padding. Rewrite the related UI label
 and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
