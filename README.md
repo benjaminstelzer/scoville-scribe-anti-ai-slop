@@ -99,13 +99,13 @@ and help text, and mention that the internal Spacing tool is unavailable."* The
 result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
-**What it costs.** `SKILL.md` currently contains 889 words of rules plus 76
+**What it costs.** `SKILL.md` currently contains 890 words of rules plus 76
 words for its name and description. Tasks involving buttons, errors, or other
 interface text load another 790 words. Tasks involving paragraphs or an
 explicit anti-slop request load another 921. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
-## Use with Scoville
+## Use with Scoville Anti-AI-Coding-Slop
 
 Use [Scoville Anti-AI-Coding-Slop](https://github.com/benjaminstelzer/scoville-anti-ai-coding-slop)
 when the text belongs to a codebase or engineering change. Scoville keeps the
