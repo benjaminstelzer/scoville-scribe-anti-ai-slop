@@ -9,12 +9,14 @@ and less true:
 - A tool was removed before release; the UI now tells users it is unavailable.
 - "I had enough information" becomes "I knew enough," changing evidence into
   an inferred mental state.
-- A translated message loses an ICU branch or runtime placeholder.
+- A translated message loses its separate wording for one or many items, or a
+  value such as `{fileName}` that the software inserts when it runs.
 
-That is prose slop: language work that weakens the reader outcome while looking
-finished. Scoville Scribe is an Agent Skill that keeps drafting, editing,
-auditing, adaptation, and localization tied to source meaning, verified product
-behavior, author voice, project terminology, and the text's actual job.
+That is prose slop: language work that looks finished but makes the text less
+useful or less true. Scoville Scribe is an Agent Skill—a reusable instruction
+file for coding agents. Whether the agent drafts, edits, reviews, adapts, or
+translates text, Scribe keeps it faithful to the source, the product, the
+writer's voice, and the words the project already uses.
 
 It may improve a sentence. It does not get to improve what happened.
 
@@ -24,10 +26,11 @@ meaning, genre conventions, or interface constraints.
 
 ## Why "Scribe"?
 
-Scoville's engineering guardrail protects the requested observable outcome.
-Scribe protects the intended reader outcome. The first stops code work from
-drifting into ceremony; the second stops writing work from drifting into smooth
-but unsupported copy.
+Scoville's engineering guardrail keeps a coding task focused on the result the
+user asked for. Scribe does the same for writing: it keeps the text focused on
+what the reader needs to understand or do. The first stops plans and tests from
+replacing the code change; the second stops polished wording from replacing the
+truth.
 
 The name also describes the range. Scribe can draft, edit, audit, adapt,
 localize, or preserve exact source text. It is not limited to marketing copy or
@@ -35,8 +38,9 @@ long-form prose.
 
 ## Install
 
-Works with any coding agent that supports the Agent Skills format (`SKILL.md`
-with name/description frontmatter), including Claude Code and Codex.
+Works with any coding agent that supports the Agent Skills format: a `SKILL.md`
+instruction file with its name and description at the top. Compatible agents
+include Claude Code and Codex.
 
 Usually, let your coding agent install the skill. Send it this prompt:
 
@@ -79,13 +83,14 @@ or describing its use unless the user explicitly asks. Follow the skill's prose
 and interface routing rules when applicable.
 ```
 
-The exact project instruction file depends on the agent. This standing rule is
-necessary when Scribe should govern ordinary agent communication as well as
-explicit writing tasks.
+The exact project instruction file depends on the agent. It may be called
+`AGENTS.md`, `CLAUDE.md`, or something else. Adding the rule there makes it a
+persistent instruction for that project, so Scribe governs ordinary replies as
+well as writing tasks that mention it by name.
 
-Scribe still classifies each segment separately. A document or interface string
-embedded in a reply follows its own source, voice, genre, and interface
-constraints rather than inheriting the agent's conversational style.
+This does not force every piece of text into the agent's conversational voice.
+If a reply contains a document, email, or interface label, that part still
+follows its own source, audience, style, and technical requirements.
 
 **Verify it works.** If your agent loads skills on demand, test the trigger. Ask
 your agent:
@@ -95,21 +100,23 @@ result should retain `Padding` and omit the internal tool if users never knew it
 existed.
 
 **What it costs.** `SKILL.md` currently contains 889 words of rules plus 76
-words of frontmatter. Tasks with interface strings load another 790 words.
-Tasks with continuous prose or an explicit anti-slop request load another 921.
-Tasks meeting both conditions load both references.
+words for its name and description. Tasks involving buttons, errors, or other
+interface text load another 790 words. Tasks involving paragraphs or an
+explicit anti-slop request load another 921. Tasks involving both load both
+guides. The agent counts this text as part of the context it reads for the task.
 
 ## Use with Scoville
 
 Use [Scoville Anti-AI-Coding-Slop](https://github.com/benjaminstelzer/scoville-anti-ai-coding-slop)
-when the text belongs to a codebase or engineering change. Scoville owns scope,
-canonical implementation, behavior verification, and validation. Scribe owns
-the reader-facing words and the smallest relevant terminology inspection.
+when the text belongs to a codebase or engineering change. Scoville keeps the
+code change in the right place, checks that it works, and prevents unrelated
+work. Scribe keeps the reader-facing words factual, clear, and consistent with
+the product's vocabulary.
 
-They share a goal-first contract with separate responsibilities. A change to an
-error string in `errors.ts`, for example, uses Scoville to verify the error path
-and Scribe to keep the message factual, actionable, and consistent with product
-language.
+They work toward the same requested result but handle different parts of it.
+For an error message in `errors.ts`, Scoville proves that the correct error
+reaches the user. Scribe makes the message factual, actionable, and consistent
+with the rest of the product.
 
 ## What it enforces
 
@@ -130,59 +137,67 @@ language.
   preserve what the writer claimed, how certain they were, and whose experience
   or judgment it was.
 - **Explanations explain.** When readers need the mechanism, Scribe includes the
-  causal link and a useful example or contrast. It distinguishes evidence from
-  inference without forcing every answer into the same template.
+  reason something happens and a useful example or contrast. It separates what
+  the evidence shows from what the writer concludes without forcing every
+  answer into the same template.
 - **The requested job stays the job.** An audit reports problems without
   rewriting the text. An edit changes only what needs fixing. A draft stays
   inside the facts it is allowed to use.
 
-## UI and prose load separately
+## UI and prose use separate guidance
 
-The core rules live in [SKILL.md](SKILL.md). It routes to two references:
+The core rules live in [SKILL.md](SKILL.md). Depending on the task, the agent
+also reads one or both of these focused guides:
 
-- [references/interface-text.md](references/interface-text.md) covers GUI, CLI,
-  errors, notifications, accessibility text, runtime messages, and metadata.
+- [references/interface-text.md](references/interface-text.md) covers buttons
+  and other graphical controls, command-line text, errors, notifications,
+  screen-reader labels, messages assembled by software, and descriptive fields
+  such as titles or alternative text.
 - [references/prose-patterns.md](references/prose-patterns.md) covers manuals,
   articles, email, documentation, explanatory analyses, author voice, and
   source-near editing.
 
-Tasks load only the references their segments and request require. Interface
-strings load the UI reference. Continuous prose or an explicit anti-slop
-request loads the prose reference. Tasks meeting both conditions load both.
+The agent reads only what the current task needs. Buttons, errors, and other
+interface text use the interface guide. Paragraphs, articles, and other
+continuous writing use the prose guide. A task containing both uses both.
 
 ## Design
 
-Scribe resolves truth, terminology, and form separately. Product behavior can
-answer what is true, but it cannot choose the house voice. A glossary can settle
-the canonical term, but it cannot preserve a false status message. One source
-ranking for every concern would make at least one of those decisions wrong.
+Scribe answers three separate questions: Is the text true? Does it use the
+product's established words? Does it fit the requested format and voice? The
+running product can show what is true but cannot choose a writing style. A
+glossary can settle whether the setting is called `Padding` or `Spacing` but
+cannot make a false status message true. Different questions need different
+sources.
 
-Text profiles apply per segment rather than per file. A settings page can
-contain a heading, explanatory paragraph, button, dynamic error, and accessible
-name; each segment keeps the constraints that apply to it without forcing the
-whole file through one writing style.
+The rules apply to each part of a text rather than blindly to the whole file. A
+settings page can contain a heading, explanation, button, error message, and a
+label used by screen readers. Each part keeps the rules it needs without being
+forced into one writing style.
 
-The integrity floor is hard. Style preferences do not compensate for lost
-facts, altered modality, broken placeholders, or a product claim that was never
-verified. Detector scores decide nothing.
+Some details are never traded away for smoother style: facts, the difference
+between `can`, `should`, and `must`, placeholders such as `{fileName}`, and
+claims about what the product does. A score from an AI-text detector cannot
+overrule any of them.
 
 ## Research basis
 
 The skill draws from these sources:
 
-- [W3C Understanding SC 2.5.3: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name): a visible control label must appear in its accessible name.
-- [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/): localized messages need locale-specific plural and selector branches while preserving their runtime contract.
+- [W3C Understanding SC 2.5.3: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name): the name read by assistive software must include the words users can see on the control.
+- [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/): translated messages may contain separate wording for one item, many items, or other cases; every variant and inserted value must keep working.
 - [Microsoft Writing Style Guide: Use technical terms carefully](https://learn.microsoft.com/en-us/style-guide/word-choice/use-technical-terms-carefully): product terms should remain consistent rather than vary for rhythm.
-- [Reinhart et al., Do LLMs write like humans?](https://doi.org/10.1073/pnas.2422455122): instruction-tuned models can retain a noun-heavy, informational style that misses the requested genre.
-- [Wang et al., Catch Me If You Can? Not Yet](https://aclanthology.org/2025.findings-emnlp.532/): a few author samples help more in structured genres than in nuanced informal writing, so samples guide rather than guarantee voice fidelity.
+- [Reinhart et al., Do LLMs write like humans?](https://doi.org/10.1073/pnas.2422455122): models trained to follow instructions can still produce dense, information-heavy prose that does not fit the requested type of writing.
+- [Wang et al., Catch Me If You Can? Not Yet](https://aclanthology.org/2025.findings-emnlp.532/): a few samples can help a model imitate structured writing more reliably than subtle informal voice, so samples guide the result but cannot guarantee a perfect match.
 - [Microsoft Writing Style Guide: Em dashes](https://learn.microsoft.com/en-us/style-guide/punctuation/dashes-hyphens/): em dashes are valid for a break or parenthetical remark, but repeated interruptions can make prose harder to read.
-- [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop): reader-first editing, meaning preservation, and skepticism toward surface-only AI tells.
+- [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop): reader-first editing, meaning preservation, and skepticism toward word lists that claim to identify AI writing by style alone.
 
 ## Repository contents
 
-The repository is deliberately small: the core `SKILL.md`, two selectively
-loaded references, agent metadata, this README, a changelog, and the MIT
-license. It contains no runtime, model call, detector, or generated build output.
+The repository is deliberately small: the core instruction file, two focused
+guides, a small file that helps agents display the skill, this README, a
+changelog, and the MIT license. It contains no executable software, model
+requests, AI detector, or generated files.
 
 ## License
 
