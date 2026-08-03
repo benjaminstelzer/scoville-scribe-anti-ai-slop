@@ -106,8 +106,8 @@ existed.
 
 **What it costs.** `SKILL.md` currently contains 975 words of rules plus 86
 words for its name and description. Tasks involving buttons, errors, or other
-interface text load another 790 words. Tasks involving paragraphs or an
-explicit anti-slop request load another 1,240. Tasks involving both load both
+interface text load another 819 words. Tasks involving paragraphs or an
+explicit anti-slop request load another 1,242. Tasks involving both load both
 guides. The agent counts this text as part of the context it reads for the task.
 
 ## Use with Scoville Code and UI
@@ -149,13 +149,14 @@ the message factual, actionable, and consistent with the rest of the product.
 - **Explanations explain.** When readers need the mechanism, Scribe includes the
   reason something happens and a useful example or contrast. A load-bearing
   example follows one concrete instance to its observable result instead of
-  merely naming cases. An otherwise categorical explanation of practical
-  usefulness, risk, or failure grounds itself in one representative case.
-  Scribe visibly mirrors genuinely separate dimensions, can use a marked
-  hypothetical counterexample, and demonstrates weak small-sample evidence
-  with a visibly hypothetical rate. It lands on a transferable rule when that
-  adds real compression and separates what the evidence shows from what the
-  writer concludes without forcing every answer into the same template.
+  merely naming cases. When the request asks what makes a tool, model, or
+  practice useful, the answer follows one representative request through the
+  contribution to its external verification or observable result. Scribe
+  visibly mirrors genuinely separate dimensions, can use a marked hypothetical
+  counterexample, and demonstrates weak small-sample evidence with a visibly
+  hypothetical rate. It lands on a transferable rule when that adds real
+  compression and separates what the evidence shows from what the writer
+  concludes without forcing every answer into the same template.
 - **The requested job stays the job.** An audit reports problems without
   rewriting the text. An edit changes only what needs fixing. A draft stays
   inside the facts it is allowed to use.
