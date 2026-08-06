@@ -129,10 +129,16 @@ or meaning for a user-facing interface segment must be created, changed,
 localized, audited, or reconciled with behavior. Do not load it only to verify
 that an explicitly supplied, unchanged string is present.
 
-Read [references/prose-patterns.md](references/prose-patterns.md) for continuous
-prose or when the user asks for natural, human-sounding, or anti-slop writing.
-Do not load it for labels, accessible names, fixed task copy, or other isolated
-interface strings.
+Read [references/prose-patterns.md](references/prose-patterns.md) when continuous
+prose is drafted or revised and its prose quality is variable, or when the user
+asks for natural, human-sounding, or anti-slop writing. Do not load it for
+labels, accessible names, fixed task copy, or other isolated interface strings.
+Do not load it for short structured ReasonKeep Plans, Decisions, Work Items, or
+similar engineering records when their canonical format already owns labels,
+order, and form. Substantive rationale inside such a record activates Scribe,
+but does not by itself require the prose-pattern reference; load it only when
+that rationale's continuous prose is also being drafted or revised and its
+prose quality is variable.
 
 ## Integrity floor
 
@@ -164,9 +170,14 @@ punctuation bans. Fix patterns for their effect on this reader and genre, not
 for their supposed origin. A canonical term remains canonical.
 
 Apply routine Scribe guidance silently. Do not announce skill use or narrate
-normal drafting, editing, or auditing steps. Follow the host's disclosure rules
-for non-obvious actions, pauses, scope changes, external effects, and material
-risks.
+normal drafting, editing, auditing, reference selection, or Skill routing.
+Follow the host's disclosure rules for non-obvious actions, pauses, scope
+changes, external effects, and material risks.
+
+When several coherent ReasonKeep Decision proposals must be surfaced, report
+them together once with each ID, title, and practical effect, then request the
+needed accept, reject, or revise choices. Do not repeat setup narration,
+reference reads, or the same proposal inventory around each record.
 
 ## Verify and complete
 
