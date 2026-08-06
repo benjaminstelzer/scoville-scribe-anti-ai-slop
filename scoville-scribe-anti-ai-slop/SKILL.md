@@ -3,14 +3,18 @@ name: scoville-scribe-anti-ai-slop
 description: >-
   Goal-first prose and interface writing guardrail. Use when drafting, editing,
   auditing, adapting, summarizing, localizing, or fidelity-checking manuals,
-  articles, emails, documentation, UI labels, errors, notifications, CLI help,
-  accessible names, metadata, and reader-facing strings in code or resource
+  articles, emails, and documentation. Also use when wording, meaning,
+  terminology, localization, source fidelity, or runtime string contracts must
+  be decided or checked for UI labels, errors, notifications, CLI help,
+  accessible names, metadata, or reader-facing strings in code or resource
   files. Preserves source meaning, factual claims, author voice, canonical
   product terms, verified behavior, runtime schemas, and source-exact text while
-  removing generic filler. Use alongside scoville-code-anti-ai-slop for
-  engineering artifacts and scoville-ui-anti-ai-slop when interface wording
-  and visual presentation both change. Not needed for code semantics or
-  machine-only data.
+  removing generic filler. Do not trigger merely because a code or UI task
+  renders source-exact labels or already-fixed accessible names. Use alongside
+  scoville-code-anti-ai-slop for engineering artifacts and
+  scoville-ui-anti-ai-slop when interface wording and visual presentation both
+  change. Not needed for code semantics, machine-only data, or interface work
+  without a text decision.
 ---
 
 # Scoville Scribe Anti-AI-Slop
@@ -45,7 +49,10 @@ Reuse verified behavior; do not infer it from wording.
 For interactive interfaces, apply `scoville-ui-anti-ai-slop` when presentation
 or interaction is also in scope. UI owns framework alignment, hierarchy,
 layout, responsive behavior, and whether required labels or accessible names
-exist and are associated. Scribe owns their wording and meaning.
+exist and are associated. Scribe owns their wording and meaning when the task
+creates, changes, localizes, audits, or reconciles that text. Source-exact,
+unchanged strings do not activate Scribe merely because an interface renders
+them; Code or UI may verify their required presence and association.
 
 Apply compatible host-prompt, project, request, and Scribe constraints together
 while generating the text. Scribe is not a post-processing pass over an answer
@@ -117,12 +124,15 @@ Treat these as combinable constraints, not new profiles:
 - **variant-controlled:** change only the variable the comparison intends to
   test.
 
-Read [references/interface-text.md](references/interface-text.md) for any
-user-facing interface segment, including GUI, CLI, errors, notifications,
-transactional messages, accessibility text, and metadata.
+Read [references/interface-text.md](references/interface-text.md) when wording
+or meaning for a user-facing interface segment must be created, changed,
+localized, audited, or reconciled with behavior. Do not load it only to verify
+that an explicitly supplied, unchanged string is present.
 
 Read [references/prose-patterns.md](references/prose-patterns.md) for continuous
 prose or when the user asks for natural, human-sounding, or anti-slop writing.
+Do not load it for labels, accessible names, fixed task copy, or other isolated
+interface strings.
 
 ## Integrity floor
 

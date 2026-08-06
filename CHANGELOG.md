@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-08-06: Narrow interface-text activation
+
+### Changed
+
+- Limited interface activation to tasks that decide, change, localize, audit,
+  or reconcile wording, meaning, terminology, source fidelity, or runtime
+  string contracts.
+- Excluded source-exact labels and already-fixed accessible names from
+  activating Scribe merely because an interface renders them.
+- Prevented the continuous-prose reference from loading for isolated interface
+  strings and fixed task copy.
+
+### Validation
+
+- The installable directory passed the canonical Agent Skill validator.
+- A focused routing review confirmed that unchanged, explicitly supplied
+  labels now remain with Code or UI unless a text decision is present.
+
 ## 2026-08-03: Family documentation alignment
 
 ### Changed
