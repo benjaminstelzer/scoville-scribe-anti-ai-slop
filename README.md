@@ -66,8 +66,8 @@ Padding. Rewrite the related UI label and help text, and mention that the
 internal Spacing tool is unavailable."* The result should retain `Padding` and
 omit the internal tool if users never knew it existed.
 
-**What it costs.** `SKILL.md` currently contains 1,005 words of rules plus 86
-words for its name and description. Interface-text tasks can load another 819
+**What it costs.** `SKILL.md` currently contains 1,222 words of rules plus 131
+words for its name and description. Interface-text tasks can load another 821
 words; prose tasks or explicit anti-slop requests can load another 1,300. A
 task involving both surfaces can load both guides.
 
@@ -100,6 +100,9 @@ The full rules live in
 [SKILL.md](scoville-scribe-anti-ai-slop/SKILL.md).
 
 ## Use with the Scoville family
+
+Scribe works independently. When companion Skills are installed, combine them
+only for the concerns they own.
 
 Use [Scoville Code Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
 when text belongs to a codebase or engineering change. Code owns engineering

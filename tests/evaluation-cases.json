@@ -8,21 +8,21 @@
       "expect": [
         "Activate Scribe and load interface-text guidance.",
         "Keep the problem, available recovery, terminology, and runtime contract aligned.",
-        "Compose with UI for presentation and Code for behavior verification."
+        "Use available interface and engineering guardrails without making them prerequisites for Scribe."
       ]
     },
     {
       "id": "substantive-decision-rationale",
-      "given": "A proposed Decision needs a clear technical choice, consequences, and revisit condition.",
+      "given": "A proposed decision record needs a clear technical choice, consequences, and revisit condition.",
       "expect": [
         "Activate Scribe for substantive rationale and factual meaning.",
-        "Preserve the ReasonKeep format owner.",
+        "Preserve the record's canonical format owner.",
         "Load prose-pattern guidance only if continuous prose quality is actually variable."
       ]
     },
     {
       "id": "short-format-owned-work-item",
-      "given": "A ReasonKeep Work Item already supplies exact Outcome, Acceptance, Evidence, and Next action fields and only needs format-preserving insertion.",
+      "given": "A structured project work item already supplies its format's exact outcome, acceptance, evidence, and next-action fields and only needs format-preserving insertion.",
       "expect": [
         "Do not load the continuous-prose reference.",
         "Preserve the canonical labels, order, and supplied wording.",
@@ -30,12 +30,21 @@
       ]
     },
     {
+      "id": "standalone-without-record-system",
+      "given": "A documentation edit has no project plan, decision-record format, or sibling Scoville Skills installed.",
+      "expect": [
+        "Apply Scribe normally from the supplied facts and documentation conventions.",
+        "Do not create a plan or decision record and do not require a sibling Skill.",
+        "Verify the edited meaning and report only material unresolved facts."
+      ]
+    },
+    {
       "id": "grouped-proposals",
-      "given": "Three coherent proposed Decisions need explicit user lifecycle choices.",
+      "given": "Three coherent proposed decision records need explicit user lifecycle choices.",
       "expect": [
         "Report the three proposals once as one compact set.",
-        "Include each ID, title, and practical effect.",
-        "Ask for accept, reject, or revise choices without repeating setup or reference-read narration."
+        "Include each record's identifier or title and practical effect.",
+        "Ask for the required user choices without assuming one fixed lifecycle or repeating setup narration."
       ]
     }
   ]

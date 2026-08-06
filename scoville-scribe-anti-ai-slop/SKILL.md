@@ -10,8 +10,8 @@ description: >-
   files. Preserves source meaning, factual claims, author voice, canonical
   product terms, verified behavior, runtime schemas, and source-exact text while
   removing generic filler. Do not trigger merely because a code or UI task
-  renders source-exact labels or already-fixed accessible names. Use alongside
-  scoville-code-anti-ai-slop for engineering artifacts and
+  renders source-exact labels or already-fixed accessible names. When installed,
+  compose with scoville-code-anti-ai-slop for engineering artifacts and
   scoville-ui-anti-ai-slop when interface wording and visual presentation both
   change. Not needed for code semantics, machine-only data, or interface work
   without a text decision.
@@ -29,8 +29,8 @@ Resolve each concern from the source that can answer it:
 
 - **Current truth:** verified current behavior and supplied factual sources.
 - **Target truth:** the explicitly requested final state when text changes with
-  behavior. Scoville Code must verify that state before completion or
-  publication.
+  behavior. The owning engineering workflow must verify that state as
+  implemented before completion or publication.
 - **Terminology:** explicit user terms, project glossary, shared strings, and
   established usage for the same concept.
 - **Form:** explicit output requirements, house style, genuine voice samples,
@@ -40,19 +40,22 @@ If these sources conflict materially, report the conflict instead of choosing
 convenient wording. Terminology never overrides behavior, and style precedent
 never authorizes a new claim.
 
-For engineering artifacts, apply `scoville-code-anti-ai-slop` too. Scoville
-Code owns engineering scope, canonical ownership, behavior verification,
-artifact changes, and validation. Scribe owns human-readable text and the
-smallest targeted read-only inspection of relevant terms and text surfaces.
-Reuse verified behavior; do not infer it from wording.
+For engineering artifacts, apply `scoville-code-anti-ai-slop` too when it is
+available. The owning engineering workflow remains responsible for scope,
+canonical ownership, behavior verification, artifact changes, and validation.
+Scribe owns human-readable text and the smallest targeted read-only inspection
+of relevant terms and text surfaces. Reuse verified behavior; do not infer it
+from wording.
 
-For interactive interfaces, apply `scoville-ui-anti-ai-slop` when presentation
-or interaction is also in scope. UI owns framework alignment, hierarchy,
+For interactive interfaces, apply `scoville-ui-anti-ai-slop` when it is
+available and presentation or interaction is also in scope. The owning
+interface workflow remains responsible for framework alignment, hierarchy,
 layout, responsive behavior, and whether required labels or accessible names
 exist and are associated. Scribe owns their wording and meaning when the task
 creates, changes, localizes, audits, or reconciles that text. Source-exact,
 unchanged strings do not activate Scribe merely because an interface renders
-them; Code or UI may verify their required presence and association.
+them; the engineering or interface workflow may verify their required presence
+and association.
 
 Apply compatible host-prompt, project, request, and Scribe constraints together
 while generating the text. Scribe is not a post-processing pass over an answer
@@ -133,12 +136,12 @@ Read [references/prose-patterns.md](references/prose-patterns.md) when continuou
 prose is drafted or revised and its prose quality is variable, or when the user
 asks for natural, human-sounding, or anti-slop writing. Do not load it for
 labels, accessible names, fixed task copy, or other isolated interface strings.
-Do not load it for short structured ReasonKeep Plans, Decisions, Work Items, or
-similar engineering records when their canonical format already owns labels,
-order, and form. Substantive rationale inside such a record activates Scribe,
-but does not by itself require the prose-pattern reference; load it only when
-that rationale's continuous prose is also being drafted or revised and its
-prose quality is variable.
+Do not load it for short structured project records such as plans, decision
+records, or work items when their canonical format already owns labels, order,
+and form. Substantive rationale inside such a record activates Scribe, but does
+not by itself require the prose-pattern reference; load it only when that
+rationale's continuous prose is also being drafted or revised and its prose
+quality is variable.
 
 ## Integrity floor
 
@@ -174,10 +177,11 @@ normal drafting, editing, auditing, reference selection, or Skill routing.
 Follow the host's disclosure rules for non-obvious actions, pauses, scope
 changes, external effects, and material risks.
 
-When several coherent ReasonKeep Decision proposals must be surfaced, report
-them together once with each ID, title, and practical effect, then request the
-needed accept, reject, or revise choices. Do not repeat setup narration,
-reference reads, or the same proposal inventory around each record.
+When several coherent decision proposals must be surfaced, report them together
+once using each record's identifier or title and practical effect, then request
+the decisions the user must make, such as accept, reject, or revise. Do not
+repeat setup narration, reference reads, or the same proposal inventory around
+each record.
 
 ## Verify and complete
 

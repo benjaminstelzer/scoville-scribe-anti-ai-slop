@@ -1,20 +1,33 @@
 # Changelog
 
+## 2026-08-06: Standalone structured-record terminology
+
+### Changed
+
+- Generalized structured-record and proposal-routing language so the Skill
+  applies to any canonical project format without implying a dependency on a
+  particular planning product.
+
+### Validation
+
+- The canonical Skill validator and evaluation JSON parser pass; standalone
+  fixtures cover operation without a record system or sibling Skills.
+
 ## 2026-08-06: Format-owned records and grouped proposal reporting
 
 ### Changed
 
 - Kept Scribe active for labels, errors, recovery guidance, accessible wording,
-  and substantive Decision rationale while excluding short format-owned
+  and substantive decision rationale while excluding short format-owned
   ReasonKeep records from the continuous-prose reference.
-- Grouped coherent Decision proposal reporting into one compact set with ID,
+- Grouped coherent decision-proposal reporting into one compact set with ID,
   title, practical effect, and the required user choices.
 - Extended silent routine use to reference selection and Skill routing.
 
 ### Validation
 
 - Positive and negative routing fixtures cover interface errors, recovery text,
-  substantive Decisions, short format-owned records, and grouped proposals.
+  substantive decision records, short format-owned records, and grouped proposals.
 
 ## 2026-08-06: Narrow interface-text activation
 

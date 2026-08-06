@@ -35,10 +35,10 @@ consistency, then verify the concept behind each occurrence before changing it.
 
 ## Describe the user-relevant state
 
-State what is true in the supported state represented by the artifact. Describe a
-requested final state only when it ships with the behavior and Scoville Code
-verifies it before completion or publication. Omit internal causes, discarded
-tools, issue chronology, and unreleased alternatives.
+State what is true in the supported state represented by the artifact. Describe
+a requested final state only when it ships with the behavior and the owning
+engineering workflow verifies it before completion or publication. Omit
+internal causes, discarded tools, issue chronology, and unreleased alternatives.
 
 Mention an older state only when users could have encountered it and need that
 history to migrate, understand a deprecation, avoid harm, or recover from a
