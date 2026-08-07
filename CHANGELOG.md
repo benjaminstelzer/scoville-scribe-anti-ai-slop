@@ -24,6 +24,11 @@
   editorial/transactional segments.
 - The full UI/Code/Scribe composition and the explicit Scribe opt-out case
   passed with only their required references.
+- With `gpt-5.6-terra` at medium reasoning, all seven standalone cases selected
+  the intended Core and references, and both composition cases preserved their
+  Skill and opt-out boundaries. Six standalone outputs preserved every required
+  content fact; the mixed editorial/transactional case omitted one supplied
+  delivery fact despite selecting the intended routes.
 - Direct-reference, diff, encoding, and host-neutrality checks pass.
 
 ## 2026-08-06: Standalone structured-record terminology
