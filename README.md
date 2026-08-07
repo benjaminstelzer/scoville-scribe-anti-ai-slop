@@ -66,10 +66,10 @@ Padding. Rewrite the related UI label and help text, and mention that the
 internal Spacing tool is unavailable."* The result should retain `Padding` and
 omit the internal tool if users never knew it existed.
 
-**What it costs.** `SKILL.md` currently contains 1,222 words of rules plus 131
-words for its name and description. Interface-text tasks can load another 821
-words; prose tasks or explicit anti-slop requests can load another 1,300. A
-task involving both surfaces can load both guides.
+**What it costs.** Skill discovery exposes only the name and description. After
+activation, the core loads first and selects interface text, continuous prose,
+and fidelity guidance only when the task needs them. Provider token usage also
+depends on the host and conversation.
 
 ## What it enforces
 
@@ -138,7 +138,7 @@ profile. A settings page can contain a heading, explanation, button, error,
 runtime placeholder, and accessible name. Each segment keeps the rules it
 needs.
 
-The agent conditionally loads two focused guides:
+The agent conditionally loads three focused guides:
 
 - [references/interface-text.md](scoville-scribe-anti-ai-slop/references/interface-text.md)
   covers controls, CLI text, errors, notifications, accessible names, dynamic
@@ -146,6 +146,9 @@ The agent conditionally loads two focused guides:
 - [references/prose-patterns.md](scoville-scribe-anti-ai-slop/references/prose-patterns.md)
   covers manuals, articles, email, documentation, explanatory analysis,
   author voice, and source-near editing.
+- [references/fidelity-modes.md](scoville-scribe-anti-ai-slop/references/fidelity-modes.md)
+  covers summary, localization, source-exact, regulated, author-owned, and
+  variant-controlled transformations.
 
 ## Sources and inspirations
 
@@ -167,7 +170,7 @@ The agent conditionally loads two focused guides:
 ## Repository contents
 
 The installable `scoville-scribe-anti-ai-slop/` directory contains the core
-instruction file, two focused guides, and display metadata. This README, the
+instruction file, three focused guides, and display metadata. This README, the
 changelog, and the MIT license remain at the repository root and are not loaded
 as skill instructions. The repository contains no executable software, model
 requests, AI detector, or generated files.

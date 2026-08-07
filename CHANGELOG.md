@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-08-07: Progressive disclosure and fidelity routing
+
+### Changed
+
+- Added `references/fidelity-modes.md` for summary, localization, source-exact,
+  regulated, author-owned, and variant-controlled transformations.
+- Kept the universal truth floor, procedure integrity, family boundaries, and
+  route selectors in the core while moving conditional detail to its owner.
+- Clarified the boundaries between fixed insertion, structured records,
+  continuous prose, interface procedures, and fidelity transformations.
+- Shortened the frontmatter description without making sibling installation an
+  activation signal.
+- Kept a stepwise non-interface procedure Core-only unless it also requires
+  continuous explanation, interface behavior, or explicit prose-style work.
+
+### Validation
+
+- The canonical Agent Skill validator passes.
+- Seven focused standalone routing cases passed with `gpt-5.6-sol` at medium
+  reasoning, including Core-only procedure and fixed-insertion boundaries,
+  interface text, continuous prose, localization, source-exact text, and mixed
+  editorial/transactional segments.
+- The full UI/Code/Scribe composition and the explicit Scribe opt-out case
+  passed with only their required references.
+- Direct-reference, diff, encoding, and host-neutrality checks pass.
+
 ## 2026-08-06: Standalone structured-record terminology
 
 ### Changed

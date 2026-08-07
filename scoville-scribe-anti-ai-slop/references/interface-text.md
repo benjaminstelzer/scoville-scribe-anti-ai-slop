@@ -3,6 +3,15 @@
 Use this reference for reader-facing product text: GUI, CLI, installers, console
 or API errors, notifications, email, accessibility text, and metadata values.
 
+## Contents
+
+- Inspect the relevant project state
+- Preserve the runtime contract
+- Write for action and recovery
+- Preserve accessibility meaning
+- Compose with engineering and UI ownership
+- Verify the final strings
+
 ## Inspect the relevant project state
 
 Use the smallest targeted inspection that can answer the text decision. Check,
