@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-08-08: Optional Scoville Plan ownership
+
+### Changed
+
+- Assigned durable planning-record structure, ordering, lifecycle, and edit
+  permission to Scoville Plan when that sibling is independently applicable.
+- Preserved standalone Scribe behavior by deferring to an existing structured
+  record owner when Scoville Plan is absent or inapplicable.
+- Synchronized the interface-text contents list with its actual routed sections.
+
+### Validation
+
+- The canonical Agent Skill validator and repository diff checks pass.
+- Fable's complete standalone and family review found no P0 or P1 issue; its
+  remaining P2 interface-text navigation finding was corrected.
+- The tested repository copy and the locally installed Skill are byte-identical.
+
 ## 2026-08-07: Progressive disclosure and fidelity routing
 
 ### Changed

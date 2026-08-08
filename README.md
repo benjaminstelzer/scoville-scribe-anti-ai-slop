@@ -116,8 +116,9 @@ names exist and are associated. Scribe owns what those labels and names mean.
 
 Use [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) when the
 work needs durable project direction or writing is an independently resumable
-outcome. Plan owns Work Item boundaries and lifecycle; Scribe owns wording,
-meaning, and source fidelity.
+outcome. Plan owns record structure, ordering, Work Item and Decision lifecycle,
+and whether authored content may change; Scribe owns permitted wording,
+meaning, and source fidelity. Both Skills remain independently usable.
 
 For an error message in `errors.ts`, Code proves that the correct error reaches
 the user, UI verifies its placement and interaction context, and Scribe makes

@@ -6,11 +6,12 @@ or API errors, notifications, email, accessibility text, and metadata values.
 ## Contents
 
 - Inspect the relevant project state
-- Preserve the runtime contract
-- Write for action and recovery
-- Preserve accessibility meaning
-- Compose with engineering and UI ownership
-- Verify the final strings
+- Keep concepts and terms aligned
+- Describe the user-relevant state
+- Match wording to behavior
+- Preserve runtime and localization contracts
+- Cover non-visible interface text
+- Verify in context
 
 ## Inspect the relevant project state
 

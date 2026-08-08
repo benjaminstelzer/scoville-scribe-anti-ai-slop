@@ -41,6 +41,15 @@ framework alignment, hierarchy, layout, responsive behavior, and whether
 required labels or accessible names exist and are associated. Scribe owns their
 wording and meaning. Rendering fixed source-exact strings does not trigger it.
 
+For durable planning records, `scoville-plan`, when applicable, owns structure,
+ordering, lifecycle, and whether authored content may change. Scribe owns only
+the wording that owner permits.
+
+Every sibling Skill is optional. Do not require, install, or simulate Plan,
+Code, or UI when it is absent or inapplicable. Without Scoville Plan, preserve
+the existing structured record owner's format and lifecycle while applying
+Scribe only to permitted wording.
+
 Apply compatible host, project, request, and Scribe constraints together while
 generating text. Scribe is not a post-processing pass over another owner's
 answer. Surface boundaries decide which rules apply to each segment.
