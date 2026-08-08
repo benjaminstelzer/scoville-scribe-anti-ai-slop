@@ -114,6 +114,11 @@ when presentation or interaction also changes. UI owns framework alignment,
 hierarchy, layout, responsiveness, and whether required labels or accessible
 names exist and are associated. Scribe owns what those labels and names mean.
 
+Use [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) when the
+work needs durable project direction or writing is an independently resumable
+outcome. Plan owns Work Item boundaries and lifecycle; Scribe owns wording,
+meaning, and source fidelity.
+
 For an error message in `errors.ts`, Code proves that the correct error reaches
 the user, UI verifies its placement and interaction context, and Scribe makes
 the message factual, actionable, and consistent with the product vocabulary.
