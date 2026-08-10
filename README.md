@@ -62,17 +62,18 @@ For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
 `.claude/skills/` inside a repository for that project only. For other agents,
 consult their documentation; paths differ per agent.
 
-**Verify it works.** Ask the agent: *"This project calls the layout concept
-Padding. Rewrite the related UI label and help text, and mention that the
-internal Spacing tool is unavailable."* The result should retain `Padding` and
-omit the internal tool if users never knew it existed.
-
 **What it costs.** Compatible hosts expose compact discovery metadata before
 loading the full Skill instructions. After
 activation, the core loads first and selects interface text, continuous prose,
-and fidelity guidance only when the task needs them. Provider token usage also
-depends on the host and conversation. Compared with `v1.0.6`, the always-loaded
-core fell from 1,784 to 1,430 tokens (-19.84%). See
+and fidelity guidance only when the task needs them. Compared with
+pre-optimization `v1.0.6`, the always-loaded core fell from 1,784 to 1,430
+tokens (-19.84%). Activating any Skill adds instructions to the prompt and can
+use materially more tokens than
+working without one. That overhead buys stronger factual and semantic fidelity,
+terminology control, source-exact handling, and consistent reader-facing text.
+Use Scoville Scribe when those safeguards matter; leave it inactive for a small,
+fast writing task when minimizing token use matters more. Provider usage also
+depends on the host and conversation. See
 [the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
 
 ## What it enforces
@@ -190,8 +191,8 @@ requests, AI detector, or generated files.
 prioritize reliability before compression. Across the Scoville family, **797
 runs and supporting artifacts** were recorded, including **742 valid benchmark
 runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
-use **19.84% fewer tokens than v1.0.6**. Minimum executor: Terra 5.6 Medium or
-comparable, such as Opus 4.8. See
+use **19.84% fewer tokens than pre-optimization v1.0.6**. Minimum executor:
+Terra 5.6 Medium or comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
 
 ## License
