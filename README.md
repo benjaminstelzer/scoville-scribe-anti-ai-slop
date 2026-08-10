@@ -124,6 +124,10 @@ outcome. Plan owns record structure, ordering, Work Item and Decision lifecycle,
 and whether authored content may change; Scribe owns permitted wording,
 meaning, and source fidelity. Both Skills remain independently usable.
 
+Use [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff) to
+transfer the current writing state, source boundaries, decisions, evidence,
+and next safe action to another agent or session.
+
 For an error message in `errors.ts`, Code proves that the correct error reaches
 the user, UI verifies its placement and interaction context, and Scribe makes
 the message factual, actionable, and consistent with the product vocabulary.
@@ -188,9 +192,9 @@ requests, AI detector, or generated files.
 ## Status
 
 [Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
-prioritize reliability before compression. Across the Scoville family, **797
-runs and supporting artifacts** were recorded, including **742 valid benchmark
-runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
+prioritize reliability before compression. Across the five Scoville Skills,
+development recorded **1,019 optimization and evaluation runs**. This Skill
+passed **30/30** final cases. Its always-loaded instructions
 use **19.84% fewer tokens than pre-optimization v1.0.6**. Minimum executor:
 Terra 5.6 Medium or comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
