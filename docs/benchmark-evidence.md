@@ -45,6 +45,11 @@ These are literal executor-loaded Skill instruction tokens. Provider totals
 also include routing, generation, and cache behavior, so they are not used as
 the deterministic compression measure.
 
+For the public previous-release comparison, the always-loaded Core is measured
+directly with the same tokenizer: `v1.0.6` used 1,784 tokens and `v1.0.7` uses
+1,430, a reduction of 354 tokens (-19.84%). This comparison is separate from
+the reliability-matched benchmark control above.
+
 ## Reproducibility bindings
 
 - Promoted Core SHA-256:

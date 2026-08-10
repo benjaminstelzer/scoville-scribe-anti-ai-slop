@@ -71,7 +71,9 @@ omit the internal tool if users never knew it existed.
 loading the full Skill instructions. After
 activation, the core loads first and selects interface text, continuous prose,
 and fidelity guidance only when the task needs them. Provider token usage also
-depends on the host and conversation.
+depends on the host and conversation. Compared with `v1.0.6`, the always-loaded
+core fell from 1,784 to 1,430 tokens (-19.84%). See
+[the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
 
 ## What it enforces
 
@@ -184,16 +186,12 @@ requests, AI detector, or generated files.
 
 ## Status
 
-The installable directory passes the canonical Agent Skill validator. It was
-optimized with a project-local, reliability-first, token-saving extension of
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt): `gpt-5.6-sol` at
-`xhigh` handled optimization and routing, and `gpt-5.6-terra` at `medium`
-executed the frozen A/B benchmark. Across the four-Skill program, **797 run
-artifacts** were recorded, including **742 technically valid benchmark runs**,
-before the final packages were selected. This Skill passed **30/30** final
-Train, Validation, and sealed-Test cases and loaded **6.16% fewer Skill
-instruction tokens** than its paired control. Terra 5.6 Medium or a comparably
-capable executor such as Opus 4.8 is the minimum supported level. See
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
+prioritize reliability before compression. Across the Scoville family, **797
+runs and supporting artifacts** were recorded, including **742 valid benchmark
+runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
+use **19.84% fewer tokens than v1.0.6**. Minimum executor: Terra 5.6 Medium or
+comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
 
 ## License
