@@ -43,6 +43,7 @@ Usually, let your coding agent install the skill. Send it this prompt:
 ```text
 Install this Agent Skill from GitHub and make it available for my writing work:
 https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
+Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8; this is the minimum supported capability level for this Skill.
 ```
 
 Add "for all my projects" or "only for this project" when the installation
@@ -66,7 +67,8 @@ Padding. Rewrite the related UI label and help text, and mention that the
 internal Spacing tool is unavailable."* The result should retain `Padding` and
 omit the internal tool if users never knew it existed.
 
-**What it costs.** Skill discovery exposes only the name and description. After
+**What it costs.** Compatible hosts expose compact discovery metadata before
+loading the full Skill instructions. After
 activation, the core loads first and selects interface text, continuous prose,
 and fidelity guidance only when the task needs them. Provider token usage also
 depends on the host and conversation.
@@ -89,9 +91,8 @@ depends on the host and conversation.
   or judgment it was.
 - **Explanations explain.** When readers need the mechanism, Scribe supplies the
   causal link, a useful example or contrast, and the material boundary. It can
-  use visibly hypothetical counterexamples, preserves meaningful numeric
-  invariants, and accounts for every enumerated completion condition before
-  compressing a status.
+  use visibly hypothetical counterexamples and preserves meaningful numeric
+  invariants.
 - **The requested job stays the job.** An audit reports defects without silently
   rewriting them. An edit changes the narrowest real problem. A summary may
   omit detail, but it may not distort the claims it retains.
@@ -183,9 +184,17 @@ requests, AI detector, or generated files.
 
 ## Status
 
-The installable directory passes the canonical Agent Skill validator. The
-documented word costs match the current files. Scribe makes no claim that a
-style detector can identify authorship or that one voice fits every surface.
+The installable directory passes the canonical Agent Skill validator. It was
+optimized with a project-local, reliability-first, token-saving extension of
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt): `gpt-5.6-sol` at
+`xhigh` handled optimization and routing, and `gpt-5.6-terra` at `medium`
+executed the frozen A/B benchmark. Across the four-Skill program, **797 run
+artifacts** were recorded, including **742 technically valid benchmark runs**,
+before the final packages were selected. This Skill passed **30/30** final
+Train, Validation, and sealed-Test cases and loaded **6.16% fewer Skill
+instruction tokens** than its paired control. Terra 5.6 Medium or a comparably
+capable executor such as Opus 4.8 is the minimum supported level. See
+[benchmark evidence](docs/benchmark-evidence.md).
 
 ## License
 

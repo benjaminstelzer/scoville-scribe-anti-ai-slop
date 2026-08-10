@@ -1,172 +1,116 @@
 ---
 name: scoville-scribe-anti-ai-slop
-description: Guardrail for prose, fidelity, and reader-facing interface text. Use for drafting, editing, summarizing, localizing, source-exact work, or audits. Preserve facts, meaning, terms, behavior, schemas, attribution, and exact text. Excludes code semantics, machine data, and supplied-text insertion without a wording, fidelity, or interface judgment.
+description: Guardrail for prose, fidelity, and reader-facing interface text. Use for drafting, editing, summarizing, localizing, source-exact work, or audits. Preserve facts, meaning, terms, behavior, schemas, attribution, and exact text. Excludes code semantics, machine data, and uninvoked supplied-text insertion without a wording, fidelity, or interface judgment; explicit invocation keeps such insertion Core-only.
 ---
 
 # Scoville Scribe Anti-AI-Slop
 
-Treat prose slop as writing that looks finished while weakening the reader
-outcome: invented facts, shifted meaning, generic filler, inconsistent product
-terms, or interface text detached from product behavior.
+Write effective text without changing truth, meaning, canonical terms, or
+behavior, and without filler.
 
-On explicit opt-out, do not read references, use Skill-directed tools, change
-text, or make Skill-derived claims. If higher authority requires Scribe, report
-that exact conflict. A sibling opt-out excludes only that sibling.
+**Explicit opt-out:** load no references; use no Skill-directed tool; change no
+text; make no Skill-derived claim. Report higher-authority requirements to use
+Scribe. Sibling opt-out applies only to that sibling.
 
-## Resolve the governing sources
+For Source-exact extraction or reproduction, preserve the requested boundary
+and that span's whitespace and newline state. When markers occupy their own
+lines, the separator newline before the end marker is not part of the selected
+span unless the boundary explicitly includes it. For whole-file Source-exact or
+opt-out passthrough, use a byte-preserving API such as
+`[System.IO.File]::ReadAllText`, never `Get-Content`; serialize directly. Fixed
+insertion copies the supplied string exactly.
 
-Resolve each concern from the source that can answer it:
+## Resolve authority and scope
 
-- **Current truth:** verified current behavior and supplied factual sources.
-- **Target truth:** the explicitly requested final state when text changes with
-  behavior. Engineering evidence must verify that state before completion or
-  publication.
-- **Terminology:** explicit user terms, project glossary, shared strings, and
-  established usage for the same concept.
-- **Form:** explicit output requirements, house style, genuine voice samples,
-  and the conventions of the surface or genre.
+Resolve compatible host, project, request, and Scribe constraints per segment
+during writing:
 
-If these sources conflict materially, report the conflict instead of choosing
-convenient wording. Terminology never overrides behavior, and style precedent
-never authorizes a new claim.
+| Concern | Ordered authority |
+|---|---|
+| Current truth | Verified behavior; supplied facts |
+| Target truth | Engineering evidence before completion/publication |
+| Terms | Explicit user terms; glossaries; shared strings; established same-concept usage |
+| Form | Explicit requirements; house style; genuine voice samples; surface/genre conventions |
 
-This Skill works independently. For engineering artifacts,
-`scoville-code-anti-ai-slop`, when applicable, owns scope, canonical code,
-behavior verification, artifact changes, and validation. Scribe owns readable
-text and the smallest targeted read-only inspection of relevant terms and text
-surfaces. Reuse verified behavior; do not infer it from wording.
+Report material conflicts. Behavior outranks terms; facts outrank style. Resolve
+only output-affecting reader, allowed facts/claims, voice, language, genre, form,
+and integrity. Ask only when an unknown changes output materially.
 
-For interactive interfaces, `scoville-ui-anti-ai-slop`, when applicable, owns
-framework alignment, hierarchy, layout, responsive behavior, and whether
-required labels or accessible names exist and are associated. Scribe owns their
-wording and meaning. Rendering fixed source-exact strings does not trigger it.
+Scribe owns wording/meaning and minimal targeted read-only term/text inspection.
+Active sibling owners remain: Code—engineering scope, canonical code, mutation,
+behavior evidence, validation; UI—framework, hierarchy, layout, responsiveness,
+label/accessibility-name existence or association; Plan—durable-record structure, order,
+lifecycle, edit permission. Reuse evidence. Siblings are optional; never require,
+install, or simulate. Without Plan, preserve owner format/lifecycle and edit
+permitted wording only. Never infer behavior from copy. Fixed source-exact
+rendering does not trigger UI.
 
-For durable planning records, `scoville-plan`, when applicable, owns structure,
-ordering, lifecycle, and whether authored content may change. Scribe owns only
-the wording that owner permits.
+After safety and explicit constraints, serve the reader's required knowledge,
+decision, or action. Change text only for a binding request/convention, concrete
+defect, or that outcome. Match detail; include required causal links and
+boundaries, plus useful examples.
 
-Every sibling Skill is optional. Do not require, install, or simulate Plan,
-Code, or UI when it is absent or inapplicable. Without Scoville Plan, preserve
-the existing structured record owner's format and lifecycle while applying
-Scribe only to permitted wording.
+## Select mode and references per segment
 
-Apply compatible host, project, request, and Scribe constraints together while
-generating text. Scribe is not a post-processing pass over another owner's
-answer. Surface boundaries decide which rules apply to each segment.
+Route by the requested transformation and target surface. The universal
+integrity floor and comparison against facts, requirements, behavior, or a
+glossary do not themselves select Fidelity. Add Fidelity only for an explicit
+Fidelity operation below; combine routes only when each route independently
+triggers for the same segment.
 
-## Optimize for the reader outcome
+Selecting exact tokens from a structured requirements record is not
+Source-exact extraction/reproduction. A stepwise non-interface procedure stays
+Core-only unless explicit source-span extraction/reproduction, adaptation,
+material summary, localization, regulated or author-owned work, or a controlled
+variant independently triggers Fidelity.
 
-After safety and explicit constraints, optimize for what the reader must know,
-decide, or do. Facts, meaning, project language, and format constrain delivery;
-smooth prose substitutes for none of them.
+Report any requested route or profile from the selected references: none is
+`CORE_ONLY`; otherwise report exactly the selected routes in controller order.
 
-Change text only when the edit advances that outcome, fixes a concrete defect,
-or satisfies a binding request or project convention. Match the requested
-detail. Keep a direct instruction direct. For explanation, analysis, or teaching,
-include the causal link and the material boundary; use an example or contrast
-only when it makes the behavior more predictable.
+| Mode | Core rule |
+|---|---|
+| Fixed insertion | Fully supplied wording plus fixed structure, with no wording, fidelity, terminology, behavior, or interface judgment: insert and load no reference despite surface triggers. Extraction/reproduction is Source-exact. |
+| Structured grouping | Retain every enumerated item and unresolved lifecycle choice; load no reference. |
+| Draft | Use only permitted facts/claims. |
+| Edit | Make the smallest sufficient change. Claim-preserving rewrite is Edit. |
+| Audit | Report location, problem, reader effect, correction direction. Rewrite only if asked; follow the subject's route. |
 
-## Select the mode and route
+Reference routes:
 
-- **Fixed insertion:** Insert fully supplied wording into a fixed structure
-  core-only when no wording, fidelity, terminology, behavior, or interface
-  judgment is requested. This overrides later surface triggers; extraction or
-  reproduction from a source is Source-exact.
-- **Structured grouping:** Grouping enumerated decisions, proposals, or work
-  items while retaining every item and open lifecycle choice is core; load no
-  reference.
-- **Draft:** Write only from permitted facts and claims.
-- **Edit:** Make the smallest change that solves the observed problem.
-- **Audit:** Report location, problem, reader effect, and correction direction;
-  do not rewrite unless asked. An audit still follows the route for the subject
-  it evaluates.
-- **Fidelity-controlled:** Read
-  [fidelity-modes.md](references/fidelity-modes.md) before adapting, materially
-  summarizing, localizing, extracting or reproducing Source-exact text, auditing
-  any such result, creating a controlled variant, or drafting or editing
-  regulated or author-owned content. Fixed insertion and Structured grouping
-  remain core-only.
-- **Claim-preserving rewrite:** Changing wording or flow without changing claims
-  is an Edit. For continuous prose, read
-  [prose-patterns.md](references/prose-patterns.md), not the fidelity reference,
-  unless a Fidelity-controlled condition above applies.
+| Read | Before or for |
+|---|---|
+| [Fidelity](references/fidelity-modes.md) | Adaptation; material summary; localization; Source-exact extraction/reproduction; audits of those outputs; controlled variants; regulated or author-owned drafting/editing. Fixed insertion and Structured grouping remain core-only. |
+| [Interface](references/interface-text.md) | Writing, changing, auditing, or comparing any non-Fixed-insertion user-facing GUI/CLI string, error, notification, transactional message, accessible text, metadata, or behavior-bound procedure. Product-generated email uses Interface. Editorial, personal, and newsletter prose follows prose routing unless behavior-bound. User-facing localization also needs Fidelity. |
+| [Prose](references/prose-patterns.md) | Continuous prose; substantive record rationale; requested natural, human-sounding, or anti-slop writing. Use Prose instead of Fidelity for continuous claim-preserving rewrites unless Fidelity also triggers. Exclude format-owned fixed short records and behavior-bound interface procedures. A core-only stepwise non-interface procedure triggers Prose only for substantive continuous explanation or explicit natural/anti-slop requests. Audit prose claims with Prose unless Fidelity triggers. |
 
-Determine only the reader, permitted facts and claims, required voice, language,
-genre, form, and integrity constraints that can change the result. Ask only when
-a missing answer would produce materially different text.
+Classify mixed artifacts only far enough to route each segment correctly.
 
-One artifact can mix prose, interface strings, procedures, structured records,
-release notes, and exact or regulated text. Classify each segment only far enough
-to apply the correct route; do not force the whole artifact into one profile.
+## Preserve integrity
 
-Except for Fixed insertion, read
-[interface-text.md](references/interface-text.md) before writing, changing,
-auditing, or comparing any user-facing GUI or CLI string, error, notification,
-transactional message, accessible text, metadata, or behavior-bound procedure.
+Never invent or silently change: names; numbers, dates, units; links, citations;
+attribution, quotations, exact-text boundaries; schemas, technical terms;
+negation, modality, conditions, exceptions; first-person experience, identity,
+relationships, opinions, feelings; product capabilities, causes, guarantees,
+timelines, actions, or verified runtime behavior. Mark hypotheses/examples as
+hypothetical. Preserve unresolved deliberate ambiguity.
 
-Product-generated email uses the interface route; editorial, personal, or
-newsletter prose uses the prose route unless behavior-bound. Route mixed email
-per segment.
+Behavior-bound text states the supported current state. State a requested target
+only in its artifact, with engineering evidence owning the claim. Preserve
+procedure prerequisites, order, inputs, warnings, commands, placeholders, and
+expected results unless request or verified behavior changes them.
 
-Before localizing user-facing strings, read both
-[fidelity-modes.md](references/fidelity-modes.md) and
-[interface-text.md](references/interface-text.md).
+High-risk legal, medical, financial, safety, privacy, or publication claims need
+appropriate authoritative sources and qualified review; editing is neither.
 
-Read [prose-patterns.md](references/prose-patterns.md) for continuous prose,
-substantive rationale drafted inside a structured record, or requested natural,
-human-sounding, or anti-slop writing. Do not load it for a fixed short record
-whose format owns its wording or for a behavior-bound interface procedure owned
-by `interface-text.md`. Do not load it merely because a stepwise non-interface
-procedure contains prose; keep that route Core-only unless the task also requires
-substantive continuous explanation or explicitly requests natural or anti-slop
-writing.
+Preserve strong passages and demonstrated register. Never diagnose AI
+authorship, promise detector evasion, impose universal word, punctuation,
+sentence-length, or formatting bans, or vary canonical terms for style. Apply
+routine guidance silently; disclose only host-required non-obvious actions,
+pauses, scope changes, external effects, or material risk.
 
-## Protect the universal integrity floor
+## Complete
 
-Never invent or silently change:
-
-- names, numbers, dates, units, links, citations, or attribution;
-- quotations, technical terms, negation, modality, conditions, or exceptions;
-- first-person experience, feelings, opinions, relationships, or identity; or
-- product capabilities, causes, guarantees, timelines, available actions, or
-  verified runtime behavior.
-
-Keep hypotheses and examples visibly hypothetical. Preserve deliberate
-ambiguity when the evidence does not resolve it. For behavior-bound text,
-describe the supported current state; describe the requested target only when
-the artifact is explicitly about that target and engineering evidence can own
-the claim.
-
-In every procedure—manual, interface, or CLI—preserve prerequisites, sequence,
-inputs, warnings, commands, placeholders, and expected results unless verified
-behavior or the request changes them. A clearer sentence does not authorize a
-different operation.
-
-High-risk legal, medical, financial, safety, privacy, or publication claims
-require the appropriate authoritative source and qualified review. Editing
-cannot substitute for either.
-
-## Edit without manufacturing voice
-
-Preserve strong passages and the writer's demonstrated register. Do not
-diagnose AI authorship, promise detector evasion, or apply universal word,
-punctuation, sentence-length, or formatting bans. Fix a pattern because of its
-effect on this reader and genre, not its supposed origin. A canonical term stays
-canonical even when repetition is stylistically inconvenient.
-
-Apply routine Scribe guidance silently. Do not announce Skill use or narrate
-normal drafting, editing, or auditing. Follow the host's disclosure rules for
-non-obvious actions, pauses, scope changes, external effects, and material risk.
-
-## Verify and complete
-
-Before handing text back:
-
-1. confirm the reader can reach the intended outcome;
-2. recheck every integrity-floor item touched by the edit;
-3. confirm each segment follows its surface and fidelity route;
-4. confirm the requested language, format, length, and mode; and
-5. remove process commentary unless the user requested an audit or explanation.
-
-Report unresolved factual or project conflicts. Do not hide them inside smooth
-copy. When asked only to audit, do not edit.
+Before return, verify reader outcome, touched integrity items, each segment's
+surface/fidelity route, requested language/format/length/mode, and removal of
+unrequested process commentary. Report unresolved factual/project conflicts.
+Audit-only means no edit.

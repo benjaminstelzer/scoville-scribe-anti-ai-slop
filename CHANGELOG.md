@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-08-10: Reliability-qualified compression
+
+### Changed
+
+- Compressed the activated Core while preserving source fidelity, procedure
+  integrity, truthfulness, interface-text behavior, and routed prose guidance.
+- Sharpened procedure-specific routing so fixed insertion remains distinct from
+  interface work and general stepwise instructions.
+
+### Validation
+
+- The frozen paired benchmark passed Train 18/18, Validation 9/9, and sealed
+  Test 3/3 for both the reliability control and compressed package.
+- The compressed package passed all 30 cases across hard result, exact routing,
+  execution semantics, process, and efficiency, with provider usage, no route
+  retry, no shell call, and exact-once routed reads.
+- Executor-loaded Skill instructions fell from 67,931 to 63,746 tokens across
+  the 30 cases, a 6.16% reduction against the reliability-matched control.
+- The canonical Agent Skill validator passes. The benchmark used
+  `gpt-5.6-terra` at medium reasoning and does not establish equivalent
+  behavior on weaker executors or arbitrary tasks.
+
 ## 2026-08-08: Optional Scoville Plan ownership
 
 ### Changed
