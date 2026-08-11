@@ -10,7 +10,7 @@ behavior, and without filler.
 
 **Explicit opt-out:** load no references; use no Skill-directed tool; change no
 text; make no Skill-derived claim. Report higher-authority requirements to use
-Scribe. Sibling opt-out applies only to that sibling.
+Scribe.
 
 For Source-exact extraction or reproduction, preserve the requested boundary
 and that span's whitespace and newline state. When markers occupy their own
@@ -37,13 +37,15 @@ only output-affecting reader, allowed facts/claims, voice, language, genre, form
 and integrity. Ask only when an unknown changes output materially.
 
 Scribe owns wording/meaning and minimal targeted read-only term/text inspection.
-Active sibling owners remain: Code—engineering scope, canonical code, mutation,
-behavior evidence, validation; UI—framework, hierarchy, layout, responsiveness,
-label/accessibility-name existence or association; Plan—durable-record structure, order,
-lifecycle, edit permission. Reuse evidence. Siblings are optional; never require,
-install, or simulate. Without Plan, preserve owner format/lifecycle and edit
-permitted wording only. Never infer behavior from copy. Fixed source-exact
-rendering does not trigger UI.
+Family standalone: discovery != installed|active|applicable|required;
+absent|inactive => ignore/no require|install|simulate|reimplement;
+active+applicable => owner concern only, self continues; opt-out local. Owners:
+`scoville-brainstorm` divergence;
+`scoville-code-anti-ai-slop` engineering/proof; `scoville-ui-anti-ai-slop`
+interface/rendered proof; `scoville-plan` records/lifecycle;
+`scoville-handoff` transfer. Reuse sibling evidence; without Plan, preserve owner format/lifecycle
+and edit permitted wording only. Never infer behavior from copy. Fixed
+source-exact rendering does not trigger UI.
 
 After safety and explicit constraints, serve the reader's required knowledge,
 decision, or action. Change text only for a binding request/convention, concrete
@@ -52,17 +54,14 @@ boundaries, plus useful examples.
 
 ## Select mode and references per segment
 
-Route by the requested transformation and target surface. The universal
-integrity floor and comparison against facts, requirements, behavior, or a
-glossary do not themselves select Fidelity. Add Fidelity only for an explicit
-Fidelity operation below; combine routes only when each route independently
-triggers for the same segment.
+Route by the requested transformation and target surface. Neither the integrity
+floor nor comparison against facts, requirements, behavior, or a glossary
+selects Fidelity; add it only for an explicit Fidelity operation below. Combine
+routes only when each route independently triggers for the same segment.
 
 Selecting exact tokens from a structured requirements record is not
 Source-exact extraction/reproduction. A stepwise non-interface procedure stays
-Core-only unless explicit source-span extraction/reproduction, adaptation,
-material summary, localization, regulated or author-owned work, or a controlled
-variant independently triggers Fidelity.
+Core-only unless a Fidelity-row trigger independently applies.
 
 Report any requested route or profile from the selected references: none is
 `CORE_ONLY`; otherwise report exactly the selected routes in controller order.
@@ -79,7 +78,7 @@ Reference routes:
 
 | Read | Before or for |
 |---|---|
-| [Fidelity](references/fidelity-modes.md) | Adaptation; material summary; localization; Source-exact extraction/reproduction; audits of those outputs; controlled variants; regulated or author-owned drafting/editing. Fixed insertion and Structured grouping remain core-only. |
+| [Fidelity](references/fidelity-modes.md) | Adaptation; material summary; localization; Source-exact extraction/reproduction; audits of those outputs; controlled variants; regulated or author-owned drafting/editing. |
 | [Interface](references/interface-text.md) | Writing, changing, auditing, or comparing any non-Fixed-insertion user-facing GUI/CLI string, error, notification, transactional message, accessible text, metadata, or behavior-bound procedure. Product-generated email uses Interface. Editorial, personal, and newsletter prose follows prose routing unless behavior-bound. User-facing localization also needs Fidelity. |
 | [Prose](references/prose-patterns.md) | Continuous prose; substantive record rationale; requested natural, human-sounding, or anti-slop writing. Use Prose instead of Fidelity for continuous claim-preserving rewrites unless Fidelity also triggers. Exclude format-owned fixed short records and behavior-bound interface procedures. A core-only stepwise non-interface procedure triggers Prose only for substantive continuous explanation or explicit natural/anti-slop requests. Audit prose claims with Prose unless Fidelity triggers. |
 
@@ -95,7 +94,7 @@ timelines, actions, or verified runtime behavior. Mark hypotheses/examples as
 hypothetical. Preserve unresolved deliberate ambiguity.
 
 Behavior-bound text states the supported current state. State a requested target
-only in its artifact, with engineering evidence owning the claim. Preserve
+only in its artifact. Preserve
 procedure prerequisites, order, inputs, warnings, commands, placeholders, and
 expected results unless request or verified behavior changes them.
 
