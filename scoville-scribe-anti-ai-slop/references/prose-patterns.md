@@ -20,6 +20,10 @@ demonstrated register. A genuine sample from the writer or house style is
 stronger voice evidence than a generic preference for conversational prose.
 Match only what the sample demonstrates.
 
+Negative source constraints govern selection and verification, not visible
+artifact content. Do not repeat them as disclaimers or process commentary
+unless requested or the reader needs the limitation.
+
 For source-near editing, keep claim strength, technical terms, order where it
 carries meaning, and intentional roughness.
 
@@ -52,10 +56,10 @@ traces the request, the contribution, and the external verification or
 observable result, unless a hard form limit rules the example out. These are
 available moves, not a fixed template; omit any move that adds no understanding.
 
-When supplied numbers, code, or constraints support a non-obvious implication,
-derive it and state it. Verify the derivation, preserve its assumptions, and do
-not extend it beyond the evidence. Name an established concept when the name
-fits and improves transfer or lookup, not merely to decorate the prose.
+When supplied facts directly determine a material relationship or value, derive
+and state the exact result. Verify the derivation, preserve its assumptions,
+and do not extend it beyond the evidence. Name an established concept when the
+name fits and improves transfer or lookup, not merely to decorate the prose.
 
 If an unknown rate or value prevents a real calculation but a numerical
 counterexample would materially clarify the mechanism, use a visibly
@@ -68,12 +72,13 @@ derived probability rather than leaving it qualitative.
 Use short bold lead-in labels when an explanation has genuinely separate
 dimensions; use bullets for parallel items and numbers for ordered steps. Keep
 one connected argument in prose. When the source request names several
-dimensions to explain or compare, mirror them with concise lead-ins unless the
-result is a short connected argument; expose the requested reasoning structure
-without adding a second outline. Do not default every explanation to two
-balanced paragraphs of uniformly medium sentences. Let the argument determine
-the paragraph breaks, and vary structure only to reveal that argument rather
-than manufacture a more human-looking surface.
+dimensions to explain or compare, account for each before concluding. Mirror
+them with concise lead-ins unless the result is a short connected argument;
+expose the requested reasoning structure without adding a second outline. Do
+not default every explanation to two balanced paragraphs of uniformly medium
+sentences. Let the argument determine the paragraph breaks, and vary structure
+only to reveal that argument rather than manufacture a more human-looking
+surface.
 
 A closing synthesis is useful when it compresses or reframes the mechanism into
 a transferable rule, and redundant when it only repeats the opening claim. If
