@@ -2,6 +2,20 @@
 
 Better wording is useful. Better wording that quietly changes the facts is not.
 
+It usually looks harmless:
+
+- "May reduce latency" becomes "will improve performance." Smoother, stronger,
+  and no longer the same claim.
+- A product setting named `Padding` becomes `Spacing` because repetition felt
+  inelegant. The interface remains stubbornly literal.
+- A summary keeps the result but drops "only when the cache is warm," which was
+  the part keeping the result true.
+- An error tells the user to retry even though the product offers no retry.
+  Encouragement is not yet a control.
+
+That is writing slop: the prose gets cleaner while meaning, terminology, or
+behavior moves underneath it. The sentence is delighted. The product less so.
+
 Scoville Scribe is an Agent Skill for drafting, editing, summarizing,
 localizing, source-exact work, interface text, and prose audits. It preserves
 meaning, evidence, attribution, canonical terms, schemas, and behavior while
