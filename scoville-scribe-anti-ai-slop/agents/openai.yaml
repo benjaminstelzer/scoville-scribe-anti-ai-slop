@@ -1,4 +1,4 @@
 interface:
   display_name: "Scoville Scribe Anti-AI-Slop"
-  short_description: "Goal-first prose guardrail against AI writing slop"
+  short_description: "Better writing without quietly changing the facts"
   default_prompt: "Use $scoville-scribe-anti-ai-slop to deliver the intended reader outcome while preserving source meaning, factual claims, author voice, product terminology, and verified behavior."

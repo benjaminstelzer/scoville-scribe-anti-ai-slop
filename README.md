@@ -1,12 +1,13 @@
 # Scoville Scribe Anti-AI-Slop
 
-Improves the writing without quietly improving the facts into different facts.
+Better wording is useful. Better wording that quietly changes the facts is not.
 
 Scoville Scribe is an Agent Skill for drafting, editing, summarizing,
 localizing, source-exact work, interface text, and prose audits. It preserves
 meaning, evidence, attribution, canonical terms, schemas, and behavior while
 removing filler or fixing the requested wording problem. It does not own code
-semantics, layout, or durable planning structure.
+semantics, layout, or durable planning structure, no matter how persuasive the
+new sentence sounds.
 
 ## Why "Scoville"?
 
