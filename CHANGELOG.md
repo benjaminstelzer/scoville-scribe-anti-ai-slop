@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-08-11: Scoville Brainstorm sibling (v1.0.10)
+
+### Changed
+
+- Added Scoville Brainstorm to the optional family composition guide while
+  keeping ordinary wording and naming work under Scribe.
+- Added copy-ready editing, localization, and source-exact examples.
+- Reduced installation, cost, mechanism, and family documentation while
+  retaining the Scoville name rationale, sources, and benchmark evidence.
+- Added a family run ledger and reconciled the public total across all six
+  Scoville Skills.
+
 ## 2026-08-10: Scoville Handoff sibling
 
 ### Changed

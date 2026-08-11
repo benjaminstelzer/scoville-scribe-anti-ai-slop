@@ -1,203 +1,129 @@
 # Scoville Scribe Anti-AI-Slop
 
-Keeps the meaning. Cuts the slop.
+Improves the writing without quietly improving the facts into different facts.
 
-You ask an agent to improve a piece of writing. It returns something smoother
-and less true:
+Scoville Scribe is an Agent Skill for drafting, editing, summarizing,
+localizing, source-exact work, interface text, and prose audits. It preserves
+meaning, evidence, attribution, canonical terms, schemas, and behavior while
+removing filler or fixing the requested wording problem. It does not own code
+semantics, layout, or durable planning structure.
 
-- The project calls a setting `Padding`; the new help text calls it `Spacing`.
-- A tool was removed before release; the UI now tells users it is unavailable.
-- "I had enough information" becomes "I knew enough," changing evidence into
-  an inferred mental state.
-- A translated message loses its singular branch or a runtime value such as
-  `{fileName}`.
+## Why "Scoville"?
 
-That is prose slop: language work that looks finished but makes the text less
-useful or less true. Scoville Scribe is an Agent Skill for drafting, editing,
-auditing, adapting, localizing, and preserving source-exact text. It protects
-facts, source meaning, author voice, product vocabulary, and runtime text
-contracts. It does not diagnose AI authorship or promise detector evasion.
+The family is named for useful signal that survives dilution. In writing, the
+heat is the original meaning after smoothing, shortening, localization, and the
+occasional thesaurus have all had access to the sentence.
 
-It may improve a sentence. It does not get to improve what happened.
+## How to use
 
-## Why "Scoville Scribe"?
+Name Scoville Scribe when wording must improve without changing its factual or
+technical contract:
 
-The Scoville family is named for heat you can still detect after dilution.
-Scribe applies that idea to language: the useful signal should remain visible
-after an edit instead of disappearing under polished filler. Its version of
-seasoning is deliberately conservative. It may sharpen the sentence, but it
-does not swap the ingredients or rewrite the recipe card.
+```text
+Use Scoville Scribe to tighten this release note while preserving every claim, version number, condition, and uncertainty. Keep the existing product terminology.
+```
 
-`Scribe` describes the range. The skill can draft, edit, audit, adapt,
-localize, or preserve exact source text; it is not limited to marketing copy or
-long-form prose.
+```text
+Use Scoville Scribe to localize these interface strings into German. Preserve placeholders, access keys, ICU branches, and the distinction between labels, help text, and errors.
+```
+
+```text
+Use Scoville Scribe in Source-exact mode to extract the text between the named markers. Preserve the selected bytes and return nothing else.
+```
+
+Explicit `$scoville-scribe-anti-ai-slop` invocation also works on hosts that
+support named Skill invocation.
 
 ## Install
 
-Works with any coding agent that supports the Agent Skills format: a `SKILL.md`
-instruction file with its name and description at the top. Compatible agents
-include Claude Code and Codex.
-
-Usually, let your coding agent install the skill. Send it this prompt:
+Use an Agent Skills-compatible host and Terra 5.6 Medium or a comparably
+capable executor such as Opus 4.8. Ask the agent to install:
 
 ```text
-Install this Agent Skill from GitHub and make it available for my writing work:
+Install this Agent Skill and refresh the available Skill list:
 https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
-Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8; this is the minimum supported capability level for this Skill.
+Keep the installed directory name scoville-scribe-anti-ai-slop. Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8.
 ```
 
-Add "for all my projects" or "only for this project" when the installation
-scope matters. The agent should choose its supported skills directory, install
-the skill directory under the unchanged name
-`scoville-scribe-anti-ai-slop`, and refresh its skill list.
+The final path must end in
+`<skills-dir>/scoville-scribe-anti-ai-slop/SKILL.md`. For Claude Code, use
+`~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
+hosts use their supported Skills directory.
 
-If your agent cannot install skills itself, copy the repository's
-`scoville-scribe-anti-ai-slop/` directory so the final path is:
-
-```text
-<skills-dir>/scoville-scribe-anti-ai-slop/SKILL.md
-```
-
-For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
-`.claude/skills/` inside a repository for that project only. For other agents,
-consult their documentation; paths differ per agent.
-
-**What it costs.** Compatible hosts expose compact discovery metadata before
-loading the full Skill instructions. After
-activation, the core loads first and selects interface text, continuous prose,
-and fidelity guidance only when the task needs them. Compared with
-pre-optimization `v1.0.6`, the always-loaded core fell from 1,784 to 1,430
-tokens (-19.84%). Activating any Skill adds instructions to the prompt and can
-use materially more tokens than
-working without one. That overhead buys stronger factual and semantic fidelity,
-terminology control, source-exact handling, and consistent reader-facing text.
-Use Scoville Scribe when those safeguards matter; leave it inactive for a small,
-fast writing task when minimizing token use matters more. Provider usage also
-depends on the host and conversation. See
-[the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
+**What it costs.** The 1,430-token Core is 19.84% smaller than `v1.0.6`;
+interface, prose, and fidelity guidance loads only when needed. The added
+context buys factual fidelity, terminology control, and source-exact handling.
+Use it for consequential or behavior-bound text; skip it for a disposable
+draft when token use matters more. See
+[benchmark evidence](docs/benchmark-evidence.md).
+The [family run ledger](docs/optimization-history.md) shows the complete count.
 
 ## What it enforces
 
-- **The facts survive the edit.** Numbers, quotations, conditions, attribution,
-  events, and the difference between `can`, `should`, and `must` retain their
-  meaning. Smoother wording does not strengthen the evidence.
-- **The product keeps its vocabulary.** A setting named `Padding` does not
-  become `Spacing` because the thesaurus was feeling helpful.
-- **Interface text describes the product users have.** Labels, help, and errors
-  explain available actions and current behavior. An unreleased tool does not
-  need an obituary in the UI.
-- **Working messages stay working.** String keys, placeholders, ICU branches,
-  access keys, keyboard shortcuts, accessible names, and localization contracts
-  survive the rewrite.
-- **The author still means what they wrote.** Strong passages stay. Edits
-  preserve what the author claimed, how certain they were, and whose experience
-  or judgment it was.
-- **Explanations explain.** When readers need the mechanism, Scribe supplies the
-  causal link, a useful example or contrast, and the material boundary. It can
-  use visibly hypothetical counterexamples and preserves meaningful numeric
-  invariants.
-- **The requested job stays the job.** An audit reports defects without silently
-  rewriting them. An edit changes the narrowest real problem. A summary may
-  omit detail, but it may not distort the claims it retains.
+- **Facts survive the edit.** Numbers, quotations, conditions, attribution,
+  modality, and uncertainty keep their meaning.
+- **Canonical terms stay canonical.** A setting named `Padding` does not become
+  `Spacing` because the thesaurus was feeling helpful.
+- **Working strings keep working.** Placeholders, ICU branches, access keys,
+  shortcuts, schemas, and accessible names retain their contracts.
+- **Behavior-bound text stays true.** Interface labels, help, errors, and
+  procedures describe supported behavior rather than desired fiction.
+- **The author's position survives.** Voice may improve without inventing
+  certainty, experience, identity, or conclusions.
+- **The requested operation stays narrow.** An audit reports; an edit changes
+  the smallest real defect; Source-exact output remains exact.
 
-The full rules live in
+The complete contract is in
 [SKILL.md](scoville-scribe-anti-ai-slop/SKILL.md).
 
-## Use with the Scoville family
+## How it works
 
-Scribe works independently. When companion Skills are installed, combine them
-only for the concerns they own.
+The Core resolves truth, terminology, audience, and requested transformation
+per segment. It then loads only the Interface, Prose, or Fidelity guide needed
+for that segment. Runtime behavior can establish truth, a glossary can settle
+terminology, and a voice sample can guide form; none is allowed to moonlight as
+the other two.
 
-Use [Scoville Code Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
-when text belongs to a codebase or engineering change. Code owns engineering
-scope, canonical implementation, and behavior verification; Scribe owns the
-reader-facing words.
+## Scoville family
 
-Use [Scoville UI Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
-when presentation or interaction also changes. UI owns framework alignment,
-hierarchy, layout, responsiveness, and whether required labels or accessible
-names exist and are associated. Scribe owns what those labels and names mean.
+Each Skill works independently. Combine only the concerns the task actually
+needs:
 
-Use [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) when the
-work needs durable project direction or writing is an independently resumable
-outcome. Plan owns record structure, ordering, Work Item and Decision lifecycle,
-and whether authored content may change; Scribe owns permitted wording,
-meaning, and source fidelity. Both Skills remain independently usable.
-
-Use [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff) to
-transfer the current writing state, source boundaries, decisions, evidence,
-and next safe action to another agent or session.
-
-For an error message in `errors.ts`, Code proves that the correct error reaches
-the user, UI verifies its placement and interaction context, and Scribe makes
-the message factual, actionable, and consistent with the product vocabulary.
-
-Installing Scribe makes it available to the host's skill system. A host that
-does not automatically use it for ordinary conversation can receive a standing
-project instruction to apply `$scoville-scribe-anti-ai-slop` to user-facing
-communication. That instruction selects the installed skill; it is not a
-second copy of the skill rules. Documents, emails, and interface text still
-follow their own source, audience, genre, and technical constraints.
-
-## Design
-
-Scribe resolves three separate questions from the source that can answer each
-one: Is the text true? Does it use the project's established terms? Does it fit
-the requested form and voice? Running behavior can establish truth but cannot
-choose an authorial voice. A glossary can settle `Padding` versus `Spacing` but
-cannot make a false status message true.
-
-The rules apply per segment rather than forcing a whole artifact into one
-profile. A settings page can contain a heading, explanation, button, error,
-runtime placeholder, and accessible name. Each segment keeps the rules it
-needs.
-
-The agent conditionally loads three focused guides:
-
-- [references/interface-text.md](scoville-scribe-anti-ai-slop/references/interface-text.md)
-  covers controls, CLI text, errors, notifications, accessible names, dynamic
-  messages, and descriptive metadata.
-- [references/prose-patterns.md](scoville-scribe-anti-ai-slop/references/prose-patterns.md)
-  covers manuals, articles, email, documentation, explanatory analysis,
-  author voice, and source-near editing.
-- [references/fidelity-modes.md](scoville-scribe-anti-ai-slop/references/fidelity-modes.md)
-  covers summary, localization, source-exact, regulated, author-owned, and
-  variant-controlled transformations.
-
-## Sources and inspirations
-
-- [W3C Understanding SC 2.5.3: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name)
-  for the relationship between visible control text and accessible names.
-- [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/)
-  for selector branches, runtime values, and localization contracts.
-- [Microsoft Writing Style Guide: Use technical terms carefully](https://learn.microsoft.com/en-us/style-guide/word-choice/use-technical-terms-carefully)
-  for consistent product terminology.
-- [Reinhart et al., Do LLMs write like humans?](https://doi.org/10.1073/pnas.2422455122)
-  and [Wang et al., Catch Me If You Can? Not Yet](https://aclanthology.org/2025.findings-emnlp.532/)
-  for instruction-following and style-imitation limits.
-- [Microsoft Writing Style Guide: Em dashes](https://learn.microsoft.com/en-us/style-guide/punctuation/dashes-hyphens/)
-  for context-sensitive punctuation rather than blanket bans.
-- [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop) for
-  reader-first editing and skepticism toward authorship claims based on word
-  lists.
-
-## Repository contents
-
-The installable `scoville-scribe-anti-ai-slop/` directory contains the core
-instruction file, three focused guides, and display metadata. This README, the
-changelog, and the MIT license remain at the repository root and are not loaded
-as skill instructions. The repository contains no executable software, model
-requests, AI detector, or generated files.
+- [Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm) explores
+  materially different mechanisms before selection.
+- [Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop) owns
+  engineering scope, implementation, risk, and validation.
+- [UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop) owns
+  interface hierarchy, framework fit, accessibility, and rendered evidence.
+- [Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop) owns
+  wording, terminology, factual meaning, and source fidelity.
+- [Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable Plans,
+  Work Items, Decisions, and lifecycle state.
+- [Handoff](https://github.com/benjaminstelzer/scoville-handoff) transfers active
+  work to another agent or session.
 
 ## Status
 
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
-prioritize reliability before compression. Across the five Scoville Skills,
-development recorded **1,019 optimization and evaluation runs**. This Skill
-passed **30/30** final cases. Its always-loaded instructions
-use **19.84% fewer tokens than pre-optimization v1.0.6**. Minimum executor:
-Terra 5.6 Medium or comparable, such as Opus 4.8. See
+A reliability-first extension of
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) tested the six
+Scoville Skills across **1,201 optimization and evaluation runs**. Scoville
+Scribe passed **30/30 final cases** and its always-loaded instructions use
+**19.84% fewer tokens than v1.0.6**. See
 [benchmark evidence](docs/benchmark-evidence.md).
+
+## Sources
+
+- [W3C Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name)
+  for visible control text and accessible names.
+- [ICU MessageFormat](https://unicode-org.github.io/icu/userguide/format_parse/messages/)
+  for selector branches, runtime values, and localization contracts.
+- [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/word-choice/use-technical-terms-carefully)
+  for consistent product terminology.
+- [Reinhart et al.](https://doi.org/10.1073/pnas.2422455122) and
+  [Wang et al.](https://aclanthology.org/2025.findings-emnlp.532/) for limits of
+  LLM style imitation and authorship inference.
+- [Peter Yang's no-ai-slop](https://github.com/petergyang/no-ai-slop) for
+  reader-first editing and skepticism toward word-list detectors.
 
 ## License
 
