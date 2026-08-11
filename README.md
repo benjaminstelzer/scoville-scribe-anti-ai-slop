@@ -65,10 +65,10 @@ The final path must end in
 `~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
 hosts use their supported Skills directory.
 
-**What it costs.** The 1,430-token Core is 19.84% smaller than `v1.0.6`;
-interface, prose, and fidelity guidance loads only when needed. The added
+**What it costs.** The 1,430-token Core is 19.84% smaller than `v1.0.6`.
+Interface, prose, and fidelity guidance loads only when needed. The added
 context buys factual fidelity, terminology control, and source-exact handling.
-Use it for consequential or behavior-bound text; skip it for a disposable
+Use it for consequential or behavior-bound text. Skip it for a disposable
 draft when token use matters more. See
 [benchmark evidence](docs/benchmark-evidence.md).
 The [family run ledger](docs/optimization-history.md) shows the complete count.
@@ -85,8 +85,8 @@ The [family run ledger](docs/optimization-history.md) shows the complete count.
   procedures describe supported behavior rather than desired fiction.
 - **The author's position survives.** Voice may improve without inventing
   certainty, experience, identity, or conclusions.
-- **The requested operation stays narrow.** An audit reports; an edit changes
-  the smallest real defect; Source-exact output remains exact.
+- **The requested operation stays narrow.** An audit reports. An edit changes
+  the smallest real defect. Source-exact output remains exact.
 
 The complete contract is in
 [SKILL.md](scoville-scribe-anti-ai-slop/SKILL.md).
@@ -96,7 +96,7 @@ The complete contract is in
 The Core resolves truth, terminology, audience, and requested transformation
 per segment. It then loads only the Interface, Prose, or Fidelity guide needed
 for that segment. Runtime behavior can establish truth, a glossary can settle
-terminology, and a voice sample can guide form; none is allowed to moonlight as
+terminology, and a voice sample can guide form. None is allowed to moonlight as
 the other two.
 
 ## Scoville family
