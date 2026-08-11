@@ -46,6 +46,33 @@
         "Include each record's identifier or title and practical effect.",
         "Ask for the required user choices without assuming one fixed lifecycle or repeating setup narration."
       ]
+    },
+    {
+      "id": "summary-with-derived-retry-window",
+      "given": "Summarize a retry change from 240 milliseconds and 8 attempts to 120 milliseconds and 16 attempts as change, expected effect, and remaining risk. Functional tests pass, but CPU cost on very large pages is unmeasured.",
+      "expect": [
+        "Activate Scribe and load Fidelity summary guidance plus Prose when explanatory quality is variable.",
+        "State that the maximum retry window remains exactly 1.92 seconds rather than implying that it became longer.",
+        "Separate the denser retry cadence and faster possible detection from the unmeasured CPU risk."
+      ]
+    },
+    {
+      "id": "service-copy-with-negative-source-constraints",
+      "given": "Write 70 to 90 words from three allowed services while treating company age, guarantees, awards, fixed delivery times, and service area as unsupported facts.",
+      "expect": [
+        "Activate Scribe and load Prose guidance.",
+        "Use only the allowed services and introduce no unsupported quality claim.",
+        "Keep the negative source constraints out of the visible service copy rather than restating them as a disclaimer or process note."
+      ]
+    },
+    {
+      "id": "technical-collaboration-capabilities-and-limits",
+      "given": "Explain what makes a language model useful to a technically sophisticated user despite errors and lack of first-hand experience, naming both capabilities and clear limits.",
+      "expect": [
+        "Activate Scribe and load Prose guidance.",
+        "Account for both requested dimensions before concluding: useful capabilities and clear limits.",
+        "Carry a representative technical example from the model's contribution through executable or observable verification without presenting the proposed analysis as proof."
+      ]
     }
   ]
 }

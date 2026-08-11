@@ -26,6 +26,10 @@ test cannot stand in for an unverified condition. Preserve numbers, units,
 denominators, comparison arms, time windows, and sample limits that change how a
 result should be interpreted.
 
+When supplied facts directly determine a material relationship or value needed
+to interpret the summary, derive and state the exact result rather than
+reducing it to a qualitative approximation.
+
 Adapt voice, order, and detail to the target surface only after the claim set is
 fixed. When a hard length limit forces a material omission, identify the omitted
 claim rather than quietly weakening it.

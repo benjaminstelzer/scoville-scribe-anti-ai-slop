@@ -1,5 +1,44 @@
 # Changelog
 
+## 2026-08-11: Reference-level reasoning and constraint fidelity (v1.0.15)
+
+### Changed
+
+- Updated the Prose reference to cover every explicitly requested explanatory
+  dimension, state exact material results directly determined by supplied
+  facts, and keep negative source constraints out of visible artifact content.
+- Updated the Fidelity summary rules to derive and state exact material
+  relationships or values needed to interpret a summary.
+- Added repository-owned evaluation cases for exact derived summary values,
+  invisible negative source constraints, and evidence-bound technical examples.
+
+### Validation
+
+- `quick_validate.py` accepted the installable Skill package, and
+  `git diff --check` passed.
+- A fresh routed Q30/Q31/Q38 regression run stated the unchanged 1.92-second
+  retry window, kept the 70-word service text free of negative source
+  constraints, and carried the technical collaboration example through to
+  reproducible evidence and measurement.
+- The JSONL trace confirmed that the Prose and Fidelity references were read
+  and that no prior audit, memory, or web source was accessed.
+- The historical 30/30 qualification and recorded package-tree hashes describe
+  the previously qualified package. No new full benchmark is claimed for this
+  reference-only patch.
+
+## 2026-08-11: Simpler README punctuation (v1.0.14)
+
+### Changed
+
+- Updated public README punctuation to avoid em dashes and semicolons without
+  changing the Skill package or behavioral contract.
+
+### Validation
+
+- Only `README.md` changed in the release commit.
+- The tracked README contained neither an em dash nor a semicolon after the
+  edit; local Markdown links and `git diff --check` passed.
+
 ## 2026-08-11: Concrete slop examples (v1.0.13)
 
 ### Changed
