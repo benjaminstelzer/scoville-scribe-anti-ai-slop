@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "suite": "task-scoped-routing-v1",
+  "frozen_on": "2026-08-24",
+  "objective": "Verify that the candidate removes unnecessary Scribe activation while retaining the minimum Scoville owners for representative specialist tasks.",
+  "conditions": ["no_skill", "current", "candidate"],
+  "run_order": "casewise_no_skill_current_candidate",
+  "repetitions_per_case_condition": 1,
+  "interpretation": "Read counts and model calls are mechanism evidence. Wall-clock latency is observational only because each cell runs once.",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "host": {
+    "codex_cli_version": "0.148.0",
+    "codex_cli_sha256": "2ad2cf8a732da68b8f141634f92db1a03016c5faf533a7225fbc0fb740130410",
+    "model_catalog_sha256": "f74cb2af4aaf4c8c5d32a8ca9a6717a26540461ed08712decc6442dfdbbd5d14",
+    "broker_runner_sha256": "7d703766c85842f67b01077088645ef7ee8a57cd61c1343745f6938b080ce69e",
+    "eval_broker_sha256": "5616ac0c2e0beb23a680af223b6304404752b0131dc8b537942ff8ec15b4757a"
+  },
+  "prompt_hashes": {
+    "current": "2e034cba5d40a8cdd6c455df62cba90417f43b50c8c5ba3bc97d610ec78532e5",
+    "candidate": "23d2fb6bc06cd1ad68af05e2a4cb8391971219dd936d3d1c5a7411acb2cad899"
+  },
+  "package_tree_hashes": {
+    "current_scribe": "06992b0f7875b861a6a86415dbd0f376d4ae196b0abd6ade969d60a7fa838dcf",
+    "candidate_scribe": "ff47be8cf6a04bc3ae31605627be6f1ed6d16ce84a68bedebb5a8b82093eab17",
+    "code": "9e284e092b16054e9877ddfceb5636e0daf2c3cb6e2629b78606843e4e222688",
+    "ui": "c6f23aa478a1d6cec19dd6600e598f67718eae0edeed4ddfdba4878e365b4fd4",
+    "research": "5a8524ae2ef71bb7f277717255791648b5c560a15eef19ea9209a7da453de540",
+    "plan": "dddbb586fc41c4ed27bdd1784ab7aee22dfc25b0335bb514f12f04e380d4e49a",
+    "handoff": "4bd05127ef2ff02245843056b1f1d53750644d92421104a19dd467c3a0ece75a",
+    "brainstorm": "9255e359be64a3e31b8f98459e14f55d1582315c72dceb0f527603013a84d090"
+  },
+  "isolation": {
+    "ambient_skills": "discovered and disabled",
+    "memory": false,
+    "shell": false,
+    "network": false,
+    "browser": false,
+    "writes": false,
+    "user_config": false,
+    "project_rules": false,
+    "no_skill_arm": "candidate prompt with an empty Scoville catalog and no read_skill tool"
+  },
+  "measurement": {
+    "catalog_exposure": "catalog entries in the run prompt",
+    "core_read": "successful scoville_eval.read_skill call whose logical_id ends in /SKILL.md",
+    "reference_read": "successful scoville_eval.read_skill call below /references/",
+    "attempted_or_failed_read": "started or failed read_skill event",
+    "retry": "repeated tool attempt after a failure",
+    "tool_turn": "completed MCP tool call item",
+    "provider_model_call": "turn.completed usage event",
+    "latency": "monotonic wall time around the isolated Codex process"
+  },
+  "cache": {
+    "provider_mode": "automatic",
+    "record_fields": ["input_tokens", "cached_input_tokens", "output_tokens", "reasoning_output_tokens"],
+    "claim_limit": "No causal latency or billed-cost claim from one repetition."
+  },
+  "timeout_seconds_per_run": 600,
+  "open_development_cases": [],
+  "sealed_adoption_cases": [
+    "ordinary-technical-explanation",
+    "requested-source-summary",
+    "domain-code-review",
+    "ui-implementation-new-copy",
+    "research-answer",
+    "plan-record",
+    "handoff-record"
+  ],
+  "gates": {
+    "candidate_quality": "final JSON exactly matches the frozen expected object",
+    "candidate_routing": "required cores and Scribe references are read exactly once and no unselected Core is read",
+    "ordinary_conversation": "zero Scoville reads",
+    "delivery": "exit zero with provider usage and no failed or unexpected tool call",
+    "resource": "candidate ordinary-conversation Core and reference reads must be lower than current without a candidate quality failure",
+    "adoption": "all seven candidate cells pass every gate"
+  }
+}

@@ -16,12 +16,13 @@ It usually looks harmless:
 That is writing slop: the prose gets cleaner while meaning, terminology, or
 behavior moves underneath it. The sentence is delighted. The product less so.
 
-Scoville Scribe is an Agent Skill for drafting, editing, summarizing,
-localizing, source-exact work, interface text, and prose audits. It preserves
+Scoville Scribe is an Agent Skill for requested text artifacts and
+transformations: drafting, editing, rewriting, summarizing supplied sources,
+localizing, source-exact work, interface text, and wording audits. It preserves
 meaning, evidence, attribution, canonical terms, schemas, and behavior while
-removing filler or fixing the requested wording problem. It does not own code
-semantics, layout, or durable planning structure, no matter how persuasive the
-new sentence sounds.
+removing filler or fixing the requested wording problem. Ordinary answers,
+explanations, status updates, and domain results stay with the host or their
+domain owner; merely containing prose is not an activation signal.
 
 ## Why "Scoville"?
 
@@ -65,11 +66,12 @@ The final path must end in
 `~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
 hosts use their supported Skills directory.
 
-**What it costs.** The 1,430-token Core is 19.84% smaller than `v1.0.6`.
-Interface, prose, and fidelity guidance loads only when needed. The added
-context buys factual fidelity, terminology control, and source-exact handling.
-Use it for consequential or behavior-bound text. Skip it for a disposable
-draft when token use matters more. See
+**What it costs.** Activating Scribe loads its Core and then only the Interface,
+Prose, or Fidelity guidance required by the artifact. That context buys factual
+fidelity, terminology control, and source-exact handling. Ordinary conversation
+does not activate Scribe; use the Skill when wording itself is the deliverable
+or transformation target. Historical token measurements remain bound to their
+qualified package versions. See
 [benchmark evidence](docs/benchmark-evidence.md).
 The [family run ledger](docs/optimization-history.md) shows the complete count.
 
@@ -93,11 +95,11 @@ The complete contract is in
 
 ## How it works
 
-The Core resolves truth, terminology, audience, and requested transformation
-per segment. It then loads only the Interface, Prose, or Fidelity guide needed
-for that segment. Runtime behavior can establish truth, a glossary can settle
-terminology, and a voice sample can guide form. None is allowed to moonlight as
-the other two.
+The Skill description first keeps ordinary conversation and domain-owned normal
+results out of Scribe. Once an artifact or transformation activates the Core,
+it resolves truth, terminology, audience, and requested transformation per
+segment, then loads only the Interface, Prose, or Fidelity guide needed for
+that segment. Chat delivery alone neither activates nor suppresses Scribe.
 
 ## Scoville family
 
@@ -121,12 +123,18 @@ needs:
 
 ## Status
 
-A reliability-first extension of
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) tested the six
-Scoville Skills across **1,201 optimization and evaluation runs**. Scoville
-Scribe passed **30/30 final cases** and its always-loaded instructions use
-**19.84% fewer tokens than v1.0.6**. See
+Historical qualification used a reliability-first extension of
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) across **1,201
+optimization and evaluation runs** for the six Scoville Skills. The previous
+Scribe package passed **30/30 final cases** and reduced its loaded Core by
+**19.84% from v1.0.6**. Those results remain evidence for the exact historical
+package, not for the changed activation contract. See
 [benchmark evidence](docs/benchmark-evidence.md).
+
+The changed activation contract passed its focused static and composed routing
+gates. The evaluation does not claim a measured token or latency reduction;
+the corrected ordinary comparison loaded no Skill in either condition. See the
+[task-scoped routing qualification](docs/evaluations/task-scoped-routing-v1/README.md).
 
 ## Sources
 

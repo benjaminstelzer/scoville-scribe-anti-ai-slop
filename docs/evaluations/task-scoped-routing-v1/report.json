@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "suite": "task-scoped-routing-v1",
+  "status": "reject",
+  "interpretation": "Read counts and model calls are mechanism evidence. Wall-clock latency is observational only because each cell runs once.",
+  "gates": {
+    "candidate_all_combined": false,
+    "ordinary_candidate_zero_reads": true,
+    "ordinary_reads_lower_than_current": false
+  },
+  "conditions": {
+    "no_skill": {
+      "calls": 7,
+      "quality_passes": 7,
+      "routing_passes": 7,
+      "delivery_passes": 7,
+      "combined_passes": 7,
+      "core_reads": 0,
+      "scribe_reference_reads": 0,
+      "provider_total_tokens": 130808,
+      "uncached_input_tokens": 74656,
+      "output_tokens": 856,
+      "elapsed_seconds_median": 45.962
+    },
+    "current": {
+      "calls": 7,
+      "quality_passes": 1,
+      "routing_passes": 1,
+      "delivery_passes": 7,
+      "combined_passes": 1,
+      "core_reads": 8,
+      "scribe_reference_reads": 3,
+      "provider_total_tokens": 245647,
+      "uncached_input_tokens": 115221,
+      "output_tokens": 2938,
+      "elapsed_seconds_median": 55.946
+    },
+    "candidate": {
+      "calls": 7,
+      "quality_passes": 6,
+      "routing_passes": 6,
+      "delivery_passes": 7,
+      "combined_passes": 6,
+      "core_reads": 8,
+      "scribe_reference_reads": 3,
+      "provider_total_tokens": 251569,
+      "uncached_input_tokens": 107508,
+      "output_tokens": 2237,
+      "elapsed_seconds_median": 53.171
+    }
+  },
+  "runs": [
+    {
+      "run_id": "001-ordinary-technical-explanation--no_skill",
+      "condition": "no_skill",
+      "case_id": "ordinary-technical-explanation",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18508,
+        "cached_input_tokens": 11264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_output_tokens": 10,
+        "uncached_input_tokens": 7244,
+        "provider_total_tokens": 18592
+      },
+      "elapsed_seconds": 65.865,
+      "summary_sha256": "267d5a27081546a129deeb0bfbc56a7384c01db1f7ffafbe973452bda90cd1e3"
+    },
+    {
+      "run_id": "002-ordinary-technical-explanation--current",
+      "condition": "current",
+      "case_id": "ordinary-technical-explanation",
+      "combined_pass": false,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 20863,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 191,
+        "reasoning_output_tokens": 87,
+        "uncached_input_tokens": 8575,
+        "provider_total_tokens": 21054
+      },
+      "elapsed_seconds": 48.451,
+      "summary_sha256": "96371d68d6c6acd0cfb2e7d59536f30764d8154dfa5a08b1b14efae80df1e8ff"
+    },
+    {
+      "run_id": "003-ordinary-technical-explanation--candidate",
+      "condition": "candidate",
+      "case_id": "ordinary-technical-explanation",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 20988,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 120,
+        "reasoning_output_tokens": 27,
+        "uncached_input_tokens": 8700,
+        "provider_total_tokens": 21108
+      },
+      "elapsed_seconds": 48.029,
+      "summary_sha256": "1c0e555a0e4e5d10457a4ea8ac6ed41b7bcfb800d20d5c262ea9b935f330fa11"
+    },
+    {
+      "run_id": "004-requested-source-summary--no_skill",
+      "condition": "no_skill",
+      "case_id": "requested-source-summary",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18649,
+        "cached_input_tokens": 11264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 161,
+        "reasoning_output_tokens": 89,
+        "uncached_input_tokens": 7385,
+        "provider_total_tokens": 18810
+      },
+      "elapsed_seconds": 45.962,
+      "summary_sha256": "c9184a656872770ecde2504ec7673c44171384175350c88e23ac102574d89a9b"
+    },
+    {
+      "run_id": "005-requested-source-summary--current",
+      "condition": "current",
+      "case_id": "requested-source-summary",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-scribe-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [
+        "scoville-scribe-anti-ai-slop/references/fidelity-modes.md",
+        "scoville-scribe-anti-ai-slop/references/prose-patterns.md"
+      ],
+      "usage": {
+        "input_tokens": 42218,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 498,
+        "reasoning_output_tokens": 265,
+        "uncached_input_tokens": 23274,
+        "provider_total_tokens": 42716
+      },
+      "elapsed_seconds": 55.946,
+      "summary_sha256": "adfef329093d6b32d5b188f4d699a973b16947c74bd2b23ad2c115e6efe99d9c"
+    },
+    {
+      "run_id": "006-requested-source-summary--candidate",
+      "condition": "candidate",
+      "case_id": "requested-source-summary",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-scribe-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [
+        "scoville-scribe-anti-ai-slop/references/fidelity-modes.md",
+        "scoville-scribe-anti-ai-slop/references/prose-patterns.md"
+      ],
+      "usage": {
+        "input_tokens": 43210,
+        "cached_input_tokens": 32256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 456,
+        "reasoning_output_tokens": 199,
+        "uncached_input_tokens": 10954,
+        "provider_total_tokens": 43666
+      },
+      "elapsed_seconds": 53.171,
+      "summary_sha256": "b6b6480f625f74202ddd2a1eace9a0b24a1f9839b9f8e7ed63113e1fe4e0c88c"
+    },
+    {
+      "run_id": "007-domain-code-review--no_skill",
+      "condition": "no_skill",
+      "case_id": "domain-code-review",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18536,
+        "cached_input_tokens": 11264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 110,
+        "reasoning_output_tokens": 36,
+        "uncached_input_tokens": 7272,
+        "provider_total_tokens": 18646
+      },
+      "elapsed_seconds": 45.083,
+      "summary_sha256": "3c0ae45ba290ddecb50dd42adb3d491d6fd1808b0f6693c325ec87b9e5a062db"
+    },
+    {
+      "run_id": "008-domain-code-review--current",
+      "condition": "current",
+      "case_id": "domain-code-review",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-code-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 41305,
+        "cached_input_tokens": 20992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 366,
+        "reasoning_output_tokens": 78,
+        "uncached_input_tokens": 20313,
+        "provider_total_tokens": 41671
+      },
+      "elapsed_seconds": 55.668,
+      "summary_sha256": "18013a6ab3e17c8b1023255de2ffc047cad211a229814d84dbcde45d978ad15b"
+    },
+    {
+      "run_id": "009-domain-code-review--candidate",
+      "condition": "candidate",
+      "case_id": "domain-code-review",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-code-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 41488,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 345,
+        "reasoning_output_tokens": 162,
+        "uncached_input_tokens": 13840,
+        "provider_total_tokens": 41833
+      },
+      "elapsed_seconds": 54.828,
+      "summary_sha256": "069edb514ce6485a4807a8bb4dc84e33aee58083c1a23177954cb8af009f60b9"
+    },
+    {
+      "run_id": "010-ui-implementation-new-copy--no_skill",
+      "condition": "no_skill",
+      "case_id": "ui-implementation-new-copy",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18612,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_output_tokens": 72,
+        "uncached_input_tokens": 18612,
+        "provider_total_tokens": 18756
+      },
+      "elapsed_seconds": 47.28,
+      "summary_sha256": "37dc40136f33701ce2168f6132926684b6594a26e8f0b09f3dcfde1ec0632295"
+    },
+    {
+      "run_id": "011-ui-implementation-new-copy--current",
+      "condition": "current",
+      "case_id": "ui-implementation-new-copy",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-code-anti-ai-slop/SKILL.md",
+        "scoville-scribe-anti-ai-slop/SKILL.md",
+        "scoville-ui-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [
+        "scoville-scribe-anti-ai-slop/references/interface-text.md"
+      ],
+      "usage": {
+        "input_tokens": 48455,
+        "cached_input_tokens": 31744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 695,
+        "reasoning_output_tokens": 290,
+        "uncached_input_tokens": 16711,
+        "provider_total_tokens": 49150
+      },
+      "elapsed_seconds": 61.241,
+      "summary_sha256": "ea31c806150dac829e9f4951d499558bc9a9bedb39d36a263ec3cd5a8f18bbbe"
+    },
+    {
+      "run_id": "012-ui-implementation-new-copy--candidate",
+      "condition": "candidate",
+      "case_id": "ui-implementation-new-copy",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-code-anti-ai-slop/SKILL.md",
+        "scoville-scribe-anti-ai-slop/SKILL.md",
+        "scoville-ui-anti-ai-slop/SKILL.md"
+      ],
+      "scribe_reference_reads": [
+        "scoville-scribe-anti-ai-slop/references/interface-text.md"
+      ],
+      "usage": {
+        "input_tokens": 53624,
+        "cached_input_tokens": 26112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 694,
+        "reasoning_output_tokens": 269,
+        "uncached_input_tokens": 27512,
+        "provider_total_tokens": 54318
+      },
+      "elapsed_seconds": 61.402,
+      "summary_sha256": "65177fea0b2e5bae24a2135625391a4b0d4547dc80f2a4f1455d52cc5b66c6e8"
+    },
+    {
+      "run_id": "013-research-answer--no_skill",
+      "condition": "no_skill",
+      "case_id": "research-answer",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18546,
+        "cached_input_tokens": 11264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 116,
+        "reasoning_output_tokens": 42,
+        "uncached_input_tokens": 7282,
+        "provider_total_tokens": 18662
+      },
+      "elapsed_seconds": 44.041,
+      "summary_sha256": "0402adcde1f331c48f92c8cce82aa4362787a26f38b46f402907d1f4369a145f"
+    },
+    {
+      "run_id": "014-research-answer--current",
+      "condition": "current",
+      "case_id": "research-answer",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-research/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 30082,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 385,
+        "reasoning_output_tokens": 184,
+        "uncached_input_tokens": 11138,
+        "provider_total_tokens": 30467
+      },
+      "elapsed_seconds": 58.448,
+      "summary_sha256": "a20878e6a26b61a5d46f50c9946b222d32ae9f676d1987785143a8188f1cd8ad"
+    },
+    {
+      "run_id": "015-research-answer--candidate",
+      "condition": "candidate",
+      "case_id": "research-answer",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-research/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 29989,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 175,
+        "reasoning_output_tokens": 62,
+        "uncached_input_tokens": 11045,
+        "provider_total_tokens": 30164
+      },
+      "elapsed_seconds": 43.519,
+      "summary_sha256": "0c06a6f87f973a23eabefb842ce3710537696885b445dcddba7522b8a3f7df16"
+    },
+    {
+      "run_id": "016-plan-record--no_skill",
+      "condition": "no_skill",
+      "case_id": "plan-record",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18558,
+        "cached_input_tokens": 4608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123,
+        "reasoning_output_tokens": 50,
+        "uncached_input_tokens": 13950,
+        "provider_total_tokens": 18681
+      },
+      "elapsed_seconds": 46.966,
+      "summary_sha256": "f6f686c98aa21d51d74db8adeaeb62db57b50f9fa6953f63e6b5ea9fd3980d2b"
+    },
+    {
+      "run_id": "017-plan-record--current",
+      "condition": "current",
+      "case_id": "plan-record",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-plan/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 30362,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 532,
+        "reasoning_output_tokens": 333,
+        "uncached_input_tokens": 18074,
+        "provider_total_tokens": 30894
+      },
+      "elapsed_seconds": 57.517,
+      "summary_sha256": "2a44ca2acb652ed66740a5353265dd93e41a7cedc81afda36e3c7824ce647839"
+    },
+    {
+      "run_id": "018-plan-record--candidate",
+      "condition": "candidate",
+      "case_id": "plan-record",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-plan/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 30495,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 252,
+        "reasoning_output_tokens": 113,
+        "uncached_input_tokens": 18207,
+        "provider_total_tokens": 30747
+      },
+      "elapsed_seconds": 48.39,
+      "summary_sha256": "429e0525f32d79d4f40204ad27a12c2e4ecc97ddbb0c0567fbcdd6760e4bf1c8"
+    },
+    {
+      "run_id": "019-handoff-record--no_skill",
+      "condition": "no_skill",
+      "case_id": "handoff-record",
+      "combined_pass": true,
+      "core_reads": [],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 18543,
+        "cached_input_tokens": 5632,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 118,
+        "reasoning_output_tokens": 46,
+        "uncached_input_tokens": 12911,
+        "provider_total_tokens": 18661
+      },
+      "elapsed_seconds": 42.203,
+      "summary_sha256": "942e51eb26816eaa3ef947b76e53b5f27bae00d66d99033fe8d9ca1092528ac8"
+    },
+    {
+      "run_id": "020-handoff-record--current",
+      "condition": "current",
+      "case_id": "handoff-record",
+      "combined_pass": false,
+      "core_reads": [
+        "scoville-handoff/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 29424,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 271,
+        "reasoning_output_tokens": 73,
+        "uncached_input_tokens": 17136,
+        "provider_total_tokens": 29695
+      },
+      "elapsed_seconds": 53.152,
+      "summary_sha256": "31c11967c2db9ff0728c63cd8dce927f954eee5946bc688a77aeb64afd52663c"
+    },
+    {
+      "run_id": "021-handoff-record--candidate",
+      "condition": "candidate",
+      "case_id": "handoff-record",
+      "combined_pass": true,
+      "core_reads": [
+        "scoville-handoff/SKILL.md"
+      ],
+      "scribe_reference_reads": [],
+      "usage": {
+        "input_tokens": 29538,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 195,
+        "reasoning_output_tokens": 60,
+        "uncached_input_tokens": 17250,
+        "provider_total_tokens": 29733
+      },
+      "elapsed_seconds": 60.783,
+      "summary_sha256": "76c4e66841c887becc96ecade8e7992eb43e08d5207cbd3fce159a9aa63dafc8"
+    }
+  ]
+}

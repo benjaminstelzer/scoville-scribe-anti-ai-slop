@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "ordinary-technical-explanation",
+      "scenario": "The user asks for an ordinary technical explanation of why a retry loop behaves as observed and what would prove the diagnosis. The wording is not intended for reuse.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-scribe-anti-ai-slop"], "scribe_references": ["references/prose-patterns.md"]},
+        "candidate": {"skills": [], "scribe_references": []}
+      }
+    },
+    {
+      "id": "requested-source-summary",
+      "scenario": "The user supplies a retry change and asks for a reusable report summary covering change, effect, and remaining risk.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-scribe-anti-ai-slop"], "scribe_references": ["references/fidelity-modes.md", "references/prose-patterns.md"]},
+        "candidate": {"skills": ["scoville-scribe-anti-ai-slop"], "scribe_references": ["references/fidelity-modes.md", "references/prose-patterns.md"]}
+      }
+    },
+    {
+      "id": "domain-code-review",
+      "scenario": "The user asks to review a patch for correctness and return actionable findings without drafting a separate publication artifact.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-code-anti-ai-slop", "scoville-scribe-anti-ai-slop"], "scribe_references": ["references/prose-patterns.md"]},
+        "candidate": {"skills": ["scoville-code-anti-ai-slop"], "scribe_references": []}
+      }
+    },
+    {
+      "id": "ui-implementation-new-copy",
+      "scenario": "The user asks to implement a responsive UI and formulate its labels, help text, and recovery error.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-code-anti-ai-slop", "scoville-ui-anti-ai-slop", "scoville-scribe-anti-ai-slop"], "scribe_references": ["references/interface-text.md"]},
+        "candidate": {"skills": ["scoville-code-anti-ai-slop", "scoville-ui-anti-ai-slop", "scoville-scribe-anti-ai-slop"], "scribe_references": ["references/interface-text.md"]}
+      }
+    },
+    {
+      "id": "research-answer",
+      "scenario": "The user asks for current source-backed research and a decision-ready recommendation but not a separately constrained report artifact.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-research", "scoville-scribe-anti-ai-slop"], "scribe_references": ["references/prose-patterns.md"]},
+        "candidate": {"skills": ["scoville-research"], "scribe_references": []}
+      }
+    },
+    {
+      "id": "plan-record",
+      "scenario": "The user asks to create a durable implementation Plan with Work Items and Decisions but does not independently request wording polish.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-plan", "scoville-scribe-anti-ai-slop"], "scribe_references": ["references/prose-patterns.md"]},
+        "candidate": {"skills": ["scoville-plan"], "scribe_references": []}
+      }
+    },
+    {
+      "id": "handoff-record",
+      "scenario": "The user explicitly asks for a compact continuation handoff to a new session without a separate wording request.",
+      "expected": {
+        "no_skill": {"skills": [], "scribe_references": []},
+        "current": {"skills": ["scoville-handoff", "scoville-scribe-anti-ai-slop"], "scribe_references": []},
+        "candidate": {"skills": ["scoville-handoff"], "scribe_references": []}
+      }
+    }
+  ]
+}

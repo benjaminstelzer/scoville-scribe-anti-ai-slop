@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "run_id": "004-requested-source-summary--no_skill",
+  "ordinal": 4,
+  "case_id": "requested-source-summary",
+  "condition": "no_skill",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "expected": {
+    "skills": [],
+    "scribe_references": []
+  },
+  "catalog": [],
+  "prompt_sha256": "813dbe83cb50059d5114e4a935e49eee93abe5ce33dda72495915f5a910f4952",
+  "case_sha256": "e3ecd7d223b69491ea92f195b8a1d01d9e12fabd13d8d6d85edb18d5b92a76a7",
+  "model_catalog_sha256": "9dd255c3c5f59e5fe9cacfb32d5d676d6a4ae0b3711147990b36d0fbd6219477",
+  "configured_skill_files": []
+}

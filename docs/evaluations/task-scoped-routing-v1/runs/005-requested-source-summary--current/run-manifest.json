@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_id": "005-requested-source-summary--current",
+  "ordinal": 5,
+  "case_id": "requested-source-summary",
+  "condition": "current",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "expected": {
+    "skills": [
+      "scoville-scribe-anti-ai-slop"
+    ],
+    "scribe_references": [
+      "references/fidelity-modes.md",
+      "references/prose-patterns.md"
+    ]
+  },
+  "catalog": [
+    "scoville-brainstorm",
+    "scoville-code-anti-ai-slop",
+    "scoville-handoff",
+    "scoville-plan",
+    "scoville-research",
+    "scoville-scribe-anti-ai-slop",
+    "scoville-ui-anti-ai-slop"
+  ],
+  "prompt_sha256": "4a818cf10e2011df93f5cf1e7d0b2381f2633949157091b45e37bcef6e2e2e2d",
+  "case_sha256": "e3ecd7d223b69491ea92f195b8a1d01d9e12fabd13d8d6d85edb18d5b92a76a7",
+  "model_catalog_sha256": "47e5707dae2b49abdcb66cf0fee242565c426e8ce64f49d072271726cfdf3b8d",
+  "configured_skill_files": [
+    "scoville-brainstorm/SKILL.md",
+    "scoville-brainstorm/references/research-composition.md",
+    "scoville-code-anti-ai-slop/SKILL.md",
+    "scoville-code-anti-ai-slop/references/change-workflow.md",
+    "scoville-code-anti-ai-slop/references/planning-and-decisions.md",
+    "scoville-code-anti-ai-slop/references/validation.md",
+    "scoville-handoff/SKILL.md",
+    "scoville-plan/SKILL.md",
+    "scoville-plan/references/native-decision-batches.md",
+    "scoville-plan/references/native-decision-format.md",
+    "scoville-plan/references/native-editing.md",
+    "scoville-plan/references/native-plan-format.md",
+    "scoville-plan/references/native-project-lifecycle.md",
+    "scoville-plan/references/native-work-items.md",
+    "scoville-plan/references/planning-granularity.md",
+    "scoville-plan/references/profile-validation.md",
+    "scoville-plan/references/read-only.md",
+    "scoville-research/SKILL.md",
+    "scoville-research/references/academic-research.md",
+    "scoville-research/references/brainstorm-composition.md",
+    "scoville-research/references/deep-research.md",
+    "scoville-research/references/development-research.md",
+    "scoville-scribe-anti-ai-slop/SKILL.md",
+    "scoville-scribe-anti-ai-slop/references/fidelity-modes.md",
+    "scoville-scribe-anti-ai-slop/references/interface-text.md",
+    "scoville-scribe-anti-ai-slop/references/prose-patterns.md",
+    "scoville-ui-anti-ai-slop/SKILL.md",
+    "scoville-ui-anti-ai-slop/references/framework-alignment.md",
+    "scoville-ui-anti-ai-slop/references/ui-quality.md",
+    "scoville-ui-anti-ai-slop/references/validation.md"
+  ]
+}

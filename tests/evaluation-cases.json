@@ -15,16 +15,16 @@
       "id": "substantive-decision-rationale",
       "given": "A proposed decision record needs a clear technical choice, consequences, and revisit condition.",
       "expect": [
-        "Activate Scribe for substantive rationale and factual meaning.",
-        "Preserve the record's canonical format owner.",
-        "Load prose-pattern guidance only if continuous prose quality is actually variable."
+        "Do not activate Scribe for the domain owner's normal Decision record.",
+        "Preserve the record's canonical format owner and required rationale fields.",
+        "Add Scribe only when substantive wording or fidelity is independently requested."
       ]
     },
     {
       "id": "short-format-owned-work-item",
       "given": "A structured project work item already supplies its format's exact outcome, acceptance, evidence, and next-action fields and only needs format-preserving insertion.",
       "expect": [
-        "Do not load the continuous-prose reference.",
+        "Do not activate Scribe or load the continuous-prose reference.",
         "Preserve the canonical labels, order, and supplied wording.",
         "Do not narrate Skill routing or reference selection."
       ]
@@ -42,6 +42,7 @@
       "id": "grouped-proposals",
       "given": "Three coherent proposed decision records need explicit user lifecycle choices.",
       "expect": [
+        "Do not activate Scribe for the domain owner's normal proposal report.",
         "Report the three proposals once as one compact set.",
         "Include each record's identifier or title and practical effect.",
         "Ask for the required user choices without assuming one fixed lifecycle or repeating setup narration."
@@ -69,9 +70,45 @@
       "id": "technical-collaboration-capabilities-and-limits",
       "given": "Explain what makes a language model useful to a technically sophisticated user despite errors and lack of first-hand experience, naming both capabilities and clear limits.",
       "expect": [
-        "Activate Scribe and load Prose guidance.",
+        "Do not activate Scribe or load Prose for an ordinary technical explanation.",
         "Account for both requested dimensions before concluding: useful capabilities and clear limits.",
-        "Carry a representative technical example from the model's contribution through executable or observable verification without presenting the proposed analysis as proof."
+        "Keep the quality checks under the host system prompt rather than treating the explanation as a reusable artifact."
+      ]
+    },
+    {
+      "id": "reusable-chat-artifact",
+      "given": "Write a customer-facing announcement in chat for later copying and publication.",
+      "expect": [
+        "Activate Scribe and load Prose guidance.",
+        "Treat explicit reuse and publication intent as artifact signals even though delivery is in chat.",
+        "Use only permitted facts and produce copy-ready prose."
+      ]
+    },
+    {
+      "id": "domain-code-review-without-copy-task",
+      "given": "Review a patch for correctness and return actionable findings without drafting a separate publication artifact.",
+      "expect": [
+        "Do not activate Scribe.",
+        "Keep implementation evidence and findings under the engineering owner.",
+        "Do not add Scribe merely because findings use prose."
+      ]
+    },
+    {
+      "id": "artifact-follow-up-and-conversation-pivot",
+      "given": "After drafting an announcement, first shorten it while preserving every claim, then explain why one qualifier had to remain.",
+      "expect": [
+        "Reactivate Scribe with Prose and Fidelity for the follow-up transformation.",
+        "Do not carry Scribe into the later ordinary explanation.",
+        "Classify the two segments independently."
+      ]
+    },
+    {
+      "id": "explicit-scribe-opt-out",
+      "given": "Write a disposable draft but explicitly do not use Scoville Scribe.",
+      "expect": [
+        "Load no Scribe Core or reference.",
+        "Use the host's compact fallback behavior.",
+        "Keep the opt-out local to the current task."
       ]
     }
   ]

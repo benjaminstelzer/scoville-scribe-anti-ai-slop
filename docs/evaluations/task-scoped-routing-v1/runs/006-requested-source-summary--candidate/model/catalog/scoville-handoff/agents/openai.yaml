@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scoville Handoff"
+  short_description: "Transfer active work safely to another AI session."
+  default_prompt: "Use $scoville-handoff to create a copy-ready continuation prompt for this active task."

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "run_id": "001-ordinary-technical-explanation--no_skill",
+  "ordinal": 1,
+  "case_id": "ordinary-technical-explanation",
+  "condition": "no_skill",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "expected": {
+    "skills": [],
+    "scribe_references": []
+  },
+  "catalog": [],
+  "prompt_sha256": "813dbe83cb50059d5114e4a935e49eee93abe5ce33dda72495915f5a910f4952",
+  "case_sha256": "9926270774bab85c62a296439adabfd161fa5130f6ae13f8afa582ba70e7790c",
+  "model_catalog_sha256": "9dd255c3c5f59e5fe9cacfb32d5d676d6a4ae0b3711147990b36d0fbd6219477",
+  "configured_skill_files": []
+}

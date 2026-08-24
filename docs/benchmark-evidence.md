@@ -1,5 +1,10 @@
 # Scoville Scribe benchmark evidence
 
+The qualification below remains historical evidence for the exact package and
+Core hashes recorded in this document. It does not qualify the unreleased
+task-scoped artifact-activation contract introduced on 2026-08-24; that change
+requires a new, separately named routing and resource qualification.
+
 ## Final reliability-first qualification
 
 The promoted package is the candidate from

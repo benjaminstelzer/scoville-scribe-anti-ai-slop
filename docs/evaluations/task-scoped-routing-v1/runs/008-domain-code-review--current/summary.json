@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "run_id": "008-domain-code-review--current",
+  "ordinal": 8,
+  "case_id": "domain-code-review",
+  "condition": "current",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "expected": {
+    "skills": [
+      "scoville-code-anti-ai-slop",
+      "scoville-scribe-anti-ai-slop"
+    ],
+    "scribe_references": [
+      "references/prose-patterns.md"
+    ]
+  },
+  "catalog": [
+    "scoville-brainstorm",
+    "scoville-code-anti-ai-slop",
+    "scoville-handoff",
+    "scoville-plan",
+    "scoville-research",
+    "scoville-scribe-anti-ai-slop",
+    "scoville-ui-anti-ai-slop"
+  ],
+  "prompt_sha256": "4a818cf10e2011df93f5cf1e7d0b2381f2633949157091b45e37bcef6e2e2e2d",
+  "case_sha256": "546b42220fdfbb2cb349e082d9e5ab6971e4b793dd2421d8e6acd67d165d9f8a",
+  "model_catalog_sha256": "47e5707dae2b49abdcb66cf0fee242565c426e8ce64f49d072271726cfdf3b8d",
+  "configured_skill_files": [
+    "scoville-brainstorm/SKILL.md",
+    "scoville-brainstorm/references/research-composition.md",
+    "scoville-code-anti-ai-slop/SKILL.md",
+    "scoville-code-anti-ai-slop/references/change-workflow.md",
+    "scoville-code-anti-ai-slop/references/planning-and-decisions.md",
+    "scoville-code-anti-ai-slop/references/validation.md",
+    "scoville-handoff/SKILL.md",
+    "scoville-plan/SKILL.md",
+    "scoville-plan/references/native-decision-batches.md",
+    "scoville-plan/references/native-decision-format.md",
+    "scoville-plan/references/native-editing.md",
+    "scoville-plan/references/native-plan-format.md",
+    "scoville-plan/references/native-project-lifecycle.md",
+    "scoville-plan/references/native-work-items.md",
+    "scoville-plan/references/planning-granularity.md",
+    "scoville-plan/references/profile-validation.md",
+    "scoville-plan/references/read-only.md",
+    "scoville-research/SKILL.md",
+    "scoville-research/references/academic-research.md",
+    "scoville-research/references/brainstorm-composition.md",
+    "scoville-research/references/deep-research.md",
+    "scoville-research/references/development-research.md",
+    "scoville-scribe-anti-ai-slop/SKILL.md",
+    "scoville-scribe-anti-ai-slop/references/fidelity-modes.md",
+    "scoville-scribe-anti-ai-slop/references/interface-text.md",
+    "scoville-scribe-anti-ai-slop/references/prose-patterns.md",
+    "scoville-ui-anti-ai-slop/SKILL.md",
+    "scoville-ui-anti-ai-slop/references/framework-alignment.md",
+    "scoville-ui-anti-ai-slop/references/ui-quality.md",
+    "scoville-ui-anti-ai-slop/references/validation.md"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 55.668,
+  "attempted_skill_reads": [
+    "scoville-code-anti-ai-slop/SKILL.md",
+    "scoville-code-anti-ai-slop/references/change-workflow.md"
+  ],
+  "successful_skill_reads": [
+    "scoville-code-anti-ai-slop/SKILL.md",
+    "scoville-code-anti-ai-slop/references/change-workflow.md"
+  ],
+  "core_reads": [
+    "scoville-code-anti-ai-slop/SKILL.md"
+  ],
+  "scribe_reference_reads": [],
+  "tool_failures": [],
+  "tool_turns": 3,
+  "provider_model_calls": 1,
+  "usage": {
+    "input_tokens": 41305,
+    "cached_input_tokens": 20992,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 366,
+    "reasoning_output_tokens": 78,
+    "uncached_input_tokens": 20313,
+    "provider_total_tokens": 41671
+  },
+  "final_json": {
+    "skills": [
+      "scoville-code-anti-ai-slop"
+    ],
+    "scribe_references": []
+  },
+  "quality_pass": false,
+  "routing_pass": false,
+  "delivery_pass": true,
+  "combined_pass": false,
+  "rollout_sha256": "568b87c70b00b8cd60cb1b44f8109382884fc66bc9504dea19ce19fdf567fa6f",
+  "final_sha256": "ab99bfeffa1bb23a75049a2763d2599765c834294e1ef50a0e8103aff18b806f"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "suite": "task-scoped-routing-v1-correction",
+  "status": "adopt",
+  "comparative_resource_claim": "unproven",
+  "gates": {
+    "ordinary_candidate": true,
+    "ordinary_comparison": false,
+    "ui_candidate": true
+  },
+  "runs": [
+    {
+      "run_id": "001-ordinary-real--current",
+      "combined_pass": true,
+      "reads": [],
+      "usage": {
+        "input_tokens": 20718,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 122,
+        "reasoning_output_tokens": 33,
+        "uncached_input_tokens": 8430,
+        "provider_total_tokens": 20840
+      },
+      "elapsed_seconds": 46.72,
+      "summary_sha256": "69f6c2709fadc2a9a23e51cc97c1a566b0e23661006652c0f983a0cdcbcfc1b4"
+    },
+    {
+      "run_id": "002-ordinary-real--candidate",
+      "combined_pass": true,
+      "reads": [],
+      "usage": {
+        "input_tokens": 20849,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 108,
+        "reasoning_output_tokens": 18,
+        "uncached_input_tokens": 8561,
+        "provider_total_tokens": 20957
+      },
+      "elapsed_seconds": 44.078,
+      "summary_sha256": "20d50ce9f2f09eb437588287ab37a75287a9a8e8ce7743b4a2c9ec47d3c089bb"
+    },
+    {
+      "run_id": "003-ui-order--candidate",
+      "combined_pass": true,
+      "reads": [
+        "scoville-code-anti-ai-slop/SKILL.md",
+        "scoville-scribe-anti-ai-slop/SKILL.md",
+        "scoville-ui-anti-ai-slop/SKILL.md",
+        "scoville-scribe-anti-ai-slop/references/interface-text.md"
+      ],
+      "usage": {
+        "input_tokens": 49325,
+        "cached_input_tokens": 31744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 688,
+        "reasoning_output_tokens": 393,
+        "uncached_input_tokens": 17581,
+        "provider_total_tokens": 50013
+      },
+      "elapsed_seconds": 61.357,
+      "summary_sha256": "f46de41b17524e0c289c05f9450fb68421ca826f2f7293d1b16ce473f683b733"
+    }
+  ]
+}

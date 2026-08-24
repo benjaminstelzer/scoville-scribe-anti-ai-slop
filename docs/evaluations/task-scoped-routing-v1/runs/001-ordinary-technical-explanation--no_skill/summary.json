@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "run_id": "001-ordinary-technical-explanation--no_skill",
+  "ordinal": 1,
+  "case_id": "ordinary-technical-explanation",
+  "condition": "no_skill",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "expected": {
+    "skills": [],
+    "scribe_references": []
+  },
+  "catalog": [],
+  "prompt_sha256": "813dbe83cb50059d5114e4a935e49eee93abe5ce33dda72495915f5a910f4952",
+  "case_sha256": "9926270774bab85c62a296439adabfd161fa5130f6ae13f8afa582ba70e7790c",
+  "model_catalog_sha256": "9dd255c3c5f59e5fe9cacfb32d5d676d6a4ae0b3711147990b36d0fbd6219477",
+  "configured_skill_files": [],
+  "exit_code": 0,
+  "elapsed_seconds": 65.865,
+  "attempted_skill_reads": [],
+  "successful_skill_reads": [],
+  "core_reads": [],
+  "scribe_reference_reads": [],
+  "tool_failures": [],
+  "tool_turns": 1,
+  "provider_model_calls": 1,
+  "usage": {
+    "input_tokens": 18508,
+    "cached_input_tokens": 11264,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 84,
+    "reasoning_output_tokens": 10,
+    "uncached_input_tokens": 7244,
+    "provider_total_tokens": 18592
+  },
+  "final_json": {
+    "skills": [],
+    "scribe_references": []
+  },
+  "quality_pass": true,
+  "routing_pass": true,
+  "delivery_pass": true,
+  "combined_pass": true,
+  "rollout_sha256": "250fc8660179b76d0ac40a47069cab9a30b8276d1814feb632a669d87cec0f9e",
+  "final_sha256": "4bfd3e4da07037738194eddacf9cae0242e2ce04d472fe59234bb4d0fbe9fec4"
+}

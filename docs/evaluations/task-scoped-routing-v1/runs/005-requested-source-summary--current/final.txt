@@ -1,0 +1,1 @@
+{"skills":["scoville-scribe-anti-ai-slop"],"scribe_references":["references/fidelity-modes.md","references/prose-patterns.md"]}

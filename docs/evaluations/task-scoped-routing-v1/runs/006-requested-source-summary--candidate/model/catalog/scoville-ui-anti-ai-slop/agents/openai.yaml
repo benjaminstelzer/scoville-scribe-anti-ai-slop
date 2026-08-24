@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scoville UI Anti-AI-Slop"
+  short_description: "Framework-aware UI quality guardrail"
+  default_prompt: "Use $scoville-ui-anti-ai-slop to improve this interface while preserving its design system."

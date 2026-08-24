@@ -1,5 +1,40 @@
 # Changelog
 
+## 2026-08-24: Task-scoped artifact activation (v1.0.18)
+
+### Changed
+
+- Narrowed automatic Scribe activation to requested text artifacts,
+  transformations, wording audits, source-exact work, and independently
+  constrained interface text.
+- Excluded ordinary conversation, explanations, status recaps, domain-owner
+  results, and final framing merely containing prose.
+- Defined intent-based routing across chat and file delivery, mixed segments,
+  reusable text, follow-up transformations, conversational pivots, fixed
+  insertion, explicit invocation, and opt-out.
+- Added Research to the family owner map and kept normal Code, UI, Research,
+  Plan, and Handoff results from automatically composing with Scribe.
+- Added a frozen task-scoped routing contract and reclassified the existing
+  conversational and domain-record fixtures.
+- Scoped public token and benchmark claims to the historical packages they
+  qualified.
+
+### Validation
+
+- The canonical validator passed, and the frozen task-scoped contract passed
+  28 route cases plus 12 retained evaluation cases. Fidelity and Interface
+  references remain byte-identical to the previous package.
+- The composed candidate passed all seven semantic routing cases after a
+  hash-bound correction of two test-harness defects. Normal communication used
+  zero Skill reads; mixed UI copy loaded Code, Scribe, UI, and only the
+  Interface reference.
+- The direct token and latency improvement remains unproven because both old
+  and candidate prompts used zero Skill reads in the corrected ordinary case,
+  and each cell ran once. No release is claimed.
+- The installed package is byte-identical to the candidate. Fresh local tasks
+  kept ordinary communication Skill-free and loaded Scribe only for a requested
+  reusable text artifact.
+
 ## 2026-08-19: Public validation wording (v1.0.17)
 
 ### Changed

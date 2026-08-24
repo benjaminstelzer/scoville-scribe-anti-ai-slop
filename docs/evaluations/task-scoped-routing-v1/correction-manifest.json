@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "suite": "task-scoped-routing-v1-correction",
+  "frozen_on": "2026-08-24",
+  "parent_report_sha256": "0f02dd1fba9b1106ef5b2c295fefaf0dc54857d958889054989a0df21f87d521",
+  "reason": [
+    "The v1 meta-routing ordinary case caused both current and candidate conditions to choose zero Skills, so it could not test the observed current conversational over-activation mechanism.",
+    "The v1 UI expected array used Code UI Scribe order although its own output contract required catalog order Code Scribe UI."
+  ],
+  "scope": "Only the two demonstrated harness defects; all other v1 runs remain immutable evidence.",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "repetitions": 1,
+  "latency_claim": "observational only",
+  "runs": [
+    "ordinary-real-current",
+    "ordinary-real-candidate",
+    "ui-order-candidate"
+  ],
+  "gates": {
+    "ordinary_candidate": "exact answer object with zero Skill reads",
+    "ordinary_comparison": "candidate has fewer Skill reads than current; if equal the comparative resource claim remains unproven",
+    "ui_candidate": "exact catalog-order Skill array and Interface reference with required Cores and Scribe reference read exactly once",
+    "adoption": "both candidate runs pass; comparative reduction is reported separately and is not manufactured"
+  }
+}
