@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-08-31: Restrained prose punctuation (v1.0.19)
+
+### Changed
+
+- Prohibited em dashes, en dashes, and semicolons in newly written or edited
+  natural-language text, including interface copy and non-English prose.
+- Limited sentence-level dashes to sparing ASCII hyphens, preferring sentence
+  restructuring over mechanical punctuation substitution.
+- Preserved exact quotations, source-exact and fixed-insertion content,
+  technical syntax, canonical names, compound-word hyphens, and list markers.
+- Removed conflicting punctuation guidance and added focused evaluation cases.
+
+### Validation
+
+- Skill validation and the static routing-contract check passed with 28 route
+  cases and 16 evaluation-case definitions.
+- The four new punctuation cases cover English and German drafting, prose
+  editing, interface text, and protected quotations and technical syntax.
+  These are evaluation definitions, not a completed generated-output benchmark.
+
 ## 2026-08-24: Task-scoped artifact activation (v1.0.18)
 
 ### Changed

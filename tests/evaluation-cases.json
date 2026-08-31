@@ -103,6 +103,45 @@
       ]
     },
     {
+      "id": "prose-punctuation-draft",
+      "given": "Draft a short customer announcement in English and German. The service will be unavailable on Friday from 18:00 to 19:00 for maintenance. No other facts are available.",
+      "expect": [
+        "Activate Scribe and load Prose guidance.",
+        "Use no em dashes, en dashes, or semicolons in either language.",
+        "Prefer complete sentences and ordinary punctuation. Use an ASCII hyphen as a sentence-level dash only when needed, not as a recurring construction.",
+        "Preserve the maintenance time and introduce no unsupported claims."
+      ]
+    },
+    {
+      "id": "prose-punctuation-edit",
+      "given": "Edit this announcement for clarity while preserving its claims: The update is ready\u2014it fixes the export error; installation is optional. The read-only preview remains available\u2013no installation is needed to use it.",
+      "expect": [
+        "Activate Scribe and load Prose guidance.",
+        "Remove em dashes, en dashes, and semicolons from the editable prose without replacing each one with a single or double hyphen.",
+        "Preserve the necessary hyphen in read-only, every claim, and the optional installation condition.",
+        "Keep the edit narrow and the wording natural."
+      ]
+    },
+    {
+      "id": "interface-punctuation-without-prose-route",
+      "given": "Rewrite this interface error using only the verified behavior that export failed and Retry starts another export attempt: Export failed\u2014your file was not created; select Retry to try again.",
+      "expect": [
+        "Activate Scribe and load Interface guidance, without loading Prose solely for punctuation rules.",
+        "Use no em dashes, en dashes, or semicolons in the rewritten error.",
+        "Preserve the canonical Retry label and describe only the supported recovery action."
+      ]
+    },
+    {
+      "id": "punctuation-protected-source-and-syntax",
+      "given": "Write a short documentation paragraph containing this exact quotation: Ready\u2014not released; wait for approval. Include this command unchanged: echo ready; echo done. Preserve the exact URL https://example.com/a;b and the canonical name North\u2013South. Add one explanatory sentence stating that release approval is still required.",
+      "expect": [
+        "Activate Scribe with Fidelity for the exact quotation and Prose for the variable surrounding paragraph.",
+        "Preserve the quotation, command, URL, and canonical name exactly, including their punctuation.",
+        "Use no em dashes, en dashes, or semicolons in the newly written explanatory prose.",
+        "Keep fixed-insertion and Source-exact content unchanged when the same protected text is requested through either mode."
+      ]
+    },
+    {
       "id": "explicit-scribe-opt-out",
       "given": "Write a disposable draft but explicitly do not use Scoville Scribe.",
       "expect": [

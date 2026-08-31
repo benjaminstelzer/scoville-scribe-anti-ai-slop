@@ -125,19 +125,20 @@ unrelated content:
 ## Judge only in context
 
 Passive voice, long or short sentences, fragments, contractions, technical
-jargon, punctuation choices, parallel structures, and lists of any particular
-size can all be correct. Change them only when they harm the reader's task,
-conflict with the required voice, or create real monotony.
+jargon, punctuation permitted by the Core house style, parallel structures,
+and lists of any particular size can all be correct. Change them only when
+they harm the reader's task, conflict with the required voice, or create real
+monotony.
 
 Do not replace a precise term merely because it appears on an AI-word list. Do
 not force quirks, errors, or random variation to appear human.
 
-Use a colon to set up a mechanism, consequence, or compact enumeration. Keep an
-em dash (U+2014) or parenthetical expression when it earns a real turn,
-qualification, contrast, or dry aside and leaves the main clause clear. When
+Follow the Core punctuation house style. Use a colon to set up a mechanism,
+consequence, or compact enumeration. Keep a parenthetical expression only when
+it adds a useful qualification or aside and leaves the main clause clear. When
 repeated or nested interruptions bury the point, integrate essential
-information, move useful secondary information, or remove the interruption. Do
-not target a punctuation count or manufacture rhythm for its own sake.
+information, move useful secondary information, or remove the interruption.
+Do not manufacture rhythm for its own sake.
 
 ## Edit minimally
 
@@ -150,5 +151,6 @@ Preserve modal force: `whether I should accept` must not become
 `whether I accept`. Repair the narrowest problem, then compare source and result
 for meaning, voice, and information density.
 
-Apply the conventions of the actual language and genre. Do not translate an
-English style prohibition into a universal writing rule.
+Within explicit constraints, apply the conventions of the actual language and
+genre. Do not infer further universal prohibitions from one language's style
+conventions.

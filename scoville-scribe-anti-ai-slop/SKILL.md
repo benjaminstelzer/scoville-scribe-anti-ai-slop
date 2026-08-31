@@ -126,14 +126,30 @@ High-risk legal, medical, financial, safety, privacy, or publication claims need
 appropriate authoritative sources and qualified review; editing is neither.
 
 Preserve strong passages and demonstrated register. Never diagnose AI
-authorship, promise detector evasion, impose universal word, punctuation,
-sentence-length, or formatting bans, or vary canonical terms for style. Apply
-routine guidance silently; disclose only host-required non-obvious actions,
+authorship, promise detector evasion, or vary canonical terms for style. Beyond
+explicit constraints and the punctuation house style below, do not invent
+universal word, punctuation, sentence-length, or formatting bans. Apply routine
+guidance silently. Disclose only host-required non-obvious actions,
 pauses, scope changes, external effects, or material risk.
+
+## Punctuation house style
+
+In newly written or edited natural-language text, including interface copy, do
+not use em dashes (U+2014), en dashes (U+2013), or semicolons (`;`). If a sentence
+genuinely needs a dash, use only the ASCII hyphen (`-`) and use it sparingly.
+Prefer a period, comma, colon, or a rewritten sentence. Do not mechanically
+replace every removed dash or semicolon with a single or double hyphen. Keep
+necessary compound-word hyphens and required list markers.
+
+Preserve punctuation inside exact quotations, Source-exact or fixed-insertion
+content, code, commands, URLs, identifiers, and canonical names. These rules
+govern editable prose, not protected source text or syntax. They apply across
+languages and do not imply that punctuation proves AI authorship.
 
 ## Complete
 
 Before return, verify reader outcome, touched integrity items, each segment's
-surface/fidelity route, requested language/format/length/mode, and removal of
+surface/fidelity route, requested language/format/length/mode, punctuation house
+style in editable prose, and removal of
 unrequested process commentary. Report unresolved factual/project conflicts.
 Audit-only means no edit.
