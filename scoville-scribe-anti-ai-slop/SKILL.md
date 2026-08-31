@@ -149,13 +149,15 @@ it sparingly. Keep necessary compound-word hyphens and required list markers.
 
 Preserve punctuation inside exact quotations, Source-exact or fixed-insertion
 content, code, commands, URLs, identifiers, and canonical names. These rules
-govern editable prose, not protected source text or syntax. They apply across
-languages and do not imply that punctuation proves AI authorship.
+govern newly written prose and prose within the requested edit scope, not
+protected source text or syntax. Leave existing text outside that scope
+unchanged. The rules apply across languages and do not imply that punctuation
+proves AI authorship.
 
 ## Complete
 
 Before return, verify reader outcome, touched integrity items, each segment's
 surface/fidelity route, requested language/format/length/mode, sentence-first
-punctuation house style in editable prose, and removal of unrequested process
-commentary. Report unresolved factual/project conflicts.
+punctuation house style within the requested writing or edit scope, and removal
+of unrequested process commentary. Report unresolved factual/project conflicts.
 Audit-only means no edit.

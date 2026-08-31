@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-08-31: Preserve punctuation outside the edit scope (v1.0.21)
+
+### Changed
+
+- Limited the punctuation house style and final check explicitly to newly
+  written prose and the requested edit scope. Existing text outside that scope
+  remains unchanged.
+- Added an evaluation definition for a scoped spelling correction that must
+  preserve an untouched paragraph containing an em dash and a semicolon.
+- Clarified the evidence boundary of the prior release's static checks without
+  changing its frozen historical routing baseline.
+
+### Validation
+
+- Skill validation and the static routing-contract check passed with 28 route
+  cases and 17 evaluation-case definitions. These checks verify package
+  structure and routing-contract consistency, not punctuation compliance or
+  sentence-rewriting behavior.
+- The scope correction and evaluation definition were reviewed against the
+  requested edit boundary. No new generated-output benchmark was run.
+
 ## 2026-08-31: Sentence-first prose rewriting (v1.0.20)
 
 ### Changed
@@ -17,6 +38,9 @@
 
 - Skill validation and the static routing-contract check passed with 28 route
   cases and 16 evaluation-case definitions.
+- These checks cover package structure and the existing routing contract, not
+  punctuation compliance or sentence-rewriting behavior. The case counts refer
+  to static definitions, not executed model trials.
 - The sentence-rewriting expectations were reviewed in the changed fixtures.
   No new generated-output benchmark was run.
 

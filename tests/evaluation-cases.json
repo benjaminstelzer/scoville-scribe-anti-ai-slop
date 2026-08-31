@@ -144,6 +144,15 @@
       ]
     },
     {
+      "id": "punctuation-preserves-out-of-scope-text",
+      "given": "Use Scribe to correct spelling errors in paragraph 2 only. Return both paragraphs without changing paragraph 1. Paragraph 1: The update is ready\u2014installation is optional; the preview remains available. Paragraph 2: The read-only preview is availble.",
+      "expect": [
+        "Treat only paragraph 2 as the requested edit scope and correct availble to available.",
+        "Preserve paragraph 1 exactly, including its em dash and semicolon. Do not expand a scoped spelling edit into punctuation normalization elsewhere.",
+        "Apply the punctuation house style only within the requested writing or edit scope and preserve the necessary hyphen in read-only."
+      ]
+    },
+    {
       "id": "explicit-scribe-opt-out",
       "given": "Write a disposable draft but explicitly do not use Scoville Scribe.",
       "expect": [

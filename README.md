@@ -89,9 +89,10 @@ The [family run ledger](docs/optimization-history.md) shows the complete count.
   certainty, experience, identity, or conclusions.
 - **Prose is built around sentences.** Rewrite sentences that rely on em
   dashes, en dashes, or semicolons instead of mechanically replacing the marks.
-  Structure editable prose primarily with periods and commas, using `-` only
-  sparingly when a dash is genuinely needed. Exact quotations, protected source
-  text, and technical syntax remain intact.
+  Structure newly written or edited prose primarily with periods and commas,
+  using `-` only sparingly when a dash is genuinely needed. Existing text outside
+  the requested edit scope stays unchanged, as do exact quotations, protected
+  source text, and technical syntax.
 - **The requested operation stays narrow.** An audit reports. An edit changes
   the smallest real defect. Source-exact output remains exact.
 
