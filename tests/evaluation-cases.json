@@ -108,16 +108,17 @@
       "expect": [
         "Activate Scribe and load Prose guidance.",
         "Use no em dashes, en dashes, or semicolons in either language.",
-        "Prefer complete sentences and ordinary punctuation. Use an ASCII hyphen as a sentence-level dash only when needed, not as a recurring construction.",
+        "Build the prose around complete sentences and grammatical clauses, primarily using periods and commas. Use an ASCII hyphen as a sentence-level dash only sparingly when needed.",
         "Preserve the maintenance time and introduce no unsupported claims."
       ]
     },
     {
       "id": "prose-punctuation-edit",
-      "given": "Edit this announcement for clarity while preserving its claims: The update is ready\u2014it fixes the export error; installation is optional. The read-only preview remains available\u2013no installation is needed to use it.",
+      "given": "Edit this announcement for clarity while preserving its claims: The update\u2014a fix for the export error\u2014is ready; installation is optional. The read-only preview remains available\u2013no installation is needed to use it.",
       "expect": [
         "Activate Scribe and load Prose guidance.",
-        "Remove em dashes, en dashes, and semicolons from the editable prose without replacing each one with a single or double hyphen.",
+        "Rewrite the affected sentences around periods and grammatical commas. Integrate the explanatory aside and preserve the logical relationships instead of merely swapping punctuation.",
+        "Use no em dashes, en dashes, or semicolons in editable prose. Do not retain the old construction through replacement hyphens, colons, or parentheses, or produce fragments or comma splices.",
         "Preserve the necessary hyphen in read-only, every claim, and the optional installation condition.",
         "Keep the edit narrow and the wording natural."
       ]
@@ -128,6 +129,7 @@
       "expect": [
         "Activate Scribe and load Interface guidance, without loading Prose solely for punctuation rules.",
         "Use no em dashes, en dashes, or semicolons in the rewritten error.",
+        "Rewrite the error as natural sentences primarily using periods and commas, not as the original construction with substituted punctuation.",
         "Preserve the canonical Retry label and describe only the supported recovery action."
       ]
     },

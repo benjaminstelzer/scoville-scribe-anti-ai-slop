@@ -133,12 +133,12 @@ monotony.
 Do not replace a precise term merely because it appears on an AI-word list. Do
 not force quirks, errors, or random variation to appear human.
 
-Follow the Core punctuation house style. Use a colon to set up a mechanism,
-consequence, or compact enumeration. Keep a parenthetical expression only when
-it adds a useful qualification or aside and leaves the main clause clear. When
-repeated or nested interruptions bury the point, integrate essential
-information, move useful secondary information, or remove the interruption.
-Do not manufacture rhythm for its own sake.
+Follow the Core sentence-first punctuation house style. Let sentences and
+grammatical connections carry the explanation. Reserve colons for genuine
+introductions or enumerations and parentheses for useful secondary detail,
+not as substitutes for removed dashes or semicolons. When interruptions bury
+the point, integrate essential information, move useful secondary information,
+or remove the interruption. Do not manufacture rhythm for its own sake.
 
 ## Edit minimally
 

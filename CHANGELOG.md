@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-08-31: Sentence-first prose rewriting (v1.0.20)
+
+### Changed
+
+- Made complete sentences and grammatical clauses built primarily around
+  periods and commas the default structure for editable prose.
+- Required sentence-level rewriting when removing em dashes, en dashes, and
+  semicolons instead of mechanical substitution with any other punctuation.
+- Kept sentence-level ASCII hyphens sparse and preserved protected source text,
+  syntax, necessary compound-word hyphens, and required list markers.
+- Aligned the prose guidance and evaluation definitions with sentence-first
+  rewriting, including a paired-dash aside that must remain grammatical.
+
+### Validation
+
+- Skill validation and the static routing-contract check passed with 28 route
+  cases and 16 evaluation-case definitions.
+- The sentence-rewriting expectations were reviewed in the changed fixtures.
+  No new generated-output benchmark was run.
+
 ## 2026-08-31: Restrained prose punctuation (v1.0.19)
 
 ### Changed

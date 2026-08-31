@@ -134,12 +134,18 @@ pauses, scope changes, external effects, or material risk.
 
 ## Punctuation house style
 
-In newly written or edited natural-language text, including interface copy, do
-not use em dashes (U+2014), en dashes (U+2013), or semicolons (`;`). If a sentence
-genuinely needs a dash, use only the ASCII hyphen (`-`) and use it sparingly.
-Prefer a period, comma, colon, or a rewritten sentence. Do not mechanically
-replace every removed dash or semicolon with a single or double hyphen. Keep
-necessary compound-word hyphens and required list markers.
+Build newly written or edited natural-language text, including interface copy,
+around complete sentences and grammatical clauses, primarily using periods
+and commas. Do not use em dashes (U+2014), en dashes (U+2013), or semicolons (`;`).
+
+Rewrite affected sentences, not just their punctuation. Integrate asides into
+the main clause, connect related ideas grammatically, or split a thought into
+self-contained sentences while preserving its logical relationships. Do not
+keep the old construction by swapping in other marks, including hyphens,
+colons, parentheses, commas, or periods.
+
+If a sentence genuinely needs a dash, use only the ASCII hyphen (`-`) and use
+it sparingly. Keep necessary compound-word hyphens and required list markers.
 
 Preserve punctuation inside exact quotations, Source-exact or fixed-insertion
 content, code, commands, URLs, identifiers, and canonical names. These rules
@@ -149,7 +155,7 @@ languages and do not imply that punctuation proves AI authorship.
 ## Complete
 
 Before return, verify reader outcome, touched integrity items, each segment's
-surface/fidelity route, requested language/format/length/mode, punctuation house
-style in editable prose, and removal of
-unrequested process commentary. Report unresolved factual/project conflicts.
+surface/fidelity route, requested language/format/length/mode, sentence-first
+punctuation house style in editable prose, and removal of unrequested process
+commentary. Report unresolved factual/project conflicts.
 Audit-only means no edit.

@@ -87,9 +87,11 @@ The [family run ledger](docs/optimization-history.md) shows the complete count.
   procedures describe supported behavior rather than desired fiction.
 - **The author's position survives.** Voice may improve without inventing
   certainty, experience, identity, or conclusions.
-- **Prose uses restrained punctuation.** No em dashes, en dashes, or semicolons
-  in editable text. Use only `-` when a dash is needed, and use it sparingly.
-  Exact quotations, protected source text, and technical syntax remain intact.
+- **Prose is built around sentences.** Rewrite sentences that rely on em
+  dashes, en dashes, or semicolons instead of mechanically replacing the marks.
+  Structure editable prose primarily with periods and commas, using `-` only
+  sparingly when a dash is genuinely needed. Exact quotations, protected source
+  text, and technical syntax remain intact.
 - **The requested operation stays narrow.** An audit reports. An edit changes
   the smallest real defect. Source-exact output remains exact.
 
