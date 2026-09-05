@@ -122,6 +122,25 @@ unrelated content:
   structure predictable;
 - noun-heavy compression or stacked modifiers that hide who did what.
 
+Also check for these concrete patterns when they weaken the artifact:
+
+- unearned contrasts such as `not just X, but Y` or `this is not about X`,
+  where X is a straw man or Y only praises the subject. Keep real distinctions
+  and state what changes for the reader.
+- significance padding such as `a testament to`, `a new era`, or `redefines`
+  without a supported consequence. Replace it with the actual change or omit it.
+- vague attribution such as `experts agree` or `many believe` that borrows
+  authority without an identifiable source. Cite the source or narrow the claim.
+- rhetorical questions immediately answered by the writer and repeated
+  three-part slogans used as scaffolding rather than explanation.
+- decorative bolding, emoji, mini-headings, and stacked one-line fragments
+  that give every sentence equal emphasis. Keep formatting that aids scanning,
+  accessibility, or the requested genre.
+
+These are editing signals, not proof of AI authorship or banned-word lists.
+Preserve a supported contrast, sourced attribution, intentional rhetorical
+question, or meaningful three-item list when it serves the reader.
+
 ## Judge only in context
 
 Passive voice, long or short sentences, fragments, contractions, technical

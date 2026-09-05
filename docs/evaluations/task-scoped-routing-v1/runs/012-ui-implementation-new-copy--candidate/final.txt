@@ -1,1 +1,0 @@
-{"skills":["scoville-code-anti-ai-slop","scoville-scribe-anti-ai-slop","scoville-ui-anti-ai-slop"],"scribe_references":["references/interface-text.md"]}

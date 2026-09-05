@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.0.22 - 2026-09-05
+
+### Changed
+
+- Shortened the README, moved contributor layout notes to docs/maintenance.md, and made agent installation the primary path. Safety and evidence limits remain explicit.
+- Added separate prompts for this Skill and the complete live-verified Scoville suite.
+- Included the repository license in the copied Skill package. The strict punctuation Core remains unchanged.
+- Removed 956 historical run and harness files from the current checkout. The immutable public Git snapshot preserves them. Both original rejection and correction reports remain locally unchanged.
+
+- Retained the strict sentence-first punctuation default, including the rules
+  against em dashes, en dashes, and semicolons in editable natural language.
+- Added contextual checks for unearned contrasts, inflated significance,
+  vague attribution, rhetorical scaffolding, and decorative formatting.
+- Added interface checks for vague actions, unsupported reassurance,
+  mismatched celebration, redundant help, and errors that obscure recovery.
+- Preserved canonical terms, exact sources, code, and out-of-scope text.
+
+### Validation boundary
+
+- New evaluation definitions describe positive and negative cases. Static
+  package and routing checks do not prove generated-output quality.
+- No new model-behavior qualification is claimed for these additions.
+
 ## 2026-08-31: Preserve punctuation outside the edit scope (v1.0.21)
 
 ### Changed

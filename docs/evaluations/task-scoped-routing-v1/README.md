@@ -38,5 +38,10 @@ latency reduction is claimed from this suite.
 - candidate Scribe Core SHA-256
   `bf725f1609a2b6b61742200f55ed82a3a231129b47ac2dfb61674cb94b692426`
 
-Run summaries and JSONL traces retain the observed routing and usage records.
-Disposable Codex state databases are intentionally excluded.
+The manifests, case definitions and both result reports remain here unchanged.
+The full run summaries, JSONL traces, isolated package copies and original
+harness are retained in the
+[immutable historical snapshot](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/4777afe762c676a7518c413fe8f51fee6734ad71/docs/evaluations/task-scoped-routing-v1).
+They are no longer duplicated in the current checkout. This is an archival
+change, not replacement evidence or a new qualification. Disposable Codex state
+databases remain excluded from the public snapshot.

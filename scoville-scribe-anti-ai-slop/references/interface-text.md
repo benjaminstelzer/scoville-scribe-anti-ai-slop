@@ -5,6 +5,7 @@ or API errors, notifications, email, accessibility text, and metadata values.
 
 ## Contents
 
+- Avoid generic interface filler
 - Inspect the relevant project state
 - Keep concepts and terms aligned
 - Describe the user-relevant state
@@ -12,6 +13,28 @@ or API errors, notifications, email, accessibility text, and metadata values.
 - Preserve runtime and localization contracts
 - Cover non-visible interface text
 - Verify in context
+
+## Avoid generic interface filler
+
+Apply these checks to the wording without inventing or changing product behavior:
+
+- Replace vague actions such as `Let's go`, `Unlock`, or `Get started` with the
+  supported result when the generic label conceals what the control does. Keep
+  established canonical labels and genuine onboarding actions when they fit.
+- Remove unearned reassurance such as `seamless`, `effortless`, `secure`, or
+  `you're all set` when the current state does not support it. A pending action
+  is not a completed action.
+- Keep routine success, empty, loading, and error states factual. Avoid canned
+  celebration, apologies, emoji, and exclamation marks when they obscure the
+  state or recovery. Respect an established product voice where it remains clear.
+- Remove helper text that merely repeats the label. Retain constraints, format
+  examples, consequences, and recovery instructions that affect the next action.
+- Do not turn an error into a marketing message or a vague `Something went
+  wrong` when a safe, verified, useful problem description is available. Never
+  expose sensitive internals merely to make the message more specific.
+
+Judge each pattern by clarity and verified behavior, not by presumed authorship.
+Do not add humor or rewrite canonical terms to manufacture a human voice.
 
 ## Inspect the relevant project state
 

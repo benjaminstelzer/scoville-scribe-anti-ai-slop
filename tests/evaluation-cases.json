@@ -160,6 +160,33 @@
         "Use the host's compact fallback behavior.",
         "Keep the opt-out local to the current task."
       ]
+    },
+    {
+      "id": "prose-slop-context-and-claims",
+      "given": "Edit this release paragraph using only the fact that CSV export now supports UTF-8: This is not just an update, it is a revolution. Experts agree it redefines exports. Ready for a new era? CSV export now supports UTF-8.",
+      "expect": [
+        "Load Prose and retain the supported CSV and UTF-8 fact.",
+        "Remove the unsupported revolution, expert consensus, new-era claim, and rhetorical scaffolding without inventing benefits.",
+        "Preserve the sentence-first punctuation default. Do not claim the source was written by AI."
+      ]
+    },
+    {
+      "id": "interface-slop-pending-state",
+      "given": "Rewrite status and helper text for an export that is still processing. The canonical button is Cancel and stops the export. Current text: Amazing! You're all set! Your seamless export is ready. Cancel to cancel.",
+      "expect": [
+        "Load Interface without adding Prose solely to apply interface slop checks.",
+        "State that the export is processing, not ready or successful. Remove unsupported celebration and seamlessness.",
+        "Keep Cancel unchanged and preserve the fact that it stops the export. Remove redundant help or replace it only with that verified consequence."
+      ]
+    },
+    {
+      "id": "slop-signals-are-not-universal-bans",
+      "given": "Copyedit a supplied guide with three genuinely distinct supported steps, a useful heading, and a real contrast between previewing and publishing. Preserve the exact quotation: A new era begins. Preserve the canonical onboarding label Get started.",
+      "expect": [
+        "Keep the three meaningful steps, useful heading, and supported distinction rather than mechanically banning lists or contrasts.",
+        "Keep the quotation and canonical label exactly despite matching examples of contextual slop signals.",
+        "Do not add quirky punctuation, forced humor, new facts, or an AI-authorship claim."
+      ]
     }
   ]
 }

@@ -22,11 +22,11 @@ localizing, source-exact work, interface text, and wording audits. It preserves
 meaning, evidence, attribution, canonical terms, schemas, and behavior while
 removing filler or fixing the requested wording problem. Ordinary answers,
 explanations, status updates, and domain results stay with the host or their
-domain owner; merely containing prose is not an activation signal.
+domain owner. Merely containing prose is not an activation signal.
 
 ## Why "Scoville"?
 
-The family is named for useful signal that survives dilution. In writing, the
+The family is named for useful signal that remains detectable after dilution. In writing, the
 heat is the original meaning after smoothing, shortening, localization, and the
 occasional thesaurus have all had access to the sentence.
 
@@ -52,28 +52,39 @@ support named Skill invocation.
 
 ## Install
 
-Use an Agent Skills-compatible host and Terra 5.6 Medium or a comparably
-capable executor such as Opus 4.8. Ask the agent to install:
+### Install this Skill
+
+In a local Codex or Claude Code session, ask:
 
 ```text
-Install this Agent Skill and refresh the available Skill list:
+Install this Agent Skill for all my projects from this exact package directory:
 https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
-Keep the installed directory name scoville-scribe-anti-ai-slop. Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8.
+Preserve existing customizations and ask before overwriting conflicting files.
+Report the installed location and whether the host discovers the Skill.
 ```
 
-The final path must end in
-`<skills-dir>/scoville-scribe-anti-ai-slop/SKILL.md`. For Claude Code, use
-`~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
-hosts use their supported Skills directory.
+The agent needs source access and permission to write to its personal Skills
+location. Manual fallback: [Codex Skills guide](https://learn.chatgpt.com/docs/build-skills)
+or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
-**What it costs.** Activating Scribe loads its Core and then only the Interface,
-Prose, or Fidelity guidance required by the artifact. That context buys factual
-fidelity, terminology control, and source-exact handling. Ordinary conversation
-does not activate Scribe; use the Skill when wording itself is the deliverable
-or transformation target. Historical token measurements remain bound to their
-qualified package versions. See
-[benchmark evidence](docs/benchmark-evidence.md).
-The [family run ledger](docs/optimization-history.md) shows the complete count.
+Install only the linked package for the focused option.
+
+### Install the complete Scoville suite
+
+```text
+Install the complete Scoville Skill suite for all my projects. Fetch and install every exact package directory below:
+
+https://github.com/benjaminstelzer/scoville-brainstorm/tree/main/scoville-brainstorm
+https://github.com/benjaminstelzer/scoville-research/tree/main/scoville-research
+https://github.com/benjaminstelzer/scoville-code-anti-ai-slop/tree/main/scoville-code-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-design-anti-ai-slop/tree/main/scoville-design-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/tree/main/scoville-ui-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-plan/tree/main/scoville-plan
+https://github.com/benjaminstelzer/scoville-handoff/tree/main/scoville-handoff
+
+Preserve existing customizations and ask before overwriting conflicting files. Report every installed location and whether the host discovers each Skill.
+```
 
 ## What it enforces
 
@@ -95,6 +106,10 @@ The [family run ledger](docs/optimization-history.md) shows the complete count.
   source text, and technical syntax.
 - **The requested operation stays narrow.** An audit reports. An edit changes
   the smallest real defect. Source-exact output remains exact.
+- **Filler does not stand in for meaning.** Check unearned contrasts, vague
+  authority, inflated significance, and decorative formatting. Interface copy
+  names the actual action and state without unsupported reassurance or
+  celebration. These are contextual editing checks, not authorship detection.
 
 The complete contract is in
 [SKILL.md](scoville-scribe-anti-ai-slop/SKILL.md).
@@ -106,6 +121,9 @@ results out of Scribe. Once an artifact or transformation activates the Core,
 it resolves truth, terminology, audience, and requested transformation per
 segment, then loads only the Interface, Prose, or Fidelity guide needed for
 that segment. Chat delivery alone neither activates nor suppresses Scribe.
+
+For repository structure and development tools, see
+[maintenance notes](docs/maintenance.md).
 
 ## Scoville family
 
@@ -132,18 +150,15 @@ needs:
 
 ## Status
 
-Historical qualification used a reliability-first extension of
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) across **1,201
-optimization and evaluation runs** for the six Scoville Skills. The previous
-Scribe package passed **30/30 final cases** and reduced its loaded Core by
-**19.84% from v1.0.6**. Those results remain evidence for the exact historical
-package, not for the changed activation contract. See
-[benchmark evidence](docs/benchmark-evidence.md).
+Earlier 30/30 qualification and token-reduction results belong to a historical
+package. The changed activation contract has focused static and composed
+routing evidence, not a measured token or latency advantage. See
+[benchmark evidence](docs/benchmark-evidence.md) and
+[task-scoped routing evidence](docs/evaluations/task-scoped-routing-v1/README.md).
 
-The changed activation contract passed its focused static and composed routing
-gates. The evaluation does not claim a measured token or latency reduction;
-the corrected ordinary comparison loaded no Skill in either condition. See the
-[task-scoped routing qualification](docs/evaluations/task-scoped-routing-v1/README.md).
+A Terra Medium prose case on 2026-09-05 preserved a protected quotation and
+removed unsupported emphasis, but weakened the attribution of an internal
+trial. It is not proof of perfect fidelity or AI-authorship detection.
 
 ## Sources
 
@@ -161,4 +176,4 @@ the corrected ordinary comparison loaded no Skill in either condition. See the
 
 ## License
 
-MIT - see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
