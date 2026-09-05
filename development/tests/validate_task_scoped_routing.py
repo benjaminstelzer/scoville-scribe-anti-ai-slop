@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL_ROOT = ROOT / "scoville-scribe-anti-ai-slop"
+SKILL_ROOT = ROOT.parent / "scoville-scribe-anti-ai-slop"
 ROUTE_CONTRACT = ROOT / "tests" / "task-scoped-routing.json"
 EVALUATION_CASES = ROOT / "tests" / "evaluation-cases.json"
 

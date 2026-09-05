@@ -123,7 +123,7 @@ segment, then loads only the Interface, Prose, or Fidelity guide needed for
 that segment. Chat delivery alone neither activates nor suppresses Scribe.
 
 For repository structure and development tools, see
-[maintenance notes](docs/maintenance.md).
+[maintenance notes](development/docs/maintenance.md).
 
 ## Scoville family
 
@@ -153,12 +153,14 @@ needs:
 Earlier 30/30 qualification and token-reduction results belong to a historical
 package. The changed activation contract has focused static and composed
 routing evidence, not a measured token or latency advantage. See
-[benchmark evidence](docs/benchmark-evidence.md) and
-[task-scoped routing evidence](docs/evaluations/task-scoped-routing-v1/README.md).
+[benchmark evidence](development/docs/benchmark-evidence.md) and
+[task-scoped routing evidence](development/docs/evaluations/task-scoped-routing-v1/README.md).
 
 A Terra Medium prose case on 2026-09-05 preserved a protected quotation and
 removed unsupported emphasis, but weakened the attribution of an internal
 trial. It is not proof of perfect fidelity or AI-authorship detection.
+
+Repository development and the current path mapping are in [development/](development/README.md).
 
 ## Sources
 

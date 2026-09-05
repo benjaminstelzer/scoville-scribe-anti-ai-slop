@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.23 - 2026-09-05
+
+- Move repository development into `development/` and keep the installable Skill in its own top-level directory.
+- Update current paths while retaining historical evidence and its path mapping.
+
 ## v1.0.22 - 2026-09-05
 
 ### Changed
