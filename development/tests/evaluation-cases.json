@@ -187,6 +187,31 @@
         "Keep the quotation and canonical label exactly despite matching examples of contextual slop signals.",
         "Do not add quirky punctuation, forced humor, new facts, or an AI-authorship claim."
       ]
+    },
+    {
+      "id": "available-plan-owns-native-wording",
+      "given": "Plan is available and owns native records. The user requests creation, rewriting, or wording audit without explicitly requesting Scribe.",
+      "expect": [
+        "Leave native record wording with Plan. Do not load Scribe Core or references for that segment.",
+        "Apply the exception to follow-up rewriting and Scribe already active for another segment.",
+        "Continue normal Scribe routing for separately requested non-record prose."
+      ]
+    },
+    {
+      "id": "scribe-works-without-plan",
+      "given": "Scribe is available. Plan is absent, unavailable to load, or explicitly inactive. The user requests a permitted wording edit in an existing project plan.",
+      "expect": [
+        "Use normal Scribe activation and preserve the existing record owner's format, meaning, and lifecycle.",
+        "Do not require, install, load, simulate, or recreate Plan."
+      ]
+    },
+    {
+      "id": "explicit-scribe-with-plan",
+      "given": "Both Skills are available and the user explicitly requests Scribe to shorten a native todo Work Item's wording.",
+      "expect": [
+        "Honor explicit Scribe use for wording. If Plan is available and applicable, load its Core and routed references for permitted edits, format, and lifecycle.",
+        "Do not interpret a generic request to rewrite as an explicit Scribe invocation."
+      ]
     }
   ]
 }

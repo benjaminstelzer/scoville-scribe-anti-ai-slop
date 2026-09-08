@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.24 - 2026-09-08
+
+- If Scoville Plan is available and owns native records, leave their writing, rewriting, and wording audits with Plan unless the user explicitly requests Scribe.
+- Apply that boundary to follow-up edits and Scribe already active for another segment. Keep unrelated prose on its own route.
+- Keep Scribe usable when Plan is absent, unavailable, or inactive, under the existing record owner's format and lifecycle. Neither Skill requires the other.
+- Clarify reference selection when the user explicitly requests Scribe for native record wording.
+- Keep applicable Plan checks active during explicit Scribe use. Wording ownership does not replace format or lifecycle checks.
+- Fresh Terra Medium routing cases covered standalone, mixed, follow-up, explicit, and unavailable-Plan scenarios. The explicit-use correction received targeted verification. Invalid discovery runs and a separate wording caveat are retained in Plan's shared routing evidence.
+
 ## v1.0.23 - 2026-09-05
 
 - Move repository development into `development/` and keep the installable Skill in its own top-level directory.

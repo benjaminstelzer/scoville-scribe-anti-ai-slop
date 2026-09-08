@@ -24,6 +24,13 @@ removing filler or fixing the requested wording problem. Ordinary answers,
 explanations, status updates, and domain results stay with the host or their
 domain owner. Merely containing prose is not an activation signal.
 
+If Scoville Plan is installed and owns native planning records, their writing,
+rewriting, and wording audits stay with Plan unless you explicitly request
+Scribe. Without Plan, Scribe remains usable under the existing record owner's
+format and lifecycle rules. Neither Skill requires the other.
+When you explicitly request Scribe alongside an applicable Plan, Scribe handles
+wording while Plan still checks permitted edits, format, and lifecycle.
+
 ## Why "Scoville"?
 
 The family is named for useful signal that remains detectable after dilution. In writing, the
@@ -146,6 +153,10 @@ needs:
   work to another agent or session.
 
 ## Status
+
+The [Terra Medium native-record routing cases](https://github.com/benjaminstelzer/scoville-plan/blob/main/development/docs/evaluations/record-routing-terra-medium/README.md)
+record the standalone and composed checks, corrections, and limits for the
+Plan exception. They do not establish general fidelity or host discovery.
 
 Earlier 30/30 qualification and token-reduction results belong to a historical
 package. The changed activation contract has focused static and composed

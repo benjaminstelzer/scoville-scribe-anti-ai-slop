@@ -1,6 +1,6 @@
 ---
 name: scoville-scribe-anti-ai-slop
-description: Guardrail for requested wording artifacts and transformations such as drafting, editing, source summaries, localization, source-exact work, wording audits, and reader-facing interface text. Use when wording itself is the deliverable or an independently constrained segment. Do not use for ordinary conversation, explanations, status, domain results, final framing, or uninvoked fixed insertion merely because they contain text. Preserve facts, meaning, terms, behavior, schemas, attribution, and exact text.
+description: Guardrail for requested wording artifacts and transformations such as drafting, editing, source summaries, localization, source-exact work, wording audits, and reader-facing interface text. Use when wording itself is the deliverable or an independently constrained segment. Do not use for ordinary conversation, explanations, status, domain results, final framing, or uninvoked fixed insertion merely because they contain text. If Scoville Plan is available and owns native planning records, leave their writing, rewriting, and wording audits to Plan unless the user explicitly requests Scribe. Preserve facts, meaning, terms, behavior, schemas, attribution, and exact text.
 ---
 
 # Scoville Scribe Anti-AI-Slop
@@ -13,6 +13,22 @@ text; make no Skill-derived claim. Report higher-authority requirements to use
 Scribe.
 
 ## Activate only for text artifacts
+
+If Scoville Plan is installed, available, and applicable to native Plans, Work
+Items, or Decisions, Plan owns their wording and fidelity. Do not activate,
+load, or apply Scribe to those records, including requested rewriting and
+wording audits, unless the user explicitly requests Scribe. This exception also
+applies to follow-up transformations and Scribe already active for another
+segment. It does not cover unrelated prose in a mixed task.
+
+If Plan is absent, unavailable, or inactive, use Scribe's normal activation
+rules and preserve the existing record owner's format and lifecycle. Never
+require, install, or simulate Plan to do that work.
+
+When explicitly requested for native record wording, keep fixed short fields
+Core-only within Scribe. If Plan is available and applicable, also load Plan and
+its routed references to check permitted edits, format, and lifecycle. Route
+independently requested continuous prose through Prose.
 
 Activate Scribe when wording itself is a requested deliverable or transformation
 target: drafting, editing, rewriting, summarizing supplied source material,
