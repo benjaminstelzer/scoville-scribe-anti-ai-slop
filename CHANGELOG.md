@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v1.0.25 - 2026-09-09
+
+- Describe byte-preserving source-exact file operations without prescribing one host shell.
 
 - Document host and tool requirements in the README compatibility block, matching the Skill frontmatter.
 
