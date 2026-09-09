@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added the `compatibility` frontmatter field declaring host and tool requirements. No behavior change.
+
 ## v1.0.24 - 2026-09-08
 
 - If Scoville Plan is available and owns native records, leave their writing, rewriting, and wording audits with Plan unless the user explicitly requests Scribe.

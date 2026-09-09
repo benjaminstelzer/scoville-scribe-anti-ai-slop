@@ -1,6 +1,7 @@
 ---
 name: scoville-scribe-anti-ai-slop
 description: Guardrail for requested wording artifacts and transformations such as drafting, editing, source summaries, localization, source-exact work, wording audits, and reader-facing interface text. Use when wording itself is the deliverable or an independently constrained segment. Do not use for ordinary conversation, explanations, status, domain results, final framing, or uninvoked fixed insertion merely because they contain text. If Scoville Plan is available and owns native planning records, leave their writing, rewriting, and wording audits to Plan unless the user explicitly requests Scribe. Preserve facts, meaning, terms, behavior, schemas, attribution, and exact text.
+compatibility: "Any Agent Skills host that can read references/. No scripts, no network, no subagents. Whole-file Source-exact work needs a byte-preserving file read and write that keeps encoding, line endings and trailing whitespace (not a line-splitting shell reader). Developed for Codex and Claude Code; other hosts untested."
 ---
 
 # Scoville Scribe Anti-AI-Slop
@@ -55,9 +56,10 @@ For Source-exact extraction or reproduction, preserve the requested boundary
 and that span's whitespace and newline state. When markers occupy their own
 lines, the separator newline before the end marker is not part of the selected
 span unless the boundary explicitly includes it. For whole-file Source-exact or
-opt-out passthrough, use a byte-preserving API such as
-`[System.IO.File]::ReadAllText`, never `Get-Content`; serialize directly. Fixed
-insertion copies the supplied string exactly.
+opt-out passthrough, read and write the file through a byte-preserving path that
+keeps encoding, line endings, and trailing whitespace intact; never through a
+reader that splits lines, normalizes newlines, or re-encodes text. Serialize
+directly. Fixed insertion copies the supplied string exactly.
 
 ## Resolve authority and scope
 
