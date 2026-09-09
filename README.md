@@ -57,6 +57,10 @@ Use Scoville Scribe in Source-exact mode to extract the text between the named m
 Explicit `$scoville-scribe-anti-ai-slop` invocation also works on hosts that
 support named Skill invocation.
 
+## Compatibility
+
+Any Agent Skills host that can read references/. No scripts, no network, no subagents. Whole-file Source-exact work needs a byte-preserving file read and write that keeps encoding, line endings and trailing whitespace (not a line-splitting shell reader). Developed for Codex and Claude Code; other hosts untested.
+
 ## Install
 
 ### Install this Skill
