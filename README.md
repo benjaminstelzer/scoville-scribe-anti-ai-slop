@@ -133,8 +133,7 @@ it resolves truth, terminology, audience, and requested transformation per
 segment, then loads only the Interface, Prose, or Fidelity guide needed for
 that segment. Chat delivery alone neither activates nor suppresses Scribe.
 
-For repository structure and development tools, see
-[maintenance notes](development/docs/maintenance.md).
+Repository validation and retention rules are in [development](development/README.md).
 
 ## Scoville family
 
@@ -161,21 +160,10 @@ needs:
 
 ## Status
 
-The [Terra Medium native-record routing cases](https://github.com/benjaminstelzer/scoville-plan/blob/main/development/docs/evaluations/record-routing-terra-medium/README.md)
-record the standalone and composed checks, corrections, and limits for the
-Plan exception. They do not establish general fidelity or host discovery.
-
-Earlier 30/30 qualification and token-reduction results belong to a historical
-package. The changed activation contract has focused static and composed
-routing evidence, not a measured token or latency advantage. See
-[benchmark evidence](development/docs/benchmark-evidence.md) and
-[task-scoped routing evidence](development/docs/evaluations/task-scoped-routing-v1/README.md).
-
-A Terra Medium prose case on 2026-09-05 preserved a protected quotation and
-removed unsupported emphasis, but weakened the attribution of an internal
-trial. It is not proof of perfect fidelity or AI-authorship detection.
-
-Repository development and the current path mapping are in [development/](development/README.md).
+The repository retains deterministic task-scoped routing and fidelity cases.
+Historical model runs and token measurements are summarized in the changelog;
+they do not prove perfect fidelity, authorship detection, host discovery, or a
+measured token or latency advantage for the current package.
 
 ## Sources
 

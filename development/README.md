@@ -1,23 +1,17 @@
 # Development
 
-The only installable Skill source is [`scoville-scribe-anti-ai-slop/`](../scoville-scribe-anti-ai-slop/).
-This directory owns repository development and is not an installation package.
+The only installable package is [`scoville-scribe-anti-ai-slop/`](../scoville-scribe-anti-ai-slop/). Current routing and regression cases in this directory are not installed with the Skill.
 
-## Current layout
+## Validate
 
-Paths recorded before the 2026-09-05 structure change are historical. Use this mapping
-for current local files; frozen evidence retains its original contents and hashes.
+Run the task-scoped routing checks from the repository root:
 
-| Former repository path | Current repository path |
-| --- | --- |
-| `docs` | `development/docs` |
-| `tests` | `development/tests` |
-| `PROJECT_INDEX.md` | `development/PROJECT_INDEX.md` |
+```text
+python -B development/tests/validate_task_scoped_routing.py
+```
 
-Run development commands from this directory unless the command specifies otherwise.
-The installable package is one directory above. Tests, when present, run with
-`python -B -m unittest discover -s tests` in the existing development environment.
-This move does not add dependencies or establish new model or host qualification.
+Also check Skill frontmatter, UI metadata, package links, and the JSON syntax of the retained case files. Deterministic routing cases do not establish perfect factual fidelity, style quality, or authorship detection.
 
-The native planning root is this directory: [`PROJECT_INDEX.md`](PROJECT_INDEX.md),
-`docs/plans/` and `docs/decisions/` moved together.
+## Retention
+
+Keep current routing tests, regression inputs, and this maintenance summary. Create model outputs, comparison runs, correction reports, audits, and reviews in temporary storage. Retain evaluation evidence only as a concise repository-owned summary when a published release links it.
