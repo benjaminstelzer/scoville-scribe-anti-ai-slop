@@ -45,10 +45,10 @@ work.
 
 ## Explain mechanisms completely
 
-When no explicit voice, house style, or genuine author sample governs an
-explanatory artifact, use a direct, technically literate, essay-like register.
+Apply the Core explanatory-substance check regardless of voice or house style.
 State the answer or distinction early, then expose the mechanism and its
-consequence. Add a worked example, counterexample, or failure narrative when it
+consequence. When no explicit voice, house style, or genuine author sample
+governs the artifact, use a direct, technically literate, essay-like register. Add a worked example, counterexample, or failure narrative when it
 makes the reader able to predict a nearby case. When an example carries the
 explanation, walk one concrete instance through to its observable outcome
 rather than naming the case and moving on. When the source request asks what

@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.0.27 - 2026-09-11
+
+- Check explanatory text for missing prerequisites, unclear referents, empty
+  instructions, and unsupported causal steps. Recheck each unanswered reader
+  question after editing.
+- Apply these checks across prose and interface help, regardless of personal
+  voice. Keep the existing task routing and protected-source boundaries.
+
+## v1.0.26 - 2026-09-10
+
+- Condense repository history and development material without changing Skill
+  behavior.
+
 ## v1.0.25 - 2026-09-09
 
 - Describe byte-preserving source-exact file operations without requiring one

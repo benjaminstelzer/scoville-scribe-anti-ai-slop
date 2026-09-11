@@ -80,6 +80,11 @@ not in routine labels, help, or empty states.
 
 ## Match wording to behavior
 
+Apply the Core explanatory-substance check to help and behavior-bound
+procedures. A correct control name alone does not explain its purpose, required
+input, or the criterion for checking a result. Let surrounding context supply
+these when it already does, without expanding every label into instructions.
+
 - Name an action by its actual result. `Save`, `Apply`, `Create`, `Add`,
   `Remove`, `Delete`, `Upload`, and `Transfer` are not interchangeable.
 - Use the same concept term in an action, its status, and its confirmation.

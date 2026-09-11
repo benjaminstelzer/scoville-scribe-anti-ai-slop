@@ -94,6 +94,43 @@ knowledge, decision, or action. Change text only for a binding request or
 convention, a concrete defect, or that outcome. Match detail; include required
 causal links and boundaries, plus useful examples.
 
+## Verify explanatory substance
+
+Apply this check to explanatory text in every route, including short help,
+articles, reports, onboarding, and manuals. Voice and house style do not waive
+it. Judge sentences in their reading order using the audience knowledge already
+established and the preceding text, not facts known only to the writer or
+explanations that appear later.
+
+- Identify the concrete subject and referents. Can the reader tell what is
+  activated, changed, connected, or meant by "it" and "these values"?
+- Identify the information gained. A sentence must explain a relevant fact,
+  relationship, distinction, or consequence. Remove empty orientation rather
+  than making it sound more specific with unsupported detail.
+- Introduce necessary concepts and controls before relying on them. An exact
+  interface label can identify a control without explaining its purpose.
+  Explain only the unfamiliar knowledge needed for the next point.
+- For an instruction, check the affected object, location, prerequisites,
+  required input or choice, and expected result as applicable. For "review",
+  "check", or "adjust", state what to look for and how that observation guides
+  the decision. Do not invent universal criteria where judgment is contextual.
+- Make required causal links and scope explicit. The reader must be able to
+  follow why the stated result follows and which cases it covers.
+
+The surrounding passage may supply these answers. Do not force every sentence
+to repeat them, expand clear labels, or turn non-instructional prose into a
+procedure. Assess direct-entry sections against their own stated prerequisites.
+Protected quotations, fixed insertions, and deliberate ambiguity retain their
+existing boundaries.
+
+For each defect, formulate the unanswered reader question, locate the missing
+answer, and repair it from permitted facts. If those facts are unavailable,
+report the gap instead of inventing a bridge. Re-read the revision against the
+same question and check that voice edits did not remove the answer. In an audit,
+report location, question, reader effect, and correction direction. In drafting
+or editing, perform this check silently unless findings are requested. A
+punctuation, keyword, or term-presence check is not evidence of comprehension.
+
 ## Select mode and references per segment
 
 Route by the requested transformation and target artifact surface. Neither the integrity
@@ -174,7 +211,8 @@ proves AI authorship.
 
 ## Complete
 
-Before return, verify reader outcome, touched integrity items, each segment's
+Before return, verify reader outcome through the explanatory-substance check
+where applicable, touched integrity items, each segment's
 surface/fidelity route, requested language/format/length/mode, sentence-first
 punctuation house style within the requested writing or edit scope, and removal
 of unrequested process commentary. Report unresolved factual/project conflicts.

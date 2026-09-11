@@ -31,6 +31,12 @@ format and lifecycle rules. Neither Skill requires the other.
 When you explicitly request Scribe alongside an applicable Plan, Scribe handles
 wording while Plan still checks permitted edits, format, and lifecycle.
 
+Explanatory text also needs to carry the reader through the reasoning. Scribe
+checks whether concepts have been introduced, references are clear, and
+instructions say what to do and what result to check. These checks apply to
+blog posts, reports, help, and manuals, including text written in a personal
+voice. They do not replace a comprehension test with actual readers.
+
 ## Why "Scoville"?
 
 The family is named for useful signal that remains detectable after dilution. In writing, the
