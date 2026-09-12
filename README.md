@@ -141,6 +141,22 @@ that segment. Chat delivery alone neither activates nor suppresses Scribe.
 
 Repository validation and retention rules are in [development](development/README.md).
 
+## How it was developed
+
+Scribe developed through writing work, fidelity cases and comparisons of
+which instructions an agent actually loads. Earlier
+[paired optimization tests](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/blob/660ae1c863d4404c74a83af7aff56ea726fee4b2/CHANGELOG.md)
+checked a shorter Core against the existing behavior rather than treating
+fewer words as an improvement by itself.
+
+I keep analyzing complete writing-task histories for changed meaning, missing
+conditions, unnecessary activation and token use that adds no value to the
+text. The [changelog](CHANGELOG.md) follows the resulting work on task-scoped
+routing, source-exact handling and explanations that leave the reader with
+unanswered questions. I revise and check those cases as they appear in real
+use. Passing routing tests does not establish that every generated paragraph
+will preserve meaning or be understood.
+
 ## Scoville family
 
 Each Skill works independently. Combine only the concerns the task actually
@@ -188,19 +204,3 @@ measured token or latency advantage for the current package.
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## How it was developed
-
-Scribe developed through writing work, fidelity cases and comparisons of
-which instructions an agent actually loads. Earlier
-[paired optimization tests](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/blob/660ae1c863d4404c74a83af7aff56ea726fee4b2/CHANGELOG.md)
-checked a shorter Core against the existing behavior rather than treating
-fewer words as an improvement by itself.
-
-I keep analyzing complete writing-task histories for changed meaning, missing
-conditions, unnecessary activation and token use that adds no value to the
-text. The [changelog](CHANGELOG.md) follows the resulting work on task-scoped
-routing, source-exact handling and explanations that leave the reader with
-unanswered questions. I revise and check those cases as they appear in real
-use. Passing routing tests does not establish that every generated paragraph
-will preserve meaning or be understood.

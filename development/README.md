@@ -10,7 +10,7 @@ Run the task-scoped routing checks from the repository root:
 python -B development/tests/validate_task_scoped_routing.py
 ```
 
-Also check Skill frontmatter, UI metadata, package links, and the JSON syntax of the retained case files. Deterministic routing cases do not establish perfect factual fidelity, style quality, or authorship detection.
+Deterministic routing cases do not establish perfect factual fidelity, style quality, or authorship detection.
 
 ## Retention
 
