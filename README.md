@@ -1,20 +1,8 @@
 # Scoville Scribe Anti-AI-Slop
 
-Better wording is useful. Better wording that quietly changes the facts is not.
-
-It usually looks harmless:
-
-- "May reduce latency" becomes "will improve performance." Smoother, stronger,
-  and no longer the same claim.
-- A product setting named `Padding` becomes `Spacing` because repetition felt
-  inelegant. The interface remains stubbornly literal.
-- A summary keeps the result but drops "only when the cache is warm," which was
-  the part keeping the result true.
-- An error tells the user to retry even though the product offers no retry.
-  Encouragement is not yet a control.
-
-That is writing slop: the prose gets cleaner while meaning, terminology, or
-behavior moves underneath it. The sentence is delighted. The product less so.
+A rewrite can sound better and say something different. "May reduce latency"
+becomes "will improve performance", or a summary drops the condition that made
+the result true. Those are changes to the claim, even if the prose reads smoothly.
 
 Scoville Scribe is an Agent Skill for requested text artifacts and
 transformations: drafting, editing, rewriting, summarizing supplied sources,
@@ -35,13 +23,12 @@ Explanatory text also needs to carry the reader through the reasoning. Scribe
 checks whether concepts have been introduced, references are clear, and
 instructions say what to do and what result to check. These checks apply to
 blog posts, reports, help, and manuals, including text written in a personal
-voice. They do not replace a comprehension test with actual readers.
+voice.
 
 ## Why "Scoville"?
 
-The family is named for useful signal that remains detectable after dilution. In writing, the
-heat is the original meaning after smoothing, shortening, localization, and the
-occasional thesaurus have all had access to the sentence.
+The family is named for useful signal that remains detectable after dilution.
+In Scribe, that means preserving meaning through editing, shortening and translation.
 
 ## How to use
 
@@ -107,8 +94,8 @@ Preserve existing customizations and ask before overwriting conflicting files. R
 
 - **Facts survive the edit.** Numbers, quotations, conditions, attribution,
   modality, and uncertainty keep their meaning.
-- **Canonical terms stay canonical.** A setting named `Padding` does not become
-  `Spacing` because the thesaurus was feeling helpful.
+- **Canonical terms stay canonical.** A setting named `Padding` keeps that name
+  so the reader can find it in the product.
 - **Working strings keep working.** Placeholders, ICU branches, access keys,
   shortcuts, schemas, and accessible names retain their contracts.
 - **Behavior-bound text stays true.** Interface labels, help, errors, and
@@ -139,23 +126,18 @@ it resolves truth, terminology, audience, and requested transformation per
 segment, then loads only the Interface, Prose, or Fidelity guide needed for
 that segment. Chat delivery alone neither activates nor suppresses Scribe.
 
-Repository validation and retention rules are in [development](development/README.md).
-
 ## How it was developed
 
-Scribe developed through writing work, fidelity cases and comparisons of
-which instructions an agent actually loads. Earlier
-[paired optimization tests](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/blob/660ae1c863d4404c74a83af7aff56ea726fee4b2/CHANGELOG.md)
-checked a shorter Core against the existing behavior rather than treating
-fewer words as an improvement by itself.
+Scribe grew through writing tasks where an apparently better sentence changed
+the meaning. I examine the source, the final text and the task history together
+to find missing conditions, altered terms and explanations that still leave
+the reader guessing. Those cases guide changes to the instructions.
 
-I keep analyzing complete writing-task histories for changed meaning, missing
-conditions, unnecessary activation and token use that adds no value to the
-text. The [changelog](CHANGELOG.md) follows the resulting work on task-scoped
-routing, source-exact handling and explanations that leave the reader with
-unanswered questions. I revise and check those cases as they appear in real
-use. Passing routing tests does not establish that every generated paragraph
-will preserve meaning or be understood.
+I have also compared which references an agent loads and used
+[paired optimization tests](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/blob/660ae1c863d4404c74a83af7aff56ea726fee4b2/CHANGELOG.md)
+to examine a shorter Core. The [changelog](CHANGELOG.md) follows the resulting
+work on activation, source-exact handling and explanatory text. The aim is to
+spend context on the writing problem actually being solved.
 
 ## Scoville family
 
@@ -179,13 +161,6 @@ needs:
   Work Items, Decisions, and lifecycle state.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff) transfers active
   work to another agent or session.
-
-## Status
-
-The repository retains deterministic task-scoped routing and fidelity cases.
-Historical model runs and token measurements are summarized in the changelog;
-they do not prove perfect fidelity, authorship detection, host discovery, or a
-measured token or latency advantage for the current package.
 
 ## Sources
 

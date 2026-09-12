@@ -14,4 +14,6 @@ Deterministic routing cases do not establish perfect factual fidelity, style qua
 
 ## Retention
 
-Keep current routing tests, regression inputs, and this maintenance summary. Create model outputs, comparison runs, correction reports, audits, and reviews in temporary storage. Retain evaluation evidence only as a concise repository-owned summary when a published release links it.
+Keep current routing tests, regression inputs, and this maintenance summary. Create model outputs, comparison runs, correction reports, audits, and reviews in temporary storage. Retain a concise evaluation summary only when it explains a useful result or
+development lesson and a published release links it. Routine checks and
+inconclusive miniature runs stay temporary.
